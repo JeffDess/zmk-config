@@ -35,7 +35,7 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
 // tap: backspace | shift + tap: delete | hold: symbol layer
 ZMK_BEHAVIOR(bs_del_num, mod_morph,
     bindings = <&lt NUM BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <MOD_LSFT|MOD_RSFT>;
 )
 
 // combos
