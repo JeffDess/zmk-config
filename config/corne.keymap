@@ -33,10 +33,10 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
 )
 
 // tap: backspace | shift + tap: delete | hold: symbol layer
-ZMK_BEHAVIOR(bs_del_sym, mod_morph,
-    bindings = <&lt NUM BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+//ZMK_BEHAVIOR(bs_del_sym, mod_morph,
+    //bindings = <&lt NUM BSPC>, <&kp DEL>;
+    //mods = <(MOD_LSFT|MOD_RSFT)>;
+//)
 
 // combos
 #undef COMBO_TERM
@@ -55,7 +55,7 @@ ZMK_LAYER(default_layer,
      // ├───────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤   ├─────────┼─────────────┼─────────────┼────────────┼───────────────┼───────────┤
           &kp LSHFT   &kp Z         &kp X         &kp C         &kp V          &kp B            &kp N     &kp M         &kp COMMA     &kp DOT       &kp FSLH        &kp DOT
      // ╰───────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤   ├─────────┼─────────────┼─────────────┼────────────┼───────────────┼───────────┤
-                                                  &kp ESC       &lt NAV SPACE  &bs_del_sym      &kp RET   &kp SPACE     &ss_cw
+                                                  &kp ESC       &lt NAV SPACE  &kp BSPC         &kp RET   &kp SPACE     &ss_cw
      //                                         ╰─────────────┴──────────────┴────────────╯   ╰─────────┴─────────────┴─────────────╯
 )
 
