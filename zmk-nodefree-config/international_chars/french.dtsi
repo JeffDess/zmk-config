@@ -16,4 +16,9 @@ ZMK_UNICODE_PAIR(fr_u_circumflex,   N0, N0, F, B,    N0, N0, D, B)   // û/Û
 ZMK_UNICODE_PAIR(fr_u_diaeresis,    N0, N0, F, C,    N0, N0, D, C)   // ü/Ü
 ZMK_UNICODE_PAIR(fr_y_diaeresis,    N0, N0, F, F,    N0, N1, N7, N8) // ÿ/Ÿ
 
+/* French symbols */
+ZMK_UNICODE(fr_laquo,   N0, N0, A, B) // «
+ZMK_UNICODE(fr_raquo,   N0, N0, B, B) // »
+ZMK_UNICODE_PAIR(fr_gra_dia, N0, N0, A, N8,  N0, N0, N6, N0) // `/¨
+
 
