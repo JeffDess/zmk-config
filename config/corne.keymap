@@ -42,9 +42,9 @@ ZMK_BEHAVIOR(bs_del_nav, mod_morph,
 // combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
-ZMK_COMBO(combo_copy,   &kp LC(C),  LB2 LB3, ALL)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,  &kp LC(V),  LB1 LB2, ALL)  // Ctrl + V, active on all layers
-ZMK_COMBO(ds_cw,        &caps_word, LM1 RM1, DEF)  // Caps word on both HR shifts, active on default only
+ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)  // Ctrl + V, active on all layers
+ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, DEF)  // On both HR shifts, active on default only
 
 
 /* keymap */
