@@ -32,9 +32,9 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
     bindings = <&sk LSHFT>, <&caps_word>;
 )
 
-// tap: backspace | shift + tap: delete | hold: symbol layer
-ZMK_BEHAVIOR(bs_del_sym, mod_morph,
-    bindings = <&lt SYM BSPC>, <&kp DEL>;
+// tap: backspace | shift + tap: delete | hold: nav layer
+ZMK_BEHAVIOR(bs_del_nav, mod_morph,
+    bindings = <&lt NAV BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -53,12 +53,11 @@ ZMK_LAYER(default_layer,
      // ├───────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤   ├───────────┼─────────────┼─────────────┼────────────┼───────────────┼───────────┤
           &kp BSPC    &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F   &kp G            &kp H       &hrm RSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI  &kp GRAVE
      // ├───────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤   ├───────────┼─────────────┼─────────────┼────────────┼───────────────┼───────────┤
-          &kp LSHFT   &kp Z         &kp X         &kp C         &kp V          &kp B            &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp DOT,
+          &kp LSHFT   &kp Z         &kp X         &kp C         &kp V          &kp B            &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp DOT
      // ╰───────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤   ├───────────┼─────────────┼─────────────┼────────────┼───────────────┼───────────┤
-                                                  &kp DEL       &kp BSPC       &lt NAV ESC      &lt SYM RET &kp SPACE     &kp RALT
+                                                  &kp DEL       &bs_del_nav    &kp ESC          kp RET      &lt SYM SPACE &kp RALT
      //                                         ╰─────────────┴──────────────┴────────────╯   ╰───────────┴─────────────┴─────────────╯
 )
-
 
 ZMK_LAYER(nav_layer,
      // ╭───────────┬─────────────┬─────────────┬─────────────┬──────────────┬────────────╮   ╭───────────┬─────────────┬─────────────┬────────────┬───────────────┬───────────╮
@@ -83,4 +82,4 @@ ZMK_LAYER(symbol_layer,
                                                   ___           ___            ___              ___         ___           ___
      //                                         ╰─────────────┴──────────────┴────────────╯   ╰───────────┴─────────────┴─────────────╯
 )
-               
+
