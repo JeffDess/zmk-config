@@ -8,9 +8,9 @@
 #include "../zmk-nodefree-config/symbols/math.dtsi"
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
 
+#include "shortcuts.dtsi"
 #include "../behaviors/combos.dtsi"
 #include "../behaviors/custom.dtsi"
-#include "shortcuts.dtsi"
 
 ZMK_LAYER(qwerty_layer,
 // ╭──────────┬─────────────┬─────────────┬─────────────┬──────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬──────────────┬───────────╮
