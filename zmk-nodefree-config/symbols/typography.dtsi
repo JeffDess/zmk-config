@@ -1,0 +1,11 @@
+/* Typography */
+ZMK_UNICODE_SINGLE(laquo,      N0, N0, A,  B)  // «
+ZMK_UNICODE_SINGLE(raquo,      N0, N0, B,  B)  // »
+ZMK_UNICODE_SINGLE(n_dash,     N2, N0, N1, N3) // –
+ZMK_UNICODE_SINGLE(m_dash,     N2, N0, N1, N4) // —
+ZMK_UNICODE_SINGLE(h_bar,      N2, N0, N1, N4) // ―
+ZMK_UNICODE_SINGLE(bullet,     N2, N0, N2, N2) // •
+ZMK_UNICODE_SINGLE(h_ellipsis, N2, N0, N2, N6) // …
+
+
+

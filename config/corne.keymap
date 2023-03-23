@@ -7,6 +7,7 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
+#include "../zmk-nodefree-config/symbols/typography.dtsi"
 
 /* layer and key shortcuts */
 
@@ -95,7 +96,7 @@ ZMK_LAYER(symbol_layer,
 // ├──────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼──────────────┼───────────┤
      ___        &kp FSLH      &kp UNDER     &kp LPAR      &kp RPAR       &kp EQUAL      &kp DLLR    &kp QMARK     &kp EXCL      &kp AMPS     &kp PIPE       &kp TILDE
 // ├──────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼──────────────┼───────────┤
-     ___        &kp STAR      &kp PRCNT     &kp LBKT      &kp RBKT       &kp MINUS      ___         &kp LT        &kp GT        &fr_laquo    &fr_raquo      ___
+     ___        &kp STAR      &kp PRCNT     &kp LBKT      &kp RBKT       &kp MINUS      ___         &kp LT        &kp GT        &laquo       &raquo         ___
 // ╰──────────┴─────────────┴─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴──────────────┴───────────╯
                                             ___           ___            ___            ___         ___           ___
 //                                        ╰─────────────┴──────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
