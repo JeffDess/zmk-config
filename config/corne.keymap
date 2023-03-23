@@ -9,6 +9,7 @@
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
 
 #include "../behaviors/combos.dtsi"
+#include "../behaviors/custom.dtsi"
 
 /* layer and key shortcuts */
 
@@ -22,29 +23,6 @@
 #define NAV 4
 #define NUM 5
 
-/* custom behaviors */
-
-// homerow mods
-ZMK_BEHAVIOR(hrm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-)
-
-// tap: sticky shift | double tap: capsword
-ZMK_BEHAVIOR(ss_cw, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&sk LSHFT>, <&caps_word>;
-)
-
-// tap: backspace | shift + tap: delete | hold: nav layer
-ZMK_BEHAVIOR(bs_del_nav, mod_morph,
-    bindings = <&lt NAV BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
 /* keymap */
 
 ZMK_LAYER(qwerty_layer,
@@ -55,7 +33,7 @@ ZMK_LAYER(qwerty_layer,
 // ├──────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼──────────────┼───────────┤
      &kp LSHFT  &kp Z         &kp X         &kp C         &kp V          &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &fr_c_cd       &fr_e_ac
 // ╰──────────┴─────────────┴─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴──────────────┴───────────╯
-                                            &lt NUM DEL   &bs_del_nav    &kp ESC        &kp RET     &lt SYM SPACE &mt RALT TAB
+                                            &lt NUM DEL   &bs_del_nav    &kp ESC        &kp RET    &lt SYM SPACE  &mt RALT TAB
 //                                        ╰─────────────┴──────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
 )
 
