@@ -1,14 +1,18 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
 // Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
-ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)  // Ctrl + V, active on all layers
-ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)  // On both HR shifts, active on default only
+
+// COPY - Ctrl + C, active on all layers
+ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)
+
+// PASTE - Ctrl + V, active on all layers
+ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)
+
+// CAPS WORD - Both HR Shifts, active on all layers
+ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
