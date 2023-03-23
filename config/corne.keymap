@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
