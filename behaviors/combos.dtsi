@@ -1,3 +1,5 @@
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
 // Combos
 #undef COMBO_TERM
