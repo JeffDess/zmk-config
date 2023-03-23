@@ -9,6 +9,8 @@
 #include "../zmk-nodefree-config/symbols/math.dtsi"
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
 
+#include "../behaviors/combos.dtsi"
+
 /* layer and key shortcuts */
 
 #define ___ &trans
@@ -43,14 +45,6 @@ ZMK_BEHAVIOR(bs_del_nav, mod_morph,
     bindings = <&lt NAV BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-
-// combos
-#undef COMBO_TERM
-#define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
-ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)  // Ctrl + C, active on all layers
-ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)  // Ctrl + V, active on all layers
-ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, DEF)  // On both HR shifts, active on default only
-
 
 /* keymap */
 
