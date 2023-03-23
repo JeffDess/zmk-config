@@ -1,0 +1,12 @@
+// Keys
+#define ___ &trans
+#define XXX &none
+
+// Layers
+// Must match order in which they are defined
+#define DEF 0
+#define ERG 1
+#define ACC 2
+#define SYM 3
+#define NAV 4
+#define NUM 5

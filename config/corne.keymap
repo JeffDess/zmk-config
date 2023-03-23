@@ -10,20 +10,7 @@
 
 #include "../behaviors/combos.dtsi"
 #include "../behaviors/custom.dtsi"
-
-/* layer and key shortcuts */
-
-#define ___ &trans
-#define XXX &none
-
-#define DEF 0  // layer shortcuts, must match order in which they are defined below
-#define ERG 1
-#define ACC 2
-#define SYM 3
-#define NAV 4
-#define NUM 5
-
-/* keymap */
+#include "shortcuts.dtsi"
 
 ZMK_LAYER(qwerty_layer,
 // ╭──────────┬─────────────┬─────────────┬─────────────┬──────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬──────────────┬───────────╮
