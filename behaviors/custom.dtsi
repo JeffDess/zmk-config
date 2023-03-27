@@ -27,20 +27,20 @@ ZMK_BEHAVIOR(bs_del_nav, mod_morph,
 )
 
 // tap: plus | shift + tap: minus
-ZMK_BEHAVIOR(plus_minus), mod_morph,
+ZMK_BEHAVIOR(plus_minus, mod_morph,
     bindings = <&kp PLUS>, <&kp MINUS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: multiply | shift + tap: divide
-ZMK_BEHAVIOR(multi_div), mod_morph,
+ZMK_BEHAVIOR(multi_div, mod_morph,
     bindings = <&kp STAR>, <&kp FSLH>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 
 // tap: comma | shift + tap: period
-ZMK_BEHAVIOR(comma_dot), mod_morph,
+ZMK_BEHAVIOR(comma_dot, mod_morph,
     bindings = <&kp COMMA>, <&kp DOT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
