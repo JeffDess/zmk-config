@@ -16,3 +16,9 @@ ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
+// Ergo-L Layer - Both Middle Thumb, active on default layer
+ZMK_COMBO(combo_ergol, &to ERG, LH1, RH1, DEF)
+
+// Querty Layer - Both Middle Thumb, active on Ergo-L layer
+ZMK_COMBO(combo_qwerty, &to DEF, LH1, RH1, ERG)
+
