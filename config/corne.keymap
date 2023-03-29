@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define HOST_OS 1 // 0 = Windows; 1 = Linux; 2 = MacOS
+#include "os.dtsi"
+#define HOST_OS LINUX
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
