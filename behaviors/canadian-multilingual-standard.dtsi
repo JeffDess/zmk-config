@@ -4,14 +4,17 @@
 
 /* Canadian Multilingual Standard Mappings */
 
-// ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
+ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
 ZMK_BEHAVIOR(E_C,      macro, bindings = <&kp SLASH>;)         // É
-// ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
+ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
 ZMK_BEHAVIOR(CEDIL,    macro, bindings = <&kp LT>;)            // Ç
-// ZMK_BEHAVIOR(GRA,      macro, wait-ms = <100>; tap-ms = <5>; bindings = <&kp RALT(LBKT)>;)    // `
+// ZMK_BEHAVIOR(GRA,      macro, bindings = <&kp RALT(LBKT)>;)    // `
 ZMK_BEHAVIOR(CIRC,     macro, bindings = <&kp LBKT>;)          // ^)
 // ZMK_BEHAVIOR(AIGU,  macro, bindings = <&kp RALT(SLASH)>;)   // ´
-// ZMK_BEHAVIOR(TREMA, macro, bindings = <&kp LSHFT(LBKT)>;)    // ¨
+ZMK_BEHAVIOR(TREMA, macro, bindings =
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp LBKT)>,
+    <&macro_release &kp LSHFT>;)    // ¨
 // ZMK_BEHAVIOR(DEG,   macro, bindings = <&kp RALT(SEMI)>;)    // °
 // ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RALT(N7)>;)    // 0
 // ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RALT(N8)>;)    // °
