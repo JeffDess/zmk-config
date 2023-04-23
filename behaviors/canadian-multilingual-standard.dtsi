@@ -2,9 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 
-wait-ms = <70>;
-tap-ms = <40>;
-
 /* Canadian Multilingual Standard Mappings */
 ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
 ZMK_BEHAVIOR(E_C,   macro, bindings = <&kp SLASH>;)         // É
@@ -43,10 +40,13 @@ ZMK_BEHAVIOR(RBKET,  macro, bindings = // ]
     <&macro_press &kp RALT>,
     <&macro_tap &kp N0>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(SLSH,  macro, bindings = // °
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp GRAVE>,
-    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(SLSH,  macro,
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings = // |
+        <&macro_press &kp RALT>,
+        <&macro_tap &kp GRAVE>,
+        <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(QUEST,  macro, bindings = // ?
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp N6>,
