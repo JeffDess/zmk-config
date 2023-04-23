@@ -25,19 +25,44 @@ ZMK_BEHAVIOR(DEG,   macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp SEMI>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(LBRAC,  macro, bindings = // 0
+ZMK_BEHAVIOR(LBRAC,  macro, bindings = // {
     <&macro_press &kp RALT>,
     <&macro_tap &kp N7>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBRAC,  macro, bindings = // °
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = // 8
     <&macro_press &kp RALT>,
     <&macro_tap &kp N8>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(LBKET,  macro, bindings = // °
+ZMK_BEHAVIOR(LBKET,  macro, bindings = // [
     <&macro_press &kp RALT>,
     <&macro_tap &kp N9>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBKET,  macro, bindings = // °
+ZMK_BEHAVIOR(RBKET,  macro, bindings = // 0
     <&macro_press &kp RALT>,
     <&macro_tap &kp N0>,
     <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(SLSH,  macro, bindings = // °
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp GRAVE>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(QUEST,  macro, bindings = // °
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp N6>,
+    <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(PIP,  macro, bindings = // °
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp GRAVE>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(TIL,  macro, bindings = // °
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp GRAVE>,
+    <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(LETHAN,  macro, bindings = // °
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp COMMA>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // °
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp DOT>,
+    <&macro_release &kp RALT>;)
+
