@@ -13,8 +13,8 @@ ZMK_BEHAVIOR(CIRC,  macro, bindings = <&kp LBKT>;)          // ^)
 ZMK_BEHAVIOR(AIGU,  macro, bindings = <&kp RALT(SLASH)>;)   // ´
 ZMK_BEHAVIOR(TREMA, macro, bindings = <&kp LSHFT(LBKT)>;)    // ¨
 ZMK_BEHAVIOR(DEG,   macro, bindings = <&kp RALT(SEMI)>;)    // °
-ZMK_BEHAVIOR(LBRC,  macro, bindings = <&kp RALT(N7)>;)    // 0
-ZMK_BEHAVIOR(RBRC,  macro, bindings = <&kp RALT(N8)>;)    // °
-ZMK_BEHAVIOR(LBKT,  macro, bindings = <&kp RALT(N9)>;)    // °
-ZMK_BEHAVIOR(RBRT,  macro, bindings = <&kp RALT(N0)>;)    // °
+ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RALT(N7)>;)    // 0
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RALT(N8)>;)    // °
+ZMK_BEHAVIOR(LBKET,  macro, bindings = <&kp RALT(N9)>;)    // °
+ZMK_BEHAVIOR(RBRET,  macro, bindings = <&kp RALT(N0)>;)    // °
 
