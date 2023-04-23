@@ -7,7 +7,7 @@
 ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
 ZMK_BEHAVIOR(E_C,   macro, bindings = <&kp SLASH>;)         // É
 ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp LT>;)            // Ç
+ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)          // Ç
 ZMK_BEHAVIOR(CIRC,  macro, bindings = <&kp LBKT>;)          // ^)
 ZMK_BEHAVIOR(GRA,   macro, bindings = // `
     <&macro_press &kp RALT>,
@@ -29,7 +29,7 @@ ZMK_BEHAVIOR(LBRAC,  macro, bindings = // {
     <&macro_press &kp RALT>,
     <&macro_tap &kp N7>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBRAC,  macro, bindings = // 8
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = // }
     <&macro_press &kp RALT>,
     <&macro_tap &kp N8>,
     <&macro_release &kp RALT>;)
@@ -37,7 +37,7 @@ ZMK_BEHAVIOR(LBKET,  macro, bindings = // [
     <&macro_press &kp RALT>,
     <&macro_tap &kp N9>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBKET,  macro, bindings = // 0
+ZMK_BEHAVIOR(RBKET,  macro, bindings = // ]
     <&macro_press &kp RALT>,
     <&macro_tap &kp N0>,
     <&macro_release &kp RALT>;)
@@ -45,18 +45,18 @@ ZMK_BEHAVIOR(SLSH,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(QUEST,  macro, bindings = // °
+ZMK_BEHAVIOR(QUEST,  macro, bindings = // ?
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp N6>,
     <&macro_release &kp LSHFT>;)
-ZMK_BEHAVIOR(PIP,  macro, bindings = // °
+ZMK_BEHAVIOR(PIP,  macro, bindings = // |
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TILDS,  macro, bindings = // °
-    <&macro_press &kp LSHFT>,
-    <&macro_tap &kp GRAVE>,
-    <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(TILDS,  macro, bindings = // 
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp RBRK>,
+    <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(LETHAN,  macro, bindings = // <
     <&macro_press &kp RALT>,
     <&macro_tap &kp COMMA>,
