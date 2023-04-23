@@ -16,5 +16,5 @@ ZMK_BEHAVIOR(DEG,   macro, bindings = <&kp RALT(SEMI)>;)    // °
 ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RALT(N7)>;)    // 0
 ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RALT(N8)>;)    // °
 ZMK_BEHAVIOR(LBKET,  macro, bindings = <&kp RALT(N9)>;)    // °
-ZMK_BEHAVIOR(RBRET,  macro, bindings = <&kp RALT(N0)>;)    // °
+ZMK_BEHAVIOR(RBKET,  macro, bindings = <&kp RALT(N0)>;)    // °
 
