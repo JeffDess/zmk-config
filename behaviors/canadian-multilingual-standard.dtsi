@@ -2,8 +2,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 
-/* Canadian Multilingual Standard Mappings */
+wait-ms = <70>;
+tap-ms = <40>;
 
+/* Canadian Multilingual Standard Mappings */
 ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
 ZMK_BEHAVIOR(E_C,   macro, bindings = <&kp SLASH>;)         // É
 ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
