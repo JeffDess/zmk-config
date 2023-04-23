@@ -41,15 +41,15 @@ ZMK_BEHAVIOR(RBKET,  macro, bindings = // 0
     <&macro_press &kp RALT>,
     <&macro_tap &kp N0>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(SLSH,  macro, bindings = // °
+ZMK_BEHAVIOR(SLSHs,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(QUEST,  macro, bindings = // °
+ZMK_BEHAVIOR(QUESTs,  macro, bindings = // °
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp N6>,
     <&macro_release &kp LSHFT>;)
-ZMK_BEHAVIOR(PIP,  macro, bindings = // °
+ZMK_BEHAVIOR(PIPs,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
