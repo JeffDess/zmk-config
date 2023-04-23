@@ -53,7 +53,7 @@ ZMK_BEHAVIOR(PIP,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TIL,  macro, bindings = // °
+ZMK_BEHAVIOR(TILD,  macro, bindings = // °
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp LSHFT>;)
