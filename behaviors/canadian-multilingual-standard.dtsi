@@ -53,15 +53,15 @@ ZMK_BEHAVIOR(PIPs,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TILD,  macro, bindings = // °
+ZMK_BEHAVIOR(TILDs,  macro, bindings = // °
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp GRAVE>,
     <&macro_release &kp LSHFT>;)
-ZMK_BEHAVIOR(LETHAN,  macro, bindings = // °
+ZMK_BEHAVIOR(LETHANs,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp COMMA>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // °
+ZMK_BEHAVIOR(GRTHANs,  macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp DOT>,
     <&macro_release &kp RALT>;)
