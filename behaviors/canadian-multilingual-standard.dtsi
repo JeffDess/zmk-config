@@ -55,7 +55,7 @@ ZMK_BEHAVIOR(PIP,  macro, bindings = // |
     <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(TILDS,  macro, bindings = // 
     <&macro_press &kp RALT>,
-    <&macro_tap &kp RBRK>,
+    <&macro_tap &kp RBKT>,
     <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(LETHAN,  macro, bindings = // <
     <&macro_press &kp RALT>,
