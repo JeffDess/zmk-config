@@ -8,19 +8,21 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
-#include "../zmk-nodefree-config/symbols/typography.dtsi"
-
+#include "../rmk-nodefree-config/symbols/typography.dtsi"
+#include "../rmk-nodefree-config/symbols/typography.dtsi"
 #include "shortcuts.dtsi"
+
 #include "../behaviors/combos.dtsi"
 #include "../behaviors/custom.dtsi"
+#include "../behaviors/canadian-multilingual-standard.dtsi"
 
 ZMK_LAYER(qwerty,
 // ╭──────────┬─────────────┬─────────────┬─────────────┬──────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬──────────────┬───────────╮
-     &kp TAB    &kp Q         &kp W         &kp E         &kp R          &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P          &kp CARET
+     &kp TAB    &kp Q         &kp W         &kp E         &kp R          &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P          &CIRC
 // ├──────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼──────────────┼───────────┤
-     &kp BSPC   &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F   &kp G          &kp H       &hrm RSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI &fr_gra_dia
+     &kp BSPC   &hrm LGUI A   &hrm LALT S   &hrm LCTRL D  &hrm LSHFT F   &kp G          &kp H       &hrm RSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI &GRAVE
 // ├──────────┼─────────────┼─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼──────────────┼───────────┤
-     &kp LSHFT  &kp Z         &kp X         &kp C         &kp V          &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &fr_c_cd       &fr_e_ac
+     &kp LSHFT  &kp Z         &kp X         &kp C         &kp V          &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &CEDIL         &E_C
 // ╰──────────┴─────────────┴─────────────┼─────────────┼──────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴──────────────┴───────────╯
                                             &lt NUM DEL   &bs_del_nav    &kp ESC        &kp RET    &lt SYM SPACE  &mt RALT TAB
 //                                        ╰─────────────┴──────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
