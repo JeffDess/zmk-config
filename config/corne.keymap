@@ -8,8 +8,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
-#include "../rmk-nodefree-config/symbols/typography.dtsi"
-#include "../rmk-nodefree-config/symbols/typography.dtsi"
+#include "../zmk-nodefree-config/symbols/typography.dtsi"
 #include "shortcuts.dtsi"
 
 #include "../behaviors/combos.dtsi"
