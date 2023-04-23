@@ -8,6 +8,7 @@ ZMK_BEHAVIOR(E_C,   macro, bindings = <&kp SLASH>;)         // É
 ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
 ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)          // Ç
 ZMK_BEHAVIOR(CIRC,  macro, bindings = <&kp LBKT>;)          // ^)
+ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)          // |)
 ZMK_BEHAVIOR(GRA,   macro, bindings = // `
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT>,
@@ -40,13 +41,6 @@ ZMK_BEHAVIOR(RBKET,  macro, bindings = // ]
     <&macro_press &kp RALT>,
     <&macro_tap &kp N0>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(SLSH,  macro,
-    wait-ms = <40>;
-    tap-ms = <40>;
-    bindings = // |
-        <&macro_press &kp RALT>,
-        <&macro_tap &kp GRAVE>,
-        <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(QUEST,  macro, bindings = // ?
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp N6>,
