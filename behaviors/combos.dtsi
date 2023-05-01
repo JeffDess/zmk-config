@@ -7,6 +7,9 @@
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
 
+// CUT - Ctrl + X, active on all layers
+ZMK_COMBO(combo_cut,      &kp LC(X),  LB3 LB4, ALL)
+
 // COPY - Ctrl + C, active on all layers
 ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)
 
