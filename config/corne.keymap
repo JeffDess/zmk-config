@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #include "os.dtsi"
 #define HOST_OS LINUX
@@ -18,9 +19,9 @@
 
 ZMK_LAYER(qwerty,
 // ╭─────┬───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬─────╮
-     XXX   &kp Q       &kp W       &kp E       &kp R        &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P        XXX
+&mkp LCLK  &kp Q       &kp W       &kp E       &kp R        &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P        XXX
 // ├─────┼───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┼─────┤
-     XXX   &hrm GL A   &hrm AL S   &hrm CL D  &hrm SL F     &kp G          &kp H       &hrm SL J     &hrm CL K     &hrm AL L   &hrm GL SEMI  XXX
+&mkp RCLK  &hrm GL A   &hrm AL S   &hrm CL D  &hrm SL F     &kp G          &kp H       &hrm SL J     &hrm CL K     &hrm AL L   &hrm GL SEMI  XXX
 // ├─────┼───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┼─────┤
      XXX   &kp Z       &kp X       &kp C       &kp V        &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &sl ACC      XXX
 // ╰─────┴───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────┴─────╯
