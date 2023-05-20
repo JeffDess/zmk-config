@@ -10,3 +10,4 @@
 #define SYM 3
 #define NAV 4
 #define NUM 5
+#define COL 6
