@@ -20,6 +20,12 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
     bindings = <&sk LSHFT>, <&caps_word>;
 )
 
+// tap: backspace | shift + tap: delete
+ZMK_BEHAVIOR(bspc_del, mod_morph,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: backspace | shift + tap: delete | hold: nav layer
 ZMK_BEHAVIOR(bs_del_nav, mod_morph,
     bindings = <&lt NAV BSPC>, <&kp DEL>;
