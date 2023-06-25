@@ -16,6 +16,9 @@ ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)
 // PASTE - Ctrl + V, active on all layers
 ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)
 
+// PRINT SCREEN - PrintScreen, active on navigation layer
+ZMK_COMBO(combo_printscreen, &kp LC(V),  RT3 RT4, NAV)
+
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
