@@ -44,6 +44,11 @@ ZMK_BEHAVIOR(multi_div, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: dash | shift + tap: tilde
+ZMK_BEHAVIOR(dash_tildle, mod_morph,
+    bindings = <&kp MINUS>, <&TILDS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 // tap: comma | shift + tap: period
 ZMK_BEHAVIOR(comma_dot, mod_morph,
