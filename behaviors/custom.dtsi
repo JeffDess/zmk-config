@@ -45,7 +45,7 @@ ZMK_BEHAVIOR(multi_div, mod_morph,
 )
 
 // tap: dash | shift + tap: tilde
-ZMK_BEHAVIOR(dash_tildle, mod_morph,
+ZMK_BEHAVIOR(dash_tilde, mod_morph,
     bindings = <&kp MINUS>, <&TILDS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
