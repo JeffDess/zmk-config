@@ -17,7 +17,7 @@ ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp LSHFT>;)
-ZMK_BEHAVIOR(GRAV,  macro, bindings = // ` to input
+ZMK_BEHAVIOR(AGRA, macro, bindings = // ` to input
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp RALT>,
