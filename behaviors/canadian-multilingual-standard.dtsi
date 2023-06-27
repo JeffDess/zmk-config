@@ -3,18 +3,15 @@
 #include "../zmk-nodefree-config/helper.h"
 
 /* Canadian Multilingual Standard Mappings */
-ZMK_BEHAVIOR(A_GR,   macro, bindings = <&kp BACKSLASH>;) // À
-ZMK_BEHAVIOR(E_CU,   macro, bindings = <&kp SLASH>;)     // É
-ZMK_BEHAVIOR(E_GR,   macro, bindings = <&kp APOS>;)      // È
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)       // Ç
-ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)      // /
-ZMK_BEHAVIOR(CAR,   macro, bindings = // ^
-    <&kp LBKT>,
-    <&kp SPACE>;)
+ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
+ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>;)                     // É
+ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>;)                      // È
+ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
+ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
+ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^
 ZMK_BEHAVIOR(GRA,  macro, bindings = // `
     <&macro_press &kp RALT>,
-    <&macro_tap &kp LBKT>,
-    <&macro_tap &kp LBKT>,
+    <&macro_tap &kp LBKT &kp LBKT>,
     <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
     <&macro_press &kp LSHFT>,
