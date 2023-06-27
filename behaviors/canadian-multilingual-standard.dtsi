@@ -35,6 +35,10 @@ ZMK_BEHAVIOR(TREM, macro, bindings = // ¨ to input
     <&macro_release &kp LSHFT>,
     <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(CIRC, macro, bindings = // ^ to input
+    <&macro_tap &kp LBKT>,
+    <&macro_param_1to1>,
+    <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(DEG,   macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp SEMI>,
