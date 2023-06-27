@@ -3,24 +3,38 @@
 #include "../zmk-nodefree-config/helper.h"
 
 /* Canadian Multilingual Standard Mappings */
-ZMK_BEHAVIOR(A_G,   macro, bindings = <&kp BACKSLASH>;)     // À
-ZMK_BEHAVIOR(E_C,   macro, bindings = <&kp SLASH>;)         // É
-ZMK_BEHAVIOR(E_G,   macro, bindings = <&kp APOS>;)          // È
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)          // Ç
-ZMK_BEHAVIOR(CIRC,  macro, bindings = <&kp LBKT>;)          // ^)
-ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)          // |)
-ZMK_BEHAVIOR(GRA,   macro, bindings = // `
+ZMK_BEHAVIOR(A_GR,   macro, bindings = <&kp BACKSLASH>;) // À
+ZMK_BEHAVIOR(E_CU,   macro, bindings = <&kp SLASH>;)     // É
+ZMK_BEHAVIOR(E_GR,   macro, bindings = <&kp APOS>;)      // È
+ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)       // Ç
+ZMK_BEHAVIOR(CAR,  macro, bindings = <&kp LBKT>;)        // ^
+ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)      // |
+ZMK_BEHAVIOR(GRA,  macro, bindings = // `
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(AIGU,  macro, bindings =  // ´
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp SLASH>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TREMA, macro, bindings =
+ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(GRAV,  macro, bindings = // ` to input
+    <&macro_param_1to1>,
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp RALT>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(AIGU,  macro, bindings =  // ´ to input
+    <&macro_param_1to1>,
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp SLASH>,
+    <&macro_release &kp RALT>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(TREM, macro, bindings = // ¨ to input
+    <&macro_param_1to1>,
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp LSHFT>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(DEG,   macro, bindings = // °
     <&macro_press &kp RALT>,
     <&macro_tap &kp SEMI>,
