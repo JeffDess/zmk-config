@@ -13,11 +13,11 @@
 #define NUM 6
 
 // Modifier keys
-#define LG LGUI
-#define LC LCTRL
-#define LA LALT
-#define LS LSHFT
-#define RG RGUI
-#define RC RCTRL
-#define RA RALT
-#define RS RSHFT
+#define GL LGUI
+#define CL LCTRL
+#define AL LALT
+#define SL LSHFT
+#define GR RGUI
+#define CR RCTRL
+#define AR RALT
+#define SR RSHFT
