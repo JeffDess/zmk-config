@@ -18,22 +18,22 @@ ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
     <&macro_tap &kp LBKT>,
     <&macro_release &kp LSHFT>;)
 ZMK_BEHAVIOR(GRAV,  macro, bindings = // ` to input
-    <&macro_param_1to1>,
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp RALT>,
+    <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(AIGU,  macro, bindings =  // ´ to input
-    <&macro_param_1to1>,
     <&macro_press &kp RALT>,
     <&macro_tap &kp SLASH>,
     <&macro_release &kp RALT>,
+    <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(TREM, macro, bindings = // ¨ to input
-    <&macro_param_1to1>,
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp LSHFT>,
+    <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(DEG,   macro, bindings = // °
     <&macro_press &kp RALT>,
