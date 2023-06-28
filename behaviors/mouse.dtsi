@@ -4,6 +4,7 @@
 
 // Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
 // Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
+
 &mmv {
     acceleration-exponent=<2>;
     delay-ms=<0>;
@@ -33,5 +34,8 @@ ZMK_BEHAVIOR(mwh_rg, macro, bindings = <&mwh SCROLL_RIGHT>;)
 ZMK_BEHAVIOR(mwh_up, macro, bindings = <&mwh SCROLL_UP>;)
 ZMK_BEHAVIOR(mwh_dn, macro, bindings = <&mwh SCROLL_DOWN>;)
 
-// Switch move/scroll on Ploopy Nano by pressing NumLock
-ZMK_BEHAVIOR(mwh_tg, macro, bindings = <&kp KP_NUMLOCK>;)
+// Switch move/scroll on Ploopy Nano by pressing NumLock twice
+ZMK_BEHAVIOR(mwh_tg, macro, bindings = 
+  <&kp KP_NUMLOCK>,
+  <&macro_wait_time 20>,
+  <&kp KP_NUMLOCK>;)
