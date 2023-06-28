@@ -14,7 +14,6 @@
 #include "../behaviors/combos.dtsi"
 #include "../behaviors/custom.dtsi"
 #include "../behaviors/canadian-multilingual-standard.dtsi"
-#include "../behaviors/mouse.dtsi"
 
 ZMK_LAYER(qwerty,
 // ╭─────┬───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬─────╮
