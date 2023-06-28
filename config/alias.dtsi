@@ -11,6 +11,7 @@
 #define SYM 4
 #define NAV 5
 #define NUM 6
+#define MOU 7
 
 // Modifier keys
 #define GL LGUI

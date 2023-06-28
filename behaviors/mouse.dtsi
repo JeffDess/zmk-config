@@ -1,0 +1,26 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+
+// Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
+// Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
+
+// Move cursor
+ZMK_BEHAVIOR(mmv_lf, macro, bindings = <&mmv MOVE_LEFT>;)
+ZMK_BEHAVIOR(mmv_rg, macro, bindings = <&mmv MOVE_RIGHT>;)
+ZMK_BEHAVIOR(mmv_up, macro, bindings = <&mmv MOVE_UP>;)
+ZMK_BEHAVIOR(mmv_dn, macro, bindings = <&mmv MOVE_DOWN>;)
+
+// Mouse buttons
+ZMK_BEHAVIOR(mkp_lf, macro, bindings = <&mkp LCLK>;)
+ZMK_BEHAVIOR(mkp_md, macro, bindings = <&mkp MCLK>;)
+ZMK_BEHAVIOR(mkp_rg, macro, bindings = <&mkp RCLK>;)
+
+// Scoll wheel
+ZMK_BEHAVIOR(mwh_lf, macro, bindings = <&mwh SCROLL_LEFT>;)
+ZMK_BEHAVIOR(mwh_rg, macro, bindings = <&mwh SCROLL_RIGHT>;)
+ZMK_BEHAVIOR(mwh_up, macro, bindings = <&mwh SCROLL_UP>;)
+ZMK_BEHAVIOR(mwh_dn, macro, bindings = <&mwh SCROLL_DOWN>;)
+
+// Switch move/scroll on Ploopy Nano by pressing NumLock
+ZMK_BEHAVIOR(mwh_tg, macro, bindings = <&kp NLCK>;)
