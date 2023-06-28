@@ -19,11 +19,11 @@
 
 ZMK_LAYER(qwerty,
 // ╭─────┬───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬─────╮
-   &mkp_rg &kp Q       &kp W       &kp E       &kp R        &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P        XXX
+   &mkp_rg &kp Q       &kp W       &kp E       &kp R        &kp T          &kp Y       &kp U         &kp I         &kp O        &kp P       &car
 // ├─────┼───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┼─────┤
-   &mkp_lf &hrm GL A   &hrm AL S   &hrm CL D  &hrm SL F     &kp G          &kp H       &hrm SL J     &hrm CL K     &hrm AL L   &hrm GL SEMI  XXX
+   &mkp_lf &hrm GL A   &hrm AL S   &hrm CL D   &hrm SL F     &kp G          &kp H       &hrm SL J     &hrm CL K     &hrm AL L   &hrm GL SEMI &gra
 // ├─────┼───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┼─────┤
-   &mwh_tg &kp Z       &kp X       &kp C       &kp V        &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &sl ACC      XXX
+   &mwh_tg &kp Z       &kp X       &kp C       &kp V        &kp B          &kp N       &kp M         &kp COMMA     &kp DOT      &sl ACC     &CEDIL
 // ╰─────┴───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────┴─────╯
                                    &to MOU     &lt NAV RET  &lt NUM ESC    &bspc_del  &lt SYM SPACE  &mt RALT TAB
 //                               ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
