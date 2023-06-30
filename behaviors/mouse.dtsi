@@ -36,6 +36,6 @@ ZMK_BEHAVIOR(mwh_dn, macro, bindings = <&mwh SCROLL_DOWN>;)
 
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice
 ZMK_BEHAVIOR(mwh_tg, macro, bindings = 
-  <&kp KP_NUMLOCK>,
-  <&macro_wait_time 20>,
-  <&kp KP_NUMLOCK>;)
+  <&macro_tap &kp KP_NUMLOCK>,
+  <&macro_wait_time 10>,
+  <&macro_tap &kp KP_NUMLOCK>;)
