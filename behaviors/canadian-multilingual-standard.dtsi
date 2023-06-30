@@ -85,9 +85,8 @@ ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // >
     <&macro_tap &kp DOT>,
     <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
-    <&kp SPACE>,
-    <&kp EQUAL>,
+    <&macro_tap &kp SPACE &kp EQUAL>,
     <&macro_press &kp RALT>,
-    <&macro_press &kp DOT>,
+    <&macro_tap &kp DOT>,
     <&macro_release &kp RALT>,
     <&kp SPACE>;)
