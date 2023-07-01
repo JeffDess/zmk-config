@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../zmk-nodefree-config/helper.h"
 
 // Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
@@ -39,3 +40,7 @@ ZMK_BEHAVIOR(mwh_tg, macro, bindings =
   <&macro_tap &kp KP_NUMLOCK>,
   <&macro_wait_time 10>,
   <&macro_tap &kp KP_NUMLOCK>;)
+
+// Mouse Click - Index and Middle finger of left hand, active on first laye
+ZMK_COMBO(combo_qwerty, &mkp_lf, RT0, RT1, DEF)
+
