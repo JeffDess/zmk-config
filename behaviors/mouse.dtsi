@@ -41,6 +41,6 @@ ZMK_BEHAVIOR(mwh_tg, macro, bindings =
   <&macro_wait_time 10>,
   <&macro_tap &kp KP_NUMLOCK>;)
 
-// Mouse Click - Index and Middle finger of left hand, active on first laye
-ZMK_COMBO(combo_leftclick, &mkp_lf, LT1, LT2, DEF)
+// Mouse Click - Index and Middle finger of left hand, active on first layer
+ZMK_COMBO(combo_leftclick, &mkp LCLK, LT1, LT2, DEF)
 
