@@ -39,7 +39,7 @@ ZMK_BEHAVIOR(mwh_dn, macro, bindings = <&mwh SCROLL_DOWN>;)
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice
 ZMK_BEHAVIOR(mwh_tg, macro, bindings =
   <&macro_tap &kp KP_NUMLOCK>,
-  <&macro_wait_time 25>,
+  <&macro_wait_time 20>,
   <&macro_tap &kp KP_NUMLOCK>;)
 
 // Mouse Click - Index and Middle finger of left hand, active on first layer
