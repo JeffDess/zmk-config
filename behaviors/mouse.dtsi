@@ -43,6 +43,9 @@ ZMK_BEHAVIOR(mwh_tg, macro, bindings =
   <&macro_tap &kp KP_NUMLOCK>,
   <&macro_tap &kp KP_NUMLOCK>;)
 
-// Mouse Click - Index and Middle finger of left hand, active on first layer
-ZMK_COMBO(combo_leftclick, &mkp LCLK, LT1, LT2, ALL)
+// Mouse Click - Index and Middle finger of left hand, active on all layers
+ZMK_COMBO(combo_leftclick, &mkp LCLK, LT1 LT2, ALL)
+
+// Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
+ZMK_COMBO(combo_leftclick, &mkp LCLK, LT2 LT3, ALL)
 
