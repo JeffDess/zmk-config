@@ -8,16 +8,16 @@
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
 
 // CUT - Ctrl + X, active on all layers
-ZMK_COMBO(combo_cut,      &kp LC(X),  LB3 LB4, ALL)
+ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, ALL)
 
 // COPY - Ctrl + C, active on all layers
-ZMK_COMBO(combo_copy,     &kp LC(C),  LB2 LB3, ALL)
+ZMK_COMBO(combo_copy, &kp LC(C), LB2 LB3, ALL)
 
 // PASTE - Ctrl + V, active on all layers
-ZMK_COMBO(combo_paste,    &kp LC(V),  LB1 LB2, ALL)
+ZMK_COMBO(combo_paste, &kp LC(V), LB1 LB2, ALL)
 
 // PRINT SCREEN - PrintScreen, active on navigation layer
-ZMK_COMBO(combo_printscreen, &kp LC(V),  RT3 RT4, NAV)
+ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, ALL)
 
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
