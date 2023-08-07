@@ -31,9 +31,9 @@ ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT>,
-    <&macro_release &kp RALT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
     <&macro_press &kp RALT>,
     <&macro_tap &kp SLASH>,
