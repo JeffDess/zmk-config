@@ -33,19 +33,19 @@ ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
     <&macro_tap &kp LBKT>,
     <&macro_release &kp RALT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
     <&macro_press &kp RALT>,
     <&macro_tap &kp SLASH>,
     <&macro_release &kp RALT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
     <&macro_press &kp LSHFT>,
     <&macro_tap &kp LBKT>,
     <&macro_release &kp LSHFT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&macro_tap &kp LBKT>,
     <&macro_param_1to1>,
