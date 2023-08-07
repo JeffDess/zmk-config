@@ -6,11 +6,6 @@
 
 /* Custom Behaviors */
 
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-};
-
 // homerow mods
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
