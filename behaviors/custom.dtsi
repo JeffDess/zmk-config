@@ -62,3 +62,9 @@ ZMK_BEHAVIOR(num_esc_clk, mod_morph,
     bindings = <&lt NUM ESC>, <&mkp LCLK>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+
+// hold: symbol layer | tap: space  | shift + tap: tab
+ZMK_BEHAVIOR(sp_tab_sym, mod_morph,
+    bindings = <&lt SYM SPACE>, <&kp TAB>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
