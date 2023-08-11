@@ -9,8 +9,8 @@
 // homerow mods
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&kp>;
 )
@@ -18,8 +18,8 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 // homerow mods for circumflex
 ZMK_BEHAVIOR(hrmc, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&CIRC>;
 )
@@ -27,8 +27,8 @@ ZMK_BEHAVIOR(hrmc, hold_tap,
 // homerow mods for grave
 ZMK_BEHAVIOR(hrmg, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&AGRA>;
 )
