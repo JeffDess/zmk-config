@@ -2,6 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 
+#undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 150
+
+#undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 300
+
 /* Canadian Multilingual Standard Mappings */
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
 ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>;)                     // É
@@ -9,6 +15,11 @@ ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>;)                      // È
 ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
 ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
 ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^
+ZMK_BEHAVIOR(ca,    macro, bindings = <&kp LBKT>;)                      // ^
+ZMK_BEHAVIOR(gr,    macro, bindings = // `
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(GRA,  macro, bindings = // `
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
@@ -79,4 +90,9 @@ ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // >
     <&macro_press &kp RALT>,
     <&macro_tap &kp DOT>,
     <&macro_release &kp RALT>;)
-
+ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
+    <&macro_tap &kp SPACE &kp EQUAL>,
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp DOT>,
+    <&macro_release &kp RALT>,
+    <&macro_tap &kp SPACE>;)

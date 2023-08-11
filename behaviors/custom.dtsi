@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
@@ -8,7 +9,7 @@
 // homerow mods
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <280>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&kp>;
@@ -53,5 +54,17 @@ ZMK_BEHAVIOR(dash_tilde, mod_morph,
 // tap: comma | shift + tap: period
 ZMK_BEHAVIOR(comma_dot, mod_morph,
     bindings = <&kp COMMA>, <&kp DOT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// hold: num layer | tap: escape | shift + tap: mouse click
+ZMK_BEHAVIOR(num_esc_clk, mod_morph,
+    bindings = <&lt NUM ESC>, <&mkp LCLK>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// hold: symbol layer | tap: space  | shift + tap: tab
+ZMK_BEHAVIOR(sp_tab_sym, mod_morph,
+    bindings = <&lt SYM SPACE>, <&kp TAB>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )

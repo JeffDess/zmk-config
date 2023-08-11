@@ -1,0 +1,53 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
+
+// Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
+// Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
+
+&mmv {
+    acceleration-exponent=<0>;
+    delay-ms=<60>;
+    time-to-max-speed-ms = <200>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+    delay-ms=<70>;
+    time-to-max-speed-ms = <200>;
+};
+
+// Move cursor
+ZMK_BEHAVIOR(mmv_lf, macro, bindings = <&mmv MOVE_LEFT>;)
+ZMK_BEHAVIOR(mmv_rg, macro, bindings = <&mmv MOVE_RIGHT>;)
+ZMK_BEHAVIOR(mmv_up, macro, bindings = <&mmv MOVE_UP>;)
+ZMK_BEHAVIOR(mmv_dn, macro, bindings = <&mmv MOVE_DOWN>;)
+
+// Mouse buttons
+ZMK_BEHAVIOR(mkp_lf, macro, bindings = <&mkp LCLK>;)
+ZMK_BEHAVIOR(mkp_md, macro, bindings = <&mkp MCLK>;)
+ZMK_BEHAVIOR(mkp_rg, macro, bindings = <&mkp RCLK>;)
+
+// Scoll wheel
+ZMK_BEHAVIOR(mwh_lf, macro, bindings = <&mwh SCROLL_LEFT>;)
+ZMK_BEHAVIOR(mwh_rg, macro, bindings = <&mwh SCROLL_RIGHT>;)
+ZMK_BEHAVIOR(mwh_up, macro, bindings = <&mwh SCROLL_UP>;)
+ZMK_BEHAVIOR(mwh_dn, macro, bindings = <&mwh SCROLL_DOWN>;)
+
+// Switch move/scroll on Ploopy Nano by pressing NumLock twice
+ZMK_BEHAVIOR(mwh_tg, macro, bindings =
+  <&macro_tap_time 1>,
+  <&macro_wait_time 18>,
+  <&kp KP_NUMLOCK &kp KP_NUMLOCK>;)
+
+// Mouse Left Click - Index and Middle finger of left hand, active on all layers
+ZMK_COMBO(combo_leftclick, &mkp LCLK, LT1 LT2, ALL)
+
+// Mouse Right Click - Pinky and Ring finger of left hand, active on all layers
+ZMK_COMBO(combo_rightclick, &mkp RCLK, LT3 LT4, ALL)
+
+// Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
+ZMK_COMBO(combo_scrolltoggle, &mwh_tg, LT2 LT3, ALL)
+
