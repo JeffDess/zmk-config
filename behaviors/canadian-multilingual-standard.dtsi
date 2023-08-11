@@ -12,6 +12,7 @@
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
 ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>;)                     // É
 ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>;)                      // È
+ZMK_BEHAVIOR(I_CI,  macro, bindings = <&CIRC I>;)                       // Î
 ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
 ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
 ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^

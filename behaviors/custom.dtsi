@@ -15,15 +15,6 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-// homerow mods with parametrized macro
-ZMK_BEHAVIOR(hrmm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap-ms = <150>;
-    bindings = <&kp>, <&kp 0 0>;
-)
-
 // tap: sticky shift | double tap: capsword
 ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
