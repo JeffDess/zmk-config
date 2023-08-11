@@ -21,7 +21,7 @@ ZMK_BEHAVIOR(hrmm, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     global-quick-tap-ms = <150>;
-    bindings = <&kp>, <&kp>, <&kp>;
+    bindings = <&kp>, <&kp 0 0>;
 )
 
 // tap: sticky shift | double tap: capsword
