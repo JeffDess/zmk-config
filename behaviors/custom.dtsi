@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
-#include "./canadian-multilingual-standard.dtsi"
 
 /* Custom Behaviors */
 
