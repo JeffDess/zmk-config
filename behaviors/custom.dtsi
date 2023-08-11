@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "./canadian-multilingual-standard.dtsi"
 
 /* Custom Behaviors */
 
@@ -13,6 +14,24 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     quick-tap-ms = <175>;
     global-quick-tap-ms = <150>;
     bindings = <&kp>, <&kp>;
+)
+
+// homerow mods for circumflex
+ZMK_BEHAVIOR(hrmc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms = <150>;
+    bindings = <&kp>, <&CIRC>;
+)
+
+// homerow mods for grave
+ZMK_BEHAVIOR(hrmg, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms = <150>;
+    bindings = <&kp>, <&AGRA>;
 )
 
 // tap: sticky shift | double tap: capsword
