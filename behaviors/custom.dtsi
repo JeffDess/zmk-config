@@ -9,9 +9,9 @@
 // homerow mods
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap = <150>;
     bindings = <&kp>, <&kp>;
 )
 
