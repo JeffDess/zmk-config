@@ -60,6 +60,20 @@
         }; \
     };
 
+#define ZMK_LAYER_5COL(name, layout) \
+    / { \
+        keymap { \
+            compatible = "zmk,keymap"; \
+            chosen { \
+                zmk,matrix_transform = &five_column_transform; \
+            }; \
+            layer_ ## name { \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                bindings = <layout>; \
+            }; \
+        }; \
+    };
+
 /* ZMK_COMBOS */
 
 #define ALL 0xff
