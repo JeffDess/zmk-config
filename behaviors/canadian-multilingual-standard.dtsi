@@ -3,10 +3,10 @@
 #include "../zmk-nodefree-config/helper.h"
 
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
-#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 150
+#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
 
 #undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
-#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 300
+#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
 
 /* Canadian Multilingual Standard Mappings */
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
