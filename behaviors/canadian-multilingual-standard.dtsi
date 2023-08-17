@@ -17,83 +17,39 @@ ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
 ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
 ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^
 ZMK_BEHAVIOR(ca,    macro, bindings = <&kp LBKT>;)                      // ^
-ZMK_BEHAVIOR(gr,    macro, bindings = // `
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp LBKT>,
-    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(gr,    macro, bindings = <&macro_tap &kp RA(LBKT)>;)       // `
+ZMK_BEHAVIOR(TREMA, macro, bindings = <&macro_tap &kp LS(LBKT)>;)       // ¨
+ZMK_BEHAVIOR(DEG,   macro, bindings = <&macro_tap &kp RA(SEMI)>;)       // °
+ZMK_BEHAVIOR(LBRAC, macro, bindings = <&macro_tap &kp RA(N7)>;)         // {
+ZMK_BEHAVIOR(RBRAC, macro, bindings = <&macro_tap &kp RA(N8)>;)         // }
+ZMK_BEHAVIOR(LBKET, macro, bindings = <&macro_tap &kp RA(N9)>;)         // [
+ZMK_BEHAVIOR(RBKET, macro, bindings = <&macro_tap &kp RA(N0)>;)         // ]
+ZMK_BEHAVIOR(QUEST, macro, bindings = <&macro_tap &kp LS(N6)>;)         // ?
+ZMK_BEHAVIOR(PIP, macro, bindings = <&macro_tap &kp RA(GRAVE)>;)        // |
+ZMK_BEHAVIOR(TILDS, macro, bindings = <&macro_tap &kp RA(RBKT)>;)       // ~
+ZMK_BEHAVIOR(LETHAN, macro, bindings = <&macro_tap &kp RA(COMMA)>;)     // ≤
+ZMK_BEHAVIOR(GRTHAN, macro, bindings = <&macro_tap &kp RA(DOT)>;)       // ≥
 ZMK_BEHAVIOR(GRA,  macro, bindings = // `
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
     <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
-    <&macro_press &kp LSHFT>,
-    <&macro_tap &kp LBKT>,
-    <&macro_release &kp LSHFT>;)
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp LBKT>,
-    <&macro_release &kp RALT>,
+    <&macro_tap &kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp SLASH>,
-    <&macro_release &kp RALT>,
+    <&macro_tap &kp RA(SLASH)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
-    <&macro_press &kp LSHFT>,
-    <&macro_tap &kp LBKT>,
-    <&macro_release &kp LSHFT>,
+    <&macro_tap &kp LS(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;)
 ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&macro_tap &kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;)
-ZMK_BEHAVIOR(DEG,   macro, bindings = // °
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp SEMI>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(LBRAC,  macro, bindings = // {
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp N7>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBRAC,  macro, bindings = // }
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp N8>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(LBKET,  macro, bindings = // [
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp N9>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(RBKET,  macro, bindings = // ]
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp N0>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(QUEST,  macro, bindings = // ?
-    <&macro_press &kp LSHFT>,
-    <&macro_tap &kp N6>,
-    <&macro_release &kp LSHFT>;)
-ZMK_BEHAVIOR(PIP,  macro, bindings = // |
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp GRAVE>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(TILDS,  macro, bindings = // 
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp RBKT>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(LETHAN,  macro, bindings = // <
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp COMMA>,
-    <&macro_release &kp RALT>;)
-ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // >
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp DOT>,
-    <&macro_release &kp RALT>;)
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
     <&macro_tap &kp SPACE &kp EQUAL>,
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp DOT>,
-    <&macro_release &kp RALT>,
+    <&macro_press &kp RA(DOT)>,
     <&macro_tap &kp SPACE>;)
