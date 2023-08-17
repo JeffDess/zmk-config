@@ -19,6 +19,9 @@ ZMK_COMBO(combo_paste, &kp LC(V), LB1 LB2, ALL)
 // PRINT SCREEN - PrintScreen, active on navigation layer
 ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, ALL)
 
+// TAB - Inner right thumbs, active on navigation layer
+ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
+
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
