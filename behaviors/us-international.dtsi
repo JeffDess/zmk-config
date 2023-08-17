@@ -1,0 +1,99 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+
+#undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 150
+
+#undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 300
+
+/* Canadian Multilingual Standard Mappings */
+ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
+ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>;)                     // É
+ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>;)                      // È
+ZMK_BEHAVIOR(I_CI,  macro, bindings = <&CIRC I>;)                       // Î
+ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
+ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
+ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^
+ZMK_BEHAVIOR(ca,    macro, bindings = <&kp LBKT>;)                      // ^
+ZMK_BEHAVIOR(gr,    macro, bindings = // `
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(GRA,  macro, bindings = // `
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT &kp LBKT>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp RALT>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp SLASH>,
+    <&macro_release &kp RALT>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp LBKT>,
+    <&macro_release &kp LSHFT>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
+    <&macro_tap &kp LBKT>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+ZMK_BEHAVIOR(DEG,   macro, bindings = // °
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp SEMI>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(LBRAC,  macro, bindings = // {
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp N7>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = // }
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp N8>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(LBKET,  macro, bindings = // [
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp N9>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(RBKET,  macro, bindings = // ]
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp N0>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(QUEST,  macro, bindings = // ?
+    <&macro_press &kp LSHFT>,
+    <&macro_tap &kp N6>,
+    <&macro_release &kp LSHFT>;)
+ZMK_BEHAVIOR(PIP,  macro, bindings = // |
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp GRAVE>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(TILDS,  macro, bindings = // 
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp RBKT>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(LETHAN,  macro, bindings = // <
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp COMMA>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(GRTHAN,  macro, bindings = // >
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp DOT>,
+    <&macro_release &kp RALT>;)
+ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
+    <&macro_tap &kp SPACE &kp EQUAL>,
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp DOT>,
+    <&macro_release &kp RALT>,
+    <&macro_tap &kp SPACE>;)
