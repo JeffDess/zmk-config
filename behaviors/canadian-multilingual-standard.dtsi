@@ -9,52 +9,57 @@
 #define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
 
 /* Canadian Multilingual Standard Mappings */
-ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>;)                 // À
-ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>;)                     // É
-ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>;)                      // È
-ZMK_BEHAVIOR(I_CI,  macro, bindings = <&CIRC I>;)                       // Î
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>;)                      // Ç
-ZMK_BEHAVIOR(SLSH,  macro, bindings = <&kp GRAVE>;)                     // /
-ZMK_BEHAVIOR(CAR,   macro, bindings = <&macro_tap &kp LBKT &kp SPACE>;) // ^
-ZMK_BEHAVIOR(ca,    macro, bindings = <&kp LBKT>;)                      // ^
-ZMK_BEHAVIOR(gr,    macro, bindings = <&macro_tap &kp RA(LBKT)>;)       // `
-ZMK_BEHAVIOR(TREMA, macro, bindings = <&macro_tap &kp LS(LBKT)>;)       // ¨
-ZMK_BEHAVIOR(DEG,   macro, bindings = <&macro_tap &kp RA(SEMI)>;)       // °
-ZMK_BEHAVIOR(LBRAC, macro, bindings = <&macro_tap &kp RA(N7)>;)         // {
-ZMK_BEHAVIOR(RBRAC, macro, bindings = <&macro_tap &kp RA(N8)>;)         // }
-ZMK_BEHAVIOR(LBKET, macro, bindings = <&macro_tap &kp RA(N9)>;)         // [
-ZMK_BEHAVIOR(RBKET, macro, bindings = <&macro_tap &kp RA(N0)>;)         // ]
-ZMK_BEHAVIOR(QUEST, macro, bindings = <&macro_tap &kp LS(N6)>;)         // ?
-ZMK_BEHAVIOR(PIP, macro, bindings = <&macro_tap &kp RA(GRAVE)>;)        // |
-ZMK_BEHAVIOR(TILDS, macro, bindings = <&macro_tap &kp RA(RBKT)>;)       // ~
-ZMK_BEHAVIOR(LETHAN, macro, bindings = <&macro_tap &kp RA(COMMA)>;)     // ≤
-ZMK_BEHAVIOR(GRTHAN, macro, bindings = <&macro_tap &kp RA(DOT)>;)       // ≥
-ZMK_BEHAVIOR(GRA,  macro, bindings = // `
+ZMK_BEHAVIOR(A_GR,   macro, bindings = <&kp BACKSLASH>;)                 // À
+ZMK_BEHAVIOR(E_CU,   macro, bindings = <&kp SLASH>;)                     // É
+ZMK_BEHAVIOR(E_GR,   macro, bindings = <&kp APOS>;)                      // È
+ZMK_BEHAVIOR(I_CI,   macro, bindings = <&CIRC I>;)                       // Î
+ZMK_BEHAVIOR(CEDIL,  macro, bindings = <&kp RBKT>;)                      // Ç
+ZMK_BEHAVIOR(SLSH,   macro, bindings = <&kp GRAVE>;)                     // /
+ZMK_BEHAVIOR(ca,     macro, bindings = <&kp LBKT>;)                      // ^
+ZMK_BEHAVIOR(gr,     macro, bindings = <&kp RA(LBKT)>;)                  // `
+ZMK_BEHAVIOR(DEG,    macro, bindings = <&kp RA(SEMI)>;)                  // °
+ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RA(N7)>;)                    // {
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RA(N8)>;)                    // }
+ZMK_BEHAVIOR(LBKET,  macro, bindings = <&kp RA(N9)>;)                    // [
+ZMK_BEHAVIOR(RBKET,  macro, bindings = <&kp RA(N0)>;)                    // ]
+ZMK_BEHAVIOR(QUEST,  macro, bindings = <&kp LS(N6)>;)                    // ?
+ZMK_BEHAVIOR(PIP,    macro, bindings = <&kp RA(GRAVE)>;)                 // |
+ZMK_BEHAVIOR(TILDS,  macro, bindings = <&kp RA(RBKT)>;)                  // ~
+ZMK_BEHAVIOR(LETHAN, macro, bindings = <&kp RA(COMMA)>;)                 // ≤
+ZMK_BEHAVIOR(GRTHAN, macro, bindings = <&kp RA(DOT)>;)                   // ≥
+ZMK_BEHAVIOR(CAR,    macro, bindings = // ^ directly
+    <&macro_tap &kp LBKT &kp SPACE>,
+    <&to DEF>;)
+ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨ directly
+    <&macro_tap &kp LS(LBKT)>,
+    <&to DEF>;)
+ZMK_BEHAVIOR(GRA,  macro, bindings = // ` directly
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
-    <&macro_release &kp RALT>;)
+    <&macro_release &kp RALT>,
+    <&to DEF>;)
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
-    <&macro_tap &kp RA(LBKT)>,
+    <&kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;)
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
-    <&macro_tap &kp RA(SLASH)>,
+    <&kp RA(SLASH)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;)
 ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
-    <&macro_tap &kp LS(LBKT)>,
+    <&kp LS(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;)
 ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
-    <&macro_tap &kp LBKT>,
+    <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;)
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
     <&macro_tap &kp SPACE &kp EQUAL>,
-    <&macro_tap &kp RA(DOT)>,
-    <&macro_tap &kp SPACE>,
+    <&kp RA(DOT)>,
+    <&kp SPACE>,
     <&to DEF>;)
