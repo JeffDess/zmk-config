@@ -54,9 +54,7 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;)
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
-    <&macro_wait_time 150>,
-    <&macro_tap_time 300>,
     <&macro_tap &kp SPACE &kp EQUAL>,
-    <&macro_press &kp RA(DOT)>,
+    <&macro_tap &kp RA(DOT)>,
     <&macro_tap &kp SPACE>,
     <&to DEF>;)
