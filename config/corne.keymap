@@ -4,13 +4,12 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#include "os.dtsi"
+#include "constants.dtsi"
 #define HOST_OS LINUX
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
-#include "alias.dtsi"
 
 #include "../behaviors/combos.dtsi"
 #include "../behaviors/custom.dtsi"

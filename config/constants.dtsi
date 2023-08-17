@@ -22,3 +22,8 @@
 #define CR RCTRL
 #define AR RALT
 #define SR RSHFT
+
+// OS
+#define WINDOWS 0
+#define LINUX 1
+#define MAC_OS 2
