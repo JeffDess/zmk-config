@@ -36,20 +36,25 @@ ZMK_BEHAVIOR(GRA,  macro, bindings = // `
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
     <&macro_tap &kp RA(LBKT)>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&to DEF>;)
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
     <&macro_tap &kp RA(SLASH)>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&to DEF>;)
 ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
     <&macro_tap &kp LS(LBKT)>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&to DEF>;)
 ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&macro_tap &kp LBKT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;)
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&to DEF>;)
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
     <&macro_tap &kp SPACE &kp EQUAL>,
     <&macro_press &kp RA(DOT)>,
-    <&macro_tap &kp SPACE>;)
+    <&macro_tap &kp SPACE>,
+    <&to DEF>;)
