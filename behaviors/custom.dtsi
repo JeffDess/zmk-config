@@ -33,6 +33,15 @@ ZMK_BEHAVIOR(hrmg, hold_tap,
     bindings = <&kp>, <&AGRA>;
 )
 
+// homerow mods for grave
+ZMK_BEHAVIOR(hrme, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_GR>;
+)
+
 // tap: sticky shift | double tap: capsword
 ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
