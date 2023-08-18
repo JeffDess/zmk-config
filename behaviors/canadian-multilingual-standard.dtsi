@@ -10,9 +10,14 @@
 
 /* Canadian Multilingual Standard Mappings */
 ZMK_BEHAVIOR(A_GR,   macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
-ZMK_BEHAVIOR(E_CU,   macro, bindings = <&kp SLASH>;)                     // É
-ZMK_BEHAVIOR(E_GR,   macro, bindings = <&kp APOS>;)                      // È
-ZMK_BEHAVIOR(I_CI,   macro, bindings = <&CIRC I>;)                       // Î
+ZMK_BEHAVIOR(A_CI,   macro, bindings = <&fr_a_cf>,  <&to DEF>;)          // â
+ZMK_BEHAVIOR(E_CU,   macro, bindings = <&kp SLASH>, <&to DEF>;)          // É
+ZMK_BEHAVIOR(E_GR,   macro, bindings = <&kp APOS>, <&to DEF>;)           // È
+ZMK_BEHAVIOR(E_CI,   macro, bindings = <&fr_e_cf>, <&to DEF>;)           // È
+ZMK_BEHAVIOR(I_CI,   macro, bindings = <&fr_i_cf>, <&to DEF>;)           // Î
+ZMK_BEHAVIOR(O_CI,   macro, bindings = <&fr_o_cf>, <&to DEF>;)           // Î
+ZMK_BEHAVIOR(U_CI,   macro, bindings = <&fr_u_cf>, <&to DEF>;)           // Î
+ZMK_BEHAVIOR(U_GR,   macro, bindings = <&fr_u_gr>, <&to DEF>;)           // Î
 ZMK_BEHAVIOR(CEDIL,  macro, bindings = <&kp RBKT>, <&to DEF>;)           // Ç
 ZMK_BEHAVIOR(SLSH,   macro, bindings = <&kp GRAVE>;)                     // /
 ZMK_BEHAVIOR(ca,     macro, bindings = <&kp LBKT>;)                      // ^
