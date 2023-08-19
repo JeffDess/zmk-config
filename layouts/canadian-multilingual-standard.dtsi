@@ -38,38 +38,50 @@ ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)           // Ç
 
 ZMK_BEHAVIOR(CAR,   macro, bindings = // ^ directly
     <&macro_tap &kp LBKT &kp SPACE>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨ directly
     <&macro_tap &kp LS(LBKT) &kp SPACE>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(GRA,  macro, bindings = // ` directly
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
     <&macro_release &kp RALT>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings = // ` to input
     <&kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =  // ´ to input
     <&kp RA(SLASH)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(TREM, macro_one_param, bindings = // ¨ to input
     <&kp LS(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;)
+    <&to DEF>;
+)
 
 ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;)
+    <&to DEF>;
+)
+
+#define ACC_TIMEOUT 2000
+
+ZMK_COMBO(combo_cap_e_circ_l, &CIRC E, LM3 LM1, 1, ACC_TIMEOUT)
+ZMK_COMBO(combo_cap_e_circ_r, &CIRC E, LM3 RM1, 1, ACC_TIMEOUT)
