@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
@@ -83,4 +84,5 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
 
 #define ACC_TIMEOUT 2000
 
-ZMK_COMBO(combo_cap_e_circ_l, &kp E, LM3 LM1, ALL)
+ZMK_COMBO(combo_cap_e_circ_l, &E_CI, LM3 LM1, ACC, ACC_TIMEOUT)
+ZMK_COMBO(combo_cap_e_circ_r, &E_CI, LM3 RM1, ACC, ACC_TIMEOUT)
