@@ -1,0 +1,50 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+
+/* Home Row Mods */
+
+// main homerow mods
+ZMK_BEHAVIOR(hrm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+)
+
+// homerow mods for circumflex
+ZMK_BEHAVIOR(hrmc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&CIRC>;
+)
+
+// homerow mods for grave
+ZMK_BEHAVIOR(hrmg, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&AGRA>;
+)
+
+// homerow mods for è
+ZMK_BEHAVIOR(hrme, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_GR>;
+)
+
+// homerow mods for î
+ZMK_BEHAVIOR(hrmi, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&I_CI>;
+)

@@ -4,16 +4,19 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#include "constants.dtsi"
-#define HOST_OS LINUX
+#include "constants.h"
+#define HOST_OS LINUX // Needed for unicode international_chars
+
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/french.dtsi"
 #include "../zmk-nodefree-config/symbols/math.dtsi"
 #include "../zmk-nodefree-config/symbols/typography.dtsi"
 
-#include "../behaviors/combos.dtsi"
-#include "../behaviors/custom.dtsi"
 #include "../behaviors/canadian-multilingual-standard.dtsi"
+#include "../behaviors/combos.dtsi"
+#include "../behaviors/hold-tap.dtsi"
+#include "../behaviors/macros.dtsi"
+#include "../behaviors/mod-morph.dtsi"
 #include "../behaviors/mouse.dtsi"
 
 ZMK_LAYER_5COL(qwerty,
