@@ -2,7 +2,7 @@
 
 Configuration of a Corne keyboard firmware for ZMK, optimized for English/French/Programming.
 
-![My Corne 36 keys keyboard](images/corne36.jpg)
+![My Corne 36 keys keyboard](images/corne36.jpeg)
 
 ## Features
 
