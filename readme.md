@@ -7,7 +7,7 @@ Configuration of a Corne keyboard firmware for ZMK, optimized for English/French
 ## Features
 
 * QWERTY layout
-* 5 columns, 36 keys
+* Corne 5 columns with nice!nano v2 and nice!views
 * Home row mods
 * French characters support with a single dead key and accent layer
 * Mouse keys support (left/right clicks are good, scroll and movements still need a little work)
