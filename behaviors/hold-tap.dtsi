@@ -3,6 +3,17 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 
+
+/ {
+    acc_caps: behavior_prog_caps_word {
+        compatible = "zmk,behavior-caps-word";
+        label = "ACC_CAPS";
+        #binding-cells = <0>;
+        continue-list = <E>;
+    };
+};
+
+
 /* Home Row Mods */
 
 // main homerow mods
@@ -38,7 +49,7 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
-    bindings = <&ACC_CAPS>, <&E_GR>;
+    bindings = <&acc_caps>, <&E_GR>;
 )
 
 // homerow mods for î
@@ -47,5 +58,5 @@ ZMK_BEHAVIOR(hrmi, hold_tap,
     tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
-    bindings = <&ACC_CAPS>, <&I_CI>;
+    bindings = <&acc_caps>, <&I_CI>;
 )

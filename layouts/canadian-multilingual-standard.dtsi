@@ -9,15 +9,6 @@
 #undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
 
-/ {
-    acc_caps: behavior_prog_caps_word {
-        compatible = "zmk,behavior-caps-word";
-        label = "ACC_CAPS";
-        #binding-cells = <0>;
-        continue-list = <E>;
-    };
-};
-
 /* Canadian Multilingual Standard Mappings */
 
 ZMK_BEHAVIOR(SLSH,   macro, bindings = <&kp GRAVE>;)                    // /
