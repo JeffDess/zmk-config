@@ -10,19 +10,19 @@
 
 /* Canadian Multilingual Standard Mappings */
 
-#define SLSH   GRAVE       // /
-#define ca     LBKT        // ^
-#define gr     RA(LBKT)    // `
-#define DEG    RA(SEMI)    // °
-#define LBRAC  RA(N7)      // {
-#define RBRAC  RA(N8)      // }
-#define LBKET  RA(N9)      // [
-#define RBKET  RA(N0)      // ]
-#define QUEST  LS(N6)      // ?
-#define PIP    RA(GRAVE)   // |
-#define TILDS  RA(RBKT)    // ~
-#define LETHAN RA(COMMA)   // ≤
-#define GRTHAN RA(DOT)     // ≥
+ZMK_BEHAVIOR(SLSH,   macro, bindings = <&kp GRAVE>;)                    // /
+ZMK_BEHAVIOR(ca,     macro, bindings = <&kp LBKT>;)                     // ^
+ZMK_BEHAVIOR(gr,     macro, bindings = <&kp RA(LBKT)>;)                 // `
+ZMK_BEHAVIOR(DEG,    macro, bindings = <&kp RA(SEMI)>;)                 // °
+ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RA(N7)>;)                   // {
+ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RA(N8)>;)                   // }
+ZMK_BEHAVIOR(LBKET,  macro, bindings = <&kp RA(N9)>;)                   // [
+ZMK_BEHAVIOR(RBKET,  macro, bindings = <&kp RA(N0)>;)                   // ]
+ZMK_BEHAVIOR(QUEST,  macro, bindings = <&kp LS(N6)>;)                   // ?
+ZMK_BEHAVIOR(PIP,    macro, bindings = <&kp RA(GRAVE)>;)                // |
+ZMK_BEHAVIOR(TILDS,  macro, bindings = <&kp RA(RBKT)>;)                 // ~
+ZMK_BEHAVIOR(LETHAN, macro, bindings = <&kp RA(COMMA)>;)                // ≤
+ZMK_BEHAVIOR(GRTHAN, macro, bindings = <&kp RA(DOT)>;)                  // ≥
 
 // The following must return to the base layer after being pressed
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
