@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
-#include "../config/constants.h"
 
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
@@ -83,10 +82,3 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&to DEF>;
 )
 
-#define ACC_TIMEOUT 2000
-
-// Some dead keys on the OS layout are affected by the shift modifier
-// Adding combos to override the shift modifier might solve the issue
-
-ZMK_COMBO(combo_cap_e_circ_l, &CIRC A, LM3 LM1, ACC, ACC_TIMEOUT)
-ZMK_COMBO(combo_cap_e_circ_r, &CIRC A, LM3 RM1, ACC, ACC_TIMEOUT)
