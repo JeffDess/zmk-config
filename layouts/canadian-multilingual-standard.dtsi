@@ -29,7 +29,7 @@ ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
 ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)          // Â
 ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)          // É
 ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)           // È
-ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)           // Ê
+ZMK_BEHAVIOR(E_CI,  macro, bindings = <&CIRC E>, <&to DEF>;)            // Ê
 ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)           // Î
 ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)           // Ô
 ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)           // Û
@@ -83,5 +83,5 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
 
 #define ACC_TIMEOUT 2000
 
-ZMK_COMBO(combo_cap_e_circ_l, &CIRC E, LM3 LM1, 1, ACC_TIMEOUT)
-ZMK_COMBO(combo_cap_e_circ_r, &CIRC E, LM3 RM1, 1, ACC_TIMEOUT)
+ZMK_COMBO(combo_cap_e_circ_l, &E_CI, LM3 LM1, ALL)
+ZMK_COMBO(combo_cap_e_circ_r, &E_CI, LM3 RM1, 0, ACC_TIMEOUT)
