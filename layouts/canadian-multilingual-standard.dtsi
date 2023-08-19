@@ -84,5 +84,5 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
 
 #define ACC_TIMEOUT 2000
 
-ZMK_COMBO(combo_cap_e_circ_l, &E_CI, LM3 LM1, ACC, ACC_TIMEOUT)
-ZMK_COMBO(combo_cap_e_circ_r, &E_CI, LM3 RM1, ACC, ACC_TIMEOUT)
+ZMK_COMBO(combo_cap_e_circ_l, &E_CI, LM3 LM1, 1, ACC_TIMEOUT)
+ZMK_COMBO(combo_cap_e_circ_r, &CIRC E, LM3 RM1, 1, ACC_TIMEOUT)
