@@ -36,7 +36,7 @@ ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)           // Ô
 ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)           // Û
 ZMK_BEHAVIOR(U_GR,  macro, bindings = <&fr_u_gr>, <&to DEF>;)           // Ù
 ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)           // Ç
-ZMK_BEHAVIOR(CANCEL_CAPSWORD, macro, bindings = <&kp PAUSE_BREAK>;)
+ZMK_BEHAVIOR(CANCEL_CAPSLOCK, macro, bindings = <&macro_release &kp CAPS>;)
 ZMK_BEHAVIOR(CAR,   macro, bindings = // ^ directly
     <&macro_tap &kp LBKT &kp SPACE>,
     <&to DEF>;
@@ -79,7 +79,7 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&CANCEL_CAPSWORD>,
+    <&CANCEL_CAPSLOCK>,
     <&to DEF>;
 )
 
