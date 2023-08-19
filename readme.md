@@ -10,7 +10,8 @@ Configuration of a Corne keyboard firmware for ZMK, optimized for English/French
 * 5 columns, 36 keys
 * Home row mods
 * French characters support with a single dead key and accent layer
-* Mouse support
+* Mouse keys support (left/right clicks are good, scroll and movements still need a little work)
+* Cursor/Scroll toggle with [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 * Easy to read files, thanks to the [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) helper.
 
 ## Keymap
