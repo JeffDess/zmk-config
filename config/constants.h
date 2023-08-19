@@ -5,13 +5,11 @@
 // Layers
 // Must match order in which they are defined
 #define DEF 0
-#define COL 1
-#define ERG 2
-#define ACC 3
-#define SYM 4
-#define NAV 5
-#define NUM 6
-#define MOU 7
+#define ACC 1
+#define SYM 2
+#define NAV 3
+#define NUM 4
+#define MOU 5
 
 // Modifier keys
 #define GL LGUI
