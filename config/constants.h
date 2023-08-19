@@ -1,3 +1,5 @@
+#pragma once
+
 // Keys
 #define ___ &trans
 #define XXX &none
