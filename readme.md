@@ -27,3 +27,15 @@ The keymap is made out of 6 layers:
 
 For the exact layout, see the [corne.keymap](config/corne.keymap) file.
 
+## Behaviors
+
+The keymap uses a few tricks to make the typing experience more enjoyable:
+
+ * [Combos](behaviors/combos.dtsi)
+ * [Hold-Tap (Home Row Mods)](behaviors/hold-tap.dtsi)
+ * [Macros](behaviors/macros.dtsi)
+ * [Mod-Morph](behaviors/mod-morph.dtsi)
+
+## Layouts
+
+The layout is currently based on Canadian Multilingual Standard, but it can easily be adapted to other layout by copying [canadian-multilingual-standard.dtsi](layouts/canadian-multilingual-standard.dtsi) and changing the macros accordingly.
