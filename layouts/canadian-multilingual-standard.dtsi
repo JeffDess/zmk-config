@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
-#include <../config/constants.h>
+#include "../config/constants.h"
 
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
