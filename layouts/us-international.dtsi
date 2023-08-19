@@ -36,7 +36,7 @@ ZMK_BEHAVIOR(CAR,    macro, bindings = // ^ directly
     <&macro_tap &kp CARET &kp SPACE>,
     <&to DEF>;)
 ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨ directly
-    <&macro_tap &kp DOUBLE_QUOTATION &kp SPACE>,
+    <&macro_tap &kp DOUBLE_QUOTES &kp SPACE>,
     <&to DEF>;)
 ZMK_BEHAVIOR(GRA,  macro, bindings = // ` directly
     <&macro_tap &kp GRAVE &kp SPACE>,
