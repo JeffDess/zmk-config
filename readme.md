@@ -16,7 +16,7 @@ Configuration of a Corne keyboard firmware for ZMK, optimized for English/French
 
 ## Keymap
 
-The keymap is made out of 6 layers:
+The keymap has 6 layers:
 
 1. QWERTY (DEF)
 2. Accents (ACC)
