@@ -5,5 +5,5 @@
 ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
     <&macro_tap &kp SPACE &kp EQUAL>,
     <&kp RA(DOT)>,
-    <&kp SPACE>;)
-
+    <&kp SPACE>;
+)
