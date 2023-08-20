@@ -79,7 +79,8 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&CANCEL_CAPSWORD>,
+    <&macro_tap &kp CAPS>,
+    <&macro_release &kp CAPS>,
     <&to DEF>;
 )
 
