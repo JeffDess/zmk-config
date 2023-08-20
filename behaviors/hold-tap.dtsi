@@ -38,7 +38,7 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
-    bindings = <&caps_word>, <&E_GR>;
+    bindings = <&kp>, <&E_GR>;
 )
 
 // homerow mods for î
@@ -47,5 +47,5 @@ ZMK_BEHAVIOR(hrmi, hold_tap,
     tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
-    bindings = <&caps_word>, <&I_CI>;
+    bindings = <&kp>, <&I_CI>;
 )
