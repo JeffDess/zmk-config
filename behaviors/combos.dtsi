@@ -3,10 +3,6 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 
-ZMK_BEHAVIOR(acc_caps, caps_word,
-    continue-list = <E>;
-)
-
 // Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
