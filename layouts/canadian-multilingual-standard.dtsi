@@ -11,46 +11,47 @@
 
 /* Canadian Multilingual Standard Mappings */
 
-ZMK_BEHAVIOR(SLSH,   macro, bindings = <&kp GRAVE>;)                    // /
-ZMK_BEHAVIOR(ca,     macro, bindings = <&kp LBKT>;)                     // ^
-ZMK_BEHAVIOR(gr,     macro, bindings = <&kp RA(LBKT)>;)                 // `
-ZMK_BEHAVIOR(DEG,    macro, bindings = <&kp RA(SEMI)>;)                 // °
-ZMK_BEHAVIOR(LBRAC,  macro, bindings = <&kp RA(N7)>;)                   // {
-ZMK_BEHAVIOR(RBRAC,  macro, bindings = <&kp RA(N8)>;)                   // }
-ZMK_BEHAVIOR(LBKET,  macro, bindings = <&kp RA(N9)>;)                   // [
-ZMK_BEHAVIOR(RBKET,  macro, bindings = <&kp RA(N0)>;)                   // ]
-ZMK_BEHAVIOR(QUEST,  macro, bindings = <&kp LS(N6)>;)                   // ?
-ZMK_BEHAVIOR(PIP,    macro, bindings = <&kp RA(GRAVE)>;)                // |
-ZMK_BEHAVIOR(TILDS,  macro, bindings = <&kp RA(RBKT)>;)                 // ~
-ZMK_BEHAVIOR(LETHAN, macro, bindings = <&kp RA(COMMA)>;)                // ≤
-ZMK_BEHAVIOR(GRTHAN, macro, bindings = <&kp RA(DOT)>;)                  // ≥
+#define SLSH   GRAVE       // /
+#define CA     LBKT        // ^
+#define DEG    RA(SEMI)    // °
+#define LBRAC  RA(N7)      // {
+#define RBRAC  RA(N8)      // }
+#define LBKET  RA(N9)      // [
+#define RBKET  RA(N0)      // ]
+#define QUEST  LS(N6)      // ?
+#define PIP    RA(GRAVE)   // |
+#define TILDS  RA(RBKT)    // ~
+#define LETHAN RA(COMMA)   // ≤
+#define GRTHAN RA(DOT)>    // ≥
+#define GR     RA(LBKT)    // `
+#define TR     LS(LBKT)    // ¨
 
 // The following must return to the base layer after being pressed
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
 ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)          // Â
 ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)          // É
 ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)           // È
-ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)            // Ê
+ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)           // Ê
 ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)           // Î
 ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)           // Ô
 ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)           // Û
 ZMK_BEHAVIOR(U_GR,  macro, bindings = <&fr_u_gr>, <&to DEF>;)           // Ù
 ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)           // Ç
 
-ZMK_BEHAVIOR(CAR,   macro, bindings = // ^ directly
+ZMK_BEHAVIOR(GRA, macro, bindings = // ` directly
+    <&macro_press &kp RALT>,
+    <&macro_tap &kp LBKT &kp LBKT>,
+    <&macro_release &kp RALT>,
+    <&to DEF>;
+)
+
+ZMK_BEHAVIOR(CAR, macro, bindings = // ^ directly
     <&macro_tap &kp LBKT &kp SPACE>,
     <&to DEF>;
 )
 
 ZMK_BEHAVIOR(TREMA, macro, bindings = // ¨ directly
     <&macro_tap &kp LS(LBKT) &kp SPACE>,
-    <&to DEF>;
-)
-
-ZMK_BEHAVIOR(GRA,  macro, bindings = // ` directly
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp LBKT &kp LBKT>,
-    <&macro_release &kp RALT>,
     <&to DEF>;
 )
 
