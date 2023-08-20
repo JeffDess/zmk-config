@@ -3,17 +3,6 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 
-
-/ {
-    acc_caps: behavior_prog_caps_word {
-        compatible = "zmk,behavior-caps-word";
-        label = "ACC_CAPS";
-        #binding-cells = <0>;
-        continue-list = <E>;
-    };
-};
-
-
 /* Home Row Mods */
 
 // main homerow mods
