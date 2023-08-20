@@ -27,4 +27,4 @@ ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, ALL)
 ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 
 // CAPS WORD - Both HR Shifts, active on all layers
-ZMK_COMBO(combo_capsword, &acc_caps, LM1 RM1, ALL)
+ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
