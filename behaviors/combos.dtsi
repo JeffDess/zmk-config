@@ -24,3 +24,5 @@ ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
+
+// NOTE: Other mouse keys related combos in ./mouse.dtsi
