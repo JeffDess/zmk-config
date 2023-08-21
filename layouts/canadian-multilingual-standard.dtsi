@@ -11,20 +11,20 @@
 
 /* Canadian Multilingual Standard Mappings */
 
-#define SLSH   GRAVE       // /
-#define CA     LBKT        // ^
-#define DEG    RA(SEMI)    // °
-#define LBRAC  RA(N7)      // {
-#define RBRAC  RA(N8)      // }
-#define LBKET  RA(N9)      // [
-#define RBKET  RA(N0)      // ]
-#define QUEST  LS(N6)      // ?
-#define PIP    RA(GRAVE)   // |
-#define TILDS  RA(RBKT)    // ~
-#define LETHAN RA(COMMA)   // ≤
-#define GRTHAN RA(DOT)>    // ≥
-#define GR     RA(LBKT)    // `
-#define TR     LS(LBKT)    // ¨
+#define SLSH   GRAVE         // /
+#define DEG    RA(SEMI)      // °
+#define LBRAC  RA(N7)        // {
+#define RBRAC  RA(N8)        // }
+#define LBKET  RA(N9)        // [
+#define RBKET  RA(N0)        // ]
+#define QUEST  LS(N6)        // ?
+#define PIP    RA(GRAVE)     // |
+#define TILDS  RA(RBKT)      // ~
+#define LETHAN RA(COMMA)     // ≤
+#define GRTHAN RA(DOT)>      // ≥
+#define ACC_CI LBKT          // ^
+#define ACC_GR RA(LBKT)      // `
+#define ACC_TR LS(LBKT)      // ¨
 
 // The following must return to the base layer after being pressed
 ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
