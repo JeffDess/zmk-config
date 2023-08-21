@@ -10,9 +10,9 @@ Configuration of a Corne keyboard firmware for ZMK, optimized for English/French
 * Corne 5 columns with nice!nano v2 and nice!views
 * Home row mods
 * French characters support with a single dead key and accent layer
-* Mouse keys support (left/right clicks are good, scroll and movements still need a little work)
+* Mouse keys support
 * Cursor/Scroll toggle with [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
-* Easy to read files, thanks to the [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) helper.
+* Easy to read files, thanks to the [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) helper
 
 ## Keymap
 
@@ -25,11 +25,11 @@ The keymap has 6 layers:
 5. Numbers (NUM)
 6. Mouse (MOU)
 
-For the exact layout, see the [corne.keymap](config/corne.keymap) file.
+For the complete layout, head to the [corne.keymap](config/corne.keymap) file.
 
 ## Behaviors
 
-The keymap uses a few tricks to make the typing experience more enjoyable:
+The keymap uses a few behaviors in order to make everything work:
 
  * [Combos](behaviors/combos.dtsi)
  * [Hold-Tap (Home Row Mods)](behaviors/hold-tap.dtsi)
@@ -38,4 +38,4 @@ The keymap uses a few tricks to make the typing experience more enjoyable:
 
 ## Layouts
 
-The layout is currently based on Canadian Multilingual Standard, but it can easily be adapted to other layout by copying [canadian-multilingual-standard.dtsi](layouts/canadian-multilingual-standard.dtsi) and changing the macros accordingly.
+The layout is currently based on [Canadian Multilingual Standard (CSA)](https://commons.wikimedia.org/wiki/File:KB_Canadian_Multilingual_Standard.svg), but it can easily be adapted to other layout by copying [canadian-multilingual-standard.dtsi](layouts/canadian-multilingual-standard.dtsi) and changing the macros accordingly. I've always used this layout, it's just more convenient for me to base my layout on it. This way I don't have to change whenever I switch keyboards.
