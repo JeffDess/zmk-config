@@ -5,17 +5,36 @@
 #include "../layouts/canadian-multilingual-standard.dtsi"
 
 /* Home Row Mods */
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left-hand keys
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2 // thumb keys
 
 #define hrm_tap_term 150
 #define hrm_quick_tap 125
 
-// main homerow mods
-ZMK_BEHAVIOR(hrm, hold_tap,
+/* Timerless Home Row Mods */
+/* https://github.com/urob/zmk-config#timeless-homerow-mods */
+
+/* left-hand HRMs */
+ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms;
     bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+)
+
+/* right-hand HRMs */
+ZMK_BEHAVIOR(hmr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
 )
 
 // homerow mods for circumflex
