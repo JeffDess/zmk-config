@@ -3,6 +3,8 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 
+#pragma once
+
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
 
