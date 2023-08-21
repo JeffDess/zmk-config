@@ -62,7 +62,7 @@ ZMK_BEHAVIOR(TREMA, macro, bindings =
 
 // ` to input
 ZMK_BEHAVIOR(AGRA, macro_one_param, bindings =
-t   <&kp RA(LBKT)>,
+    <&kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;
