@@ -23,7 +23,7 @@
 #define PIP    RA(GRAVE)     // |
 #define TILDS  RA(RBKT)      // ~
 #define LETHAN RA(COMMA)     // ≤
-#define GRTHAN RA(DOT)>      // ≥
+#define GRTHAN RA(DOT)       // ≥
 #define ACC_CI LBKT          // ^
 #define ACC_GR RA(LBKT)      // `
 #define ACC_TR LS(LBKT)      // ¨
