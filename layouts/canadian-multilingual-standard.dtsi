@@ -29,16 +29,16 @@
 #define ACC_TR LS(LBKT)      // ¨
 
 // The following must return to the base layer after being pressed
-ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)      // À
-ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)          // Â
-ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)          // É
-ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)           // È
-ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)           // Ê
-ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)           // Î
-ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)           // Ô
-ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)           // Û
-ZMK_BEHAVIOR(U_GR,  macro, bindings = <&fr_u_gr>, <&to DEF>;)           // Ù
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)           // Ç
+ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)  // À
+ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)      // Â
+ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)      // É
+ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)       // È
+ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)       // Ê
+ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)       // Î
+ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)       // Ô
+ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)       // Û
+ZMK_BEHAVIOR(U_GR,  macro, bindings = <&fr_u_gr>, <&to DEF>;)       // Ù
+ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)       // Ç
 
 ZMK_BEHAVIOR(GRA, macro, bindings = // ` directly
     <&macro_press &kp RALT>,
@@ -84,4 +84,12 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = // ^ to input
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to DEF>;
 )
+
+// Keypress then return to default layer
+ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
+    <&macro_param_1to1>,
+    <&kp MACRO_PLACEHOLDER>,
+    <&to DEF>;
+)
+
 
