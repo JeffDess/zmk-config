@@ -29,4 +29,4 @@
 #define MAC_OS 2
 
 // Apps
-#define TMUX LC(LS(LA(J)))  // Tmux -> Meh + J
+#define TMUX LC(LA(J))  // Tmux -> Ctrl + Alt + J
