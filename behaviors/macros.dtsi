@@ -1,9 +1,19 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
+#include "../config/constants.h"
 
-ZMK_BEHAVIOR(ARROW,   macro, bindings = // =>
+#pragma once
+
+// Fat arrow padded with spaces: ' => '
+ZMK_BEHAVIOR(ARROW, macro, bindings =
     <&macro_tap &kp SPACE &kp EQUAL>,
     <&kp RA(DOT)>,
     <&kp SPACE>;
+)
+
+// Tmux command: TMUX + ;
+ZMK_BEHAVIOR(TMUX_CMD, macro, bindings =
+    <&kp TMUX>,
+    <&kp SEMI>;
 )

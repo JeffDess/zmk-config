@@ -2,6 +2,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../config/constants.h"
+#include "../behaviors/macros.dtsi"
+
+#pragma once
 
 // Combos
 #undef COMBO_TERM
@@ -24,5 +28,11 @@ ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
+
+// TMUX - Ctrl + Alt + Shift + GUI + J, active on all layers
+ZMK_COMBO(combo_tmux, &kp TMUX, RM1 RM2, ALL)
+
+// TMUX - Ctrl + Alt + Shift + GUI + J, active on all layers
+ZMK_COMBO(combo_tmux, &TMUX_CMD, RM1 RM2 RM3, ALL)
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
