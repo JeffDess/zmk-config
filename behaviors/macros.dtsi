@@ -15,5 +15,5 @@ ZMK_BEHAVIOR(ARROW, macro, bindings =
 // Tmux command: TMUX + ;
 ZMK_BEHAVIOR(TMUX_CMD, macro, bindings =
     <&kp TMUX>,
-    <&kp SEMI>;
+    <&kp LS(SEMI)>;
 )
