@@ -29,8 +29,8 @@
 #define ACC_TR LS(LBKT)      // ¨
 
 // The following must return to the base layer after being pressed
-ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)  // À
-ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)      // Â
+#define A_GR  KPD BACKSLASH // À
+#define A_CI  KPM fr_a_cf   // Â
 ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)      // É
 ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)       // È
 ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)       // Ê
@@ -96,6 +96,13 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings =
 ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
     <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>,
+    <&to DEF>;
+)
+
+// Macro then return to default layer
+ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
+    <&macro_param_1to1>,
+    <&MACRO_PLACEHOLDER>,
     <&to DEF>;
 )
 
