@@ -30,9 +30,9 @@ ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
 // TMUX - Ctrl + Alt + J, active on all layers
-ZMK_COMBO(combo_tmux, &kp TMUX, RM1 RM2, ALL)
+ZMK_COMBO(combo_tmux, &kp TMUX, RM2 RM3, ALL)
 
 // TMUX - Ctrl + Alt + J, active on all layers
-ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, RM1 RM2 RM3, ALL)
+ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, RM2 RM3 RM4, ALL)
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
