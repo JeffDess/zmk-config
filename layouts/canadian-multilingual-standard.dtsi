@@ -29,10 +29,10 @@
 #define ACC_TR LS(LBKT)      // ¨
 
 // The following must return to the base layer after being pressed
-#define A_GR  KPD BACKSLASH // À
-#define A_CI  KPM fr_a_cf   // Â
-ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)      // É
-ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)       // È
+#define A_GR KPD BACKSLASH // À
+#define A_CI KPM fr_a_cf   // Â
+#define E_CU SLASH         // É
+#define E_GR APOS          // È
 ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)       // Ê
 ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)       // Î
 ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)       // Ô
@@ -100,7 +100,7 @@ ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
 )
 
 // Macro then return to default layer
-ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
+ZMK_BEHAVIOR(KPM, macro_one_param, bindings =
     <&macro_param_1to1>,
     <&MACRO_PLACEHOLDER>,
     <&to DEF>;
