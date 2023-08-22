@@ -2,10 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../config/constants.h"
+#include "../behaviors/macros.dtsi"
+
+#pragma once
 
 // Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
+#define HR_TIMEOUT 30  // timeout on homerow is better a bit shorter
 
 // CUT - Ctrl + X, active on all layers
 ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, ALL)
@@ -24,5 +29,14 @@ ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
+
+// TMUX Prefix - active on base layer
+ZMK_COMBO(combo_tmux, &kp TMUX, LM2 LM3, 0, HR_TIMEOUT)
+
+// TMUX Command - active on base layer
+ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, 0, HR_TIMEOUT)
+
+// TMUX New Session - active on base layer
+ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, 0, HR_TIMEOUT)
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
