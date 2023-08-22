@@ -12,31 +12,51 @@
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
 #define HR_TIMEOUT 30  // timeout on homerow is better a bit shorter
 
-// CUT - Ctrl + X, active on all layers
-ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, ALL)
+/***********************
+  ALL LAYERS
+***********************/
 
-// COPY - Ctrl + C, active on all layers
-ZMK_COMBO(combo_copy, &kp LC(C), LB2 LB3, ALL)
-
-// PASTE - Ctrl + V, active on all layers
-ZMK_COMBO(combo_paste, &kp LC(V), LB1 LB2, ALL)
-
-// PRINT SCREEN - PrintScreen, active on navigation layer
-ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, ALL)
-
-// TAB - Inner right thumbs, active on navigation layer
+// TAB - Inner right thumbs, active on all layer
 ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 
-// CAPS WORD - Both HR Shifts, active on all layers
-ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
+// NOTE: Other mouse keys related combos in ./mouse.dtsi
+
+/***********************
+  BASE LAYER
+***********************/
+
+// CUT - Ctrl + X, active on base layer
+ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, DEF)
+
+// COPY - Ctrl + C, active on base layer
+ZMK_COMBO(combo_copy, &kp LC(C), LB2 LB3, DEF)
+
+// PASTE - Ctrl + V, active on all layers
+ZMK_COMBO(combo_paste, &kp LC(V), LB1 LB2, DEF)
+
+// PRINT SCREEN - PrintScreen, active on base layer
+ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, DEF)
+
+// CAPS WORD - Both HR Shifts, active on base & accent layers
+ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, DEF ACC)
 
 // TMUX Prefix - active on base layer
-ZMK_COMBO(combo_tmux, &kp TMUX, LM2 LM3, 0, HR_TIMEOUT)
+ZMK_COMBO(combo_tmux, &kp TMUX, LM2 LM3, DEF, HR_TIMEOUT)
 
 // TMUX Command - active on base layer
-ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, 0, HR_TIMEOUT)
+ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, DEF, HR_TIMEOUT)
 
 // TMUX New Session - active on base layer
-ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, 0, HR_TIMEOUT)
+ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
 
-// NOTE: Other mouse keys related combos in ./mouse.dtsi
+
+/***********************
+  SYMBOL LAYER
+***********************/
+
+// FAT ARROW - Left index & middle fingers on home row, active on symbol layer
+ZMK_COMBO(combo_fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
+
+// THIN ARROW - Left index & middle fingers on bottom row, active on symbol layer
+ZMK_COMBO(combo_arrow, &ARROW, LB1 LB2, SYM)
+
