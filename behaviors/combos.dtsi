@@ -10,6 +10,7 @@
 // Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
+#define HR_TIMEOUT 30  // timeout on homerow is better a bit shorter
 
 // CUT - Ctrl + X, active on all layers
 ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, ALL)
@@ -29,10 +30,13 @@ ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
 // CAPS WORD - Both HR Shifts, active on all layers
 ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, ALL)
 
-// TMUX - Ctrl + Alt + J, active on all layers
-ZMK_COMBO(combo_tmux, &kp TMUX, RM2 RM3, ALL)
+// TMUX Prefix - active on base layer
+ZMK_COMBO(combo_tmux, &kp TMUX, LM2 LM3, 0, HR_TIMEOUT)
 
-// TMUX - Ctrl + Alt + J, active on all layers
-ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, RM2 RM3 RM4, ALL)
+// TMUX Command - active on base layer
+ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, 0, HR_TIMEOUT)
+
+// TMUX New Session - active on base layer
+ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, 0, HR_TIMEOUT)
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
