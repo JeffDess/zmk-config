@@ -2,13 +2,35 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../config/constants.h"
+#include "../layouts/canadian-multilingual-standard.dtsi"
 
 #pragma once
 
 // Fat arrow padded with spaces: ' => '
-ZMK_BEHAVIOR(ARROW, macro, bindings =
-    <&macro_tap &kp SPACE &kp EQUAL>,
+ZMK_BEHAVIOR(FAT_ARROW, macro, bindings =
+    <&kp SPACE &kp EQUAL>,
     <&kp RA(DOT)>,
+    <&kp SPACE>;
+)
+
+// Thin arrow padded with spaces: ' -> '
+ZMK_BEHAVIOR(ARROW, macro, bindings =
+    <&kp SPACE &kp MINUS>,
+    <&kp RA(DOT)>,
+    <&kp SPACE>;
+)
+
+// Greater than or equal to: ' >= '
+ZMK_BEHAVIOR(GTE, macro, bindings =
+    <&kp SPACE>,
+    <&kp GRTHAN>, <&kp EQUAL>,
+    <&kp SPACE>;
+)
+
+// Less than or equal to: ' <= '
+ZMK_BEHAVIOR(LTE, macro, bindings =
+    <&kp SPACE>,
+    <&kp LETHAN>, <&kp EQUAL>,
     <&kp SPACE>;
 )
 
