@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../config/constants.h"
+#include "../layouts/canadian-multilingual-standard.dtsi"
 
 #pragma once
 
@@ -20,14 +21,14 @@ ZMK_BEHAVIOR(ARROW, macro, bindings =
 )
 
 // Greater than or equal to: ' >= '
-ZMK_BEHAVIOR(GTE,   macro, bindings =
+ZMK_BEHAVIOR(GTE, macro, bindings =
     <&kp SPACE>,
     <&GRTHAN>, <&kp EQUAL>,
     <&kp SPACE>;
 )
 
 // Less than or equal to: ' <= '
-ZMK_BEHAVIOR(LTE,   macro, bindings =
+ZMK_BEHAVIOR(LTE, macro, bindings =
     <&kp SPACE>,
     <&LETHAN>, <&kp EQUAL>,
     <&kp SPACE>;
