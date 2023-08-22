@@ -6,8 +6,15 @@
 #pragma once
 
 // Fat arrow padded with spaces: ' => '
-ZMK_BEHAVIOR(ARROW, macro, bindings =
+ZMK_BEHAVIOR(FAT_ARROW, macro, bindings =
     <&macro_tap &kp SPACE &kp EQUAL>,
+    <&kp RA(DOT)>,
+    <&kp SPACE>;
+)
+
+// Thin arrow padded with spaces: ' -> '
+ZMK_BEHAVIOR(ARROW, macro, bindings =
+    <&macro_tap &kp SPACE &kp MINUS>,
     <&kp RA(DOT)>,
     <&kp SPACE>;
 )
