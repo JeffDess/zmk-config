@@ -23,14 +23,14 @@ ZMK_BEHAVIOR(ARROW, macro, bindings =
 // Greater than or equal to: ' >= '
 ZMK_BEHAVIOR(GTE, macro, bindings =
     <&kp SPACE>,
-    <&GRTHAN>, <&kp EQUAL>,
+    <&kp GRTHAN>, <&kp EQUAL>,
     <&kp SPACE>;
 )
 
 // Less than or equal to: ' <= '
 ZMK_BEHAVIOR(LTE, macro, bindings =
     <&kp SPACE>,
-    <&LETHAN>, <&kp EQUAL>,
+    <&kp LETHAN>, <&kp EQUAL>,
     <&kp SPACE>;
 )
 
