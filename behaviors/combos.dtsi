@@ -60,3 +60,9 @@ ZMK_COMBO(combo_fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
 // THIN ARROW - Left index & middle fingers on bottom row, active on symbol layer
 ZMK_COMBO(combo_arrow, &ARROW, LB1 LB2, SYM)
 
+// Lesser than or Equal - active on symbol layer
+ZMK_COMBO(combo_lte, &LTE, RB1 RB2, SYM)
+
+// Greater than or Equal - active on symbol layer
+ZMK_COMBO(combo_gte, &GTE, RB2 RB3, SYM)
+
