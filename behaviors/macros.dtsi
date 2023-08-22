@@ -7,15 +7,29 @@
 
 // Fat arrow padded with spaces: ' => '
 ZMK_BEHAVIOR(FAT_ARROW, macro, bindings =
-    <&macro_tap &kp SPACE &kp EQUAL>,
+    <&kp SPACE &kp EQUAL>,
     <&kp RA(DOT)>,
     <&kp SPACE>;
 )
 
 // Thin arrow padded with spaces: ' -> '
 ZMK_BEHAVIOR(ARROW, macro, bindings =
-    <&macro_tap &kp SPACE &kp MINUS>,
+    <&kp SPACE &kp MINUS>,
     <&kp RA(DOT)>,
+    <&kp SPACE>;
+)
+
+// Greater than or equal to: ' >= '
+ZMK_BEHAVIOR(GTE,   macro, bindings =
+    <&kp SPACE>,
+    <&GRTHAN>, <&kp EQUAL>,
+    <&kp SPACE>;
+)
+
+// Less than or equal to: ' <= '
+ZMK_BEHAVIOR(LTE,   macro, bindings =
+    <&kp SPACE>,
+    <&LETHAN>, <&kp EQUAL>,
     <&kp SPACE>;
 )
 
