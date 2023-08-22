@@ -47,9 +47,9 @@ ZMK_LAYER_5COL(symbol,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
      &kp HASH    &kp AT      &kp LBRAC   &kp RBRAC    &kp PLUS       XXX         &kp TILDS     &GRA          &kp DLLR     XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &kp SLSH    &dash_tilde &kp LPAR   &hml SL RPAR  &ARROW         &CAR        &kp QUEST     &kp EXCL      &kp AMPS     &kp PIP
+     &kp SLSH    &dash_tilde &kp LPAR   &hml SL RPAR  &EQUAL         &CAR        &kp QUEST     &kp EXCL      &kp AMPS     &kp PIP
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &kp STAR    &kp PRCNT   &kp LBKET   &kp RBKET    &kp UNDER      &kp LETHAN  &kp EQUAL     &kp GRTHAN    &laquo       &raquo
+     &kp STAR    &kp PRCNT   &kp LBKET   &kp RBKET    &kp UNDER      XXX         &kp LETHAN    &kp GRTHAN    &laquo       &raquo
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                              ___         ___          ___            ___         ___           ___
 //                         ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
