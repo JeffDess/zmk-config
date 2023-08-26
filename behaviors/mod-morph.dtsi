@@ -42,7 +42,7 @@ ZMK_BEHAVIOR(comma_dot, mod_morph,
 // hold: num layer | tap: escape | shift OR ctrl + tap : mouse click
 ZMK_BEHAVIOR(num_esc_clk, mod_morph,
     bindings = <&lt NUM ESC>, <&mkp LCLK>;
-    mods = <(MOD_LSFT|MOD_RCTL)>;
+    mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
 // hold: symbol layer | tap: space  | shift + tap: tab
