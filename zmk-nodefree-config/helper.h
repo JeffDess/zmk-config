@@ -172,7 +172,3 @@
     UC_MACRO(name ## _upper, &kp U0 &kp U1 &kp U2 &kp U3) \
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
 
-#define ZMK_UNICODE_SHORTPAIR(name, L0, L1, U0, U1)                            \
-  UC_MACRO(name##_lower, &kp L0 &kp L1)                                        \
-  UC_MACRO(name##_upper, &kp U0 &kp U1)                                        \
-  UC_MODMORPH(name, &name##_lower, &name##_upper)
