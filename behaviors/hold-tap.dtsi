@@ -61,7 +61,7 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&E_GR>;
+    bindings = <&sk>, <&E_GR>;
 )
 
 // homerow mods for î
