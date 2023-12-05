@@ -18,6 +18,8 @@
 
 // TAB - Inner right thumbs, active on all layer
 ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
+// Cheat for 34 key layout
+ZMK_COMBO(combo_tab_34, &kp TAB, LH0 RH0, ALL)
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
 
