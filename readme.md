@@ -58,8 +58,10 @@ and changing the macros accordingly. I've always used this layout, it's just
 more convenient for me to base my layout on it. This way I don't have to change
 whenever I switch keyboards.
 
+![Urchin with Nano Trackball](images/urchin-with-nano.jpg)
+
 ## References
 
 - [Corne Keyboard](https://github.com/foostan/crkbd)
-- [Urchin Keyboards](https://github.com/duckyb/urchin)
+- [Urchin Keyboard](https://github.com/duckyb/urchin)
 - [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
