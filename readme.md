@@ -9,7 +9,7 @@ Since the Corne (36 keys) and Urchin (34 keys) have similar layouts, both
 keyboards use the same configuration. The only exception is the combos using
 thumb keys, which are in their own files (combo_34 and combos_36). Keyboards
 also have their own keymap files, but in pratice they use the same mappings.
-This repos uses Github action to generate both firmware simultaneously on each
+This repos uses Github Actions to generate both firmwares simultaneously on each
 push.
 
 ![My Corne 36 keys keyboard](images/corne36.jpg)
