@@ -16,8 +16,7 @@
   ALL LAYERS
 ***********************/
 
-// TAB - Inner right thumbs, active on all layer
-ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
+// NOTE: Other thumb key combos are in ./combos_34.dsti and combos_36.dtsi
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
 

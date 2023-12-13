@@ -1,0 +1,19 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../config/constants.h"
+#include "./combos.dtsi"
+
+#pragma once
+
+// NOTE: Only thumb keys are different between 34/36 layouts
+//       All other combos should be in ./combos.dtsi
+
+/***********************
+  THUMBS
+***********************/
+
+// TAB - Inner right thumbs, active on all layer
+ZMK_COMBO(combo_tab, &kp TAB, RH0 RH1, ALL)
+
