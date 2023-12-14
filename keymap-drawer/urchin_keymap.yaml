@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
-  querty:
+  qwerty:
   - Q
   - W
   - E
@@ -213,28 +213,28 @@ layers:
 combos:
 - p: [21, 20]
   k: LC(X)
-  l: [querty]
+  l: [qwerty]
 - p: [22, 21]
   k: LC(C)
-  l: [querty]
+  l: [qwerty]
 - p: [23, 22]
   k: LC(V)
-  l: [querty]
+  l: [qwerty]
 - p: [8, 9]
   k: PRINTSCREEN
-  l: [querty]
+  l: [qwerty]
 - p: [13, 16]
   k: '&caps_word'
-  l: [querty, accent]
+  l: [qwerty, accent]
 - p: [12, 11]
   k: LC(LA(J))
-  l: [querty]
+  l: [qwerty]
 - p: [12, 11, 19]
   k: '&TMUX_CMD'
-  l: [querty]
+  l: [qwerty]
 - p: [12, 11, 10]
   k: '&TMUX_SESSION'
-  l: [querty]
+  l: [qwerty]
 - p: [13, 12]
   k: '&FAT_ARROW'
   l: [symbol]
@@ -247,15 +247,15 @@ combos:
 - p: [27, 28]
   k: '&GTE'
   l: [symbol]
-- p: [31, 32]
+- p: [32, 33]
   k: TAB
-  l: [querty]
+  l: [qwerty]
 - p: [3, 2]
   k: LCLICK
-  l: [querty]
+  l: [qwerty]
 - p: [1, 0]
   k: RCLICK
-  l: [querty]
+  l: [qwerty]
 - p: [2, 1]
   k: TOGGLE SCROLL
-  l: [querty]
+  l: [qwerty]
