@@ -1,0 +1,207 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  querty:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: LGUI}
+    - {t: S, h: LALT}
+    - {t: D, h: LCTRL}
+    - {t: F, h: LSHFT}
+    - G
+    - H
+    - {t: J, h: LSHFT}
+    - {t: K, h: LCTRL}
+    - {t: L, h: LALT}
+    - {t: ;, h: LGUI}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - {t: accent, h: toggle}
+  - - {t: RET, h: nav}
+    - {t: ESC, h: nums, s: LCLICK}
+    - {t: BSPC, s: DEL}
+    - {t: SPACE, h: symbol}
+  accent:
+  - ['', '', Ë, '', '', '', Ï, Ö, Ü, ¨]
+  - - À
+    - Ê
+    - É
+    - {t: 'È', h: LSHFT}
+    - ''
+    - ''
+    - {t: 'Î', h: LSHFT}
+    - Ô
+    - Û
+    - '`'
+  - [Â, '', Ç, '', '', '', '', '', Ù, ^]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  symbol:
+  - ['#', '@', '{', '}', +, '', '~', '`', $, '']
+  - - /
+    - {t: '-', s: '~'}
+    - (
+    - {t: ), h: LSHFT}
+    - '='
+    - ^
+    - '?'
+    - '!'
+    - '&'
+    - '|'
+  - ['*', '%', '[', ']', _, '', <, '>', «, »]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+  nav:
+  - - OUT TOG
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BT CLR
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: LGUI, h: sticky}
+    - PREV
+    - PP
+    - NEXT
+    - ''
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - INS
+  - [BT PRV, BT NXT, VOL DN, VOL UP, '', HOME, PG DN, PG UP, END, SLCK]
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  nums:
+  - - F1
+    - F2
+    - F3
+    - F4
+    - ±
+    - ¼
+    - '7'
+    - '8'
+    - '9'
+    - {t: '*', s: /}
+  - - F5
+    - F6
+    - F7
+    - {t: F8, h: LSHFT}
+    - °
+    - ½
+    - '4'
+    - '5'
+    - '6'
+    - {t: +, s: '-'}
+  - - F9
+    - F10
+    - F11
+    - F12
+    - µ
+    - ¾
+    - '1'
+    - '2'
+    - '3'
+    - {t: ',', s: .}
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - '0'
+  mouse:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - SCROLL LEFT
+    - SCROLL UP
+    - SCROLL DOWN
+    - SCROLL RIGHT
+    - MOVE LEFT
+    - CURSOR DOWN
+    - CURSOR UP
+    - CURSOR RIGHT
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - TOGGLE SCROLL
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - RCLICK
+    - LCLICK
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [21, 20]
+  k: LC(X)
+  l: [querty]
+- p: [22, 21]
+  k: LC(C)
+  l: [querty]
+- p: [23, 22]
+  k: LC(V)
+  l: [querty]
+- p: [8, 9]
+  k: PRINTSCREEN
+  l: [querty]
+- p: [13, 16]
+  k: '&caps_word'
+  l: [querty, accent]
+- p: [12, 11]
+  k: LC(LA(J))
+  l: [querty]
+- p: [12, 11, 19]
+  k: '&TMUX_CMD'
+  l: [querty]
+- p: [12, 11, 10]
+  k: '&TMUX_SESSION'
+  l: [querty]
+- p: [13, 12]
+  k: '&FAT_ARROW'
+  l: [symbol]
+- p: [23, 22]
+  k: '&ARROW'
+  l: [symbol]
+- p: [26, 27]
+  k: '&LTE'
+  l: [symbol]
+- p: [27, 28]
+  k: '&GTE'
+  l: [symbol]
+- p: [31, 32]
+  k: TAB
+  l: [querty]
+- p: [3, 2]
+  k: LCLICK
+  l: [querty]
+- p: [1, 0]
+  k: RCLICK
+  l: [querty]
+- p: [2, 1]
+  k: TOGGLE SCROLL
+  l: [querty]
