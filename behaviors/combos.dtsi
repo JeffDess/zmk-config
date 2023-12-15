@@ -40,7 +40,7 @@ ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT3 RT4, DEF)
 ZMK_COMBO(capsword, &caps_word, LM1 RM1, DEF ACC)
 
 // CAPS LOCK - Both HR Controls, active on base & accent layers
-ZMK_COMBO(capslock, &caps_lock, LM2 RM2, DEF ACC)
+ZMK_COMBO(capslock, &kp CAPSLOCK, LM2 RM2, DEF ACC)
 
 // TMUX Prefix - active on base layer
 ZMK_COMBO(tmux, &kp TMUX, LM2 LM3, DEF, HR_TIMEOUT)
