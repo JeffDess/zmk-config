@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
+  - {t: F, h: SHIFT}
   - G
   - H
-  - {t: J, h: LSHFT}
-  - {t: K, h: LCTRL}
-  - {t: L, h: LALT}
-  - {t: ;, h: LGUI}
+  - {t: J, h: SHIFT}
+  - {t: K, h: CTRL}
+  - {t: L, h: ALT}
+  - {t: ;, h: GUI}
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - .
   - {t: accent, h: toggle}
   - {t: RETURN, h: nav}
-  - {t: ESC, h: nums, s: LCLICK}
+  - {t: ESC, h: nums, s: LEFT CLICK}
   - {t: BACK SPACE, s: DEL}
   - {t: SPACE, h: symbol}
   accent:
@@ -49,10 +49,10 @@ layers:
   - À
   - Ê
   - É
-  - {t: 'È', h: LSHFT}
+  - {t: 'È', h: SHIFT}
   - ''
   - ''
-  - {t: 'Î', h: LSHFT}
+  - {t: 'Î', h: SHIFT}
   - Ô
   - Û
   - '`'
@@ -84,7 +84,7 @@ layers:
   - /
   - {t: '-', s: '~'}
   - (
-  - {t: ), h: LSHFT}
+  - {t: ), h: SHIFT}
   - '='
   - ^
   - '?'
@@ -116,7 +116,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LGUI, h: sticky}
+  - {t: GUI, h: sticky}
   - PREV
   - PP
   - NEXT
@@ -125,17 +125,17 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - INS
+  - INSERT
   - BT PRV
   - BT NXT
   - VOL DN
   - VOL UP
   - ''
   - HOME
-  - PG DN
-  - PG UP
+  - PAGE DOWN
+  - PAGE UP
   - END
-  - SLCK
+  - SCROLL LOCK
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - F5
   - F6
   - F7
-  - {t: F8, h: LSHFT}
+  - {t: F8, h: SHIFT}
   - °
   - ½
   - '4'
@@ -191,7 +191,7 @@ layers:
   - SCROLL UP
   - SCROLL DOWN
   - SCROLL RIGHT
-  - MOVE LEFT
+  - CURSOR LEFT
   - CURSOR DOWN
   - CURSOR UP
   - CURSOR RIGHT
@@ -206,55 +206,65 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RCLICK
-  - LCLICK
+  - RIGHT CLICK
+  - LEFT CLICK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [21, 20]
-  k: LC(X)
+  k: CUT
   l: [qwerty]
 - p: [22, 21]
-  k: LC(C)
+  k: COPY
   l: [qwerty]
 - p: [23, 22]
-  k: LC(V)
+  k: PASTE
   l: [qwerty]
 - p: [8, 9]
-  k: PRINTSCREEN
+  k: PRINT SCREEN
   l: [qwerty]
 - p: [13, 16]
-  k: '&caps_word'
+  k: CAPS WORD
   l: [qwerty, accent]
+  draw_separate: true
+- p: [12, 17]
+  k: CAPS LOCK
+  l: [qwerty, accent]
+  draw_separate: true
 - p: [12, 11]
-  k: LC(LA(J))
+  k: TMUX
   l: [qwerty]
+  draw_separate: true
 - p: [12, 11, 19]
-  k: '&TMUX_CMD'
+  k: TMUX COMMAND
   l: [qwerty]
+  draw_separate: true
 - p: [12, 11, 10]
-  k: '&TMUX_SESSION'
+  k: TMUX  NEW SESSION
   l: [qwerty]
+  draw_separate: true
 - p: [13, 12]
-  k: '&FAT_ARROW'
+  k: ' => '
   l: [symbol]
 - p: [23, 22]
-  k: '&ARROW'
+  k: ' -> '
   l: [symbol]
 - p: [26, 27]
-  k: '&LTE'
+  k: ' <= '
   l: [symbol]
 - p: [27, 28]
-  k: '&GTE'
+  k: ' >= '
   l: [symbol]
 - p: [32, 33]
   k: TAB
   l: [qwerty]
+  a: bottom
+  o: 0.3
 - p: [3, 2]
-  k: LCLICK
+  k: LEFT CLICK
   l: [qwerty]
 - p: [1, 0]
-  k: RCLICK
+  k: RIGHT CLICK
   l: [qwerty]
 - p: [2, 1]
   k: TOGGLE SCROLL

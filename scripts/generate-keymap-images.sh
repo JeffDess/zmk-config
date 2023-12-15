@@ -30,7 +30,7 @@ draw () {
     OPT=$2
     if keymap -c "$KMD/config.yaml" \
         draw "$KMD/$KBD_NAME"_keymap.yaml >"$IMG/urchin_keymap.svg" \
-        "$OPT"; then
+        ; then
         echo "Keymap Drawned"
     else
         echo "Error drawing keymap"

@@ -2,20 +2,20 @@ draw_config:
   key_w: 60.0
   key_h: 56.0
   split_gap: 30.0
-  combo_w: 28.0
-  combo_h: 26.0
+  combo_w: 32.0
+  combo_h: 32.0
   key_rx: 6.0
   key_ry: 6.0
   n_columns: 1
   separate_combo_diagrams: false
   combo_diagrams_scale: 2
-  inner_pad_w: 2.0
-  inner_pad_h: 2.0
+  inner_pad_w: 3.0
+  inner_pad_h: 3.0
   outer_pad_w: 30.0
   outer_pad_h: 56.0
   line_spacing: 1.2
   arc_radius: 6.0
-  append_colon_to_layer_header: true
+  append_colon_to_layer_header: false
   small_pad: 2.0
   legend_rel_x: 0.0
   legend_rel_y: 0.0
@@ -56,12 +56,14 @@ draw_config:
 
     /* color accent for combo boxes */
     rect.combo, rect.combo-separate {
-        fill: #cdf;
+        fill: #c1efff;
+        stroke: white;
+        stroke-width: 2;
     }
 
     /* color accent for held keys */
     rect.held, rect.combo.held {
-        fill: #fdd;
+        fill: #FFA066;
     }
 
     /* color accent for ghost (optional) keys */
@@ -79,14 +81,14 @@ draw_config:
     text.label {
         font-weight: bold;
         text-anchor: start;
-        stroke: white;
-        stroke-width: 2;
-        paint-order: stroke;
+        fill: inherit;
+        text-transform: uppercase;
+        font-size: 19px;
     }
 
     /* styling for combo tap, and key hold/shifted label text */
     text.combo, text.hold, text.shifted {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     text.hold {
@@ -129,7 +131,7 @@ draw_config:
     }
     /* End Tabler Icons Cleanup */
   svg_extra_style: ''
-  shrink_wide_legends: 7
+  shrink_wide_legends: 4
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -183,24 +185,36 @@ parse_config:
     "&kp RA(RBKT)": "~",
     "&kp SLSH": "/",
     "&math_micro": "µ",
-    "&mkp LCLK": "LCLICK",
-    "&mkp RCLK": "RCLICK",
+    "&mkp LCLK": "LEFT CLICK",
+    "&mkp RCLK": "RIGHT CLICK",
     "&mwh SCROLL_LEFT": "SCROLL LEFT",
     "&mwh SCROLL_RIGHT": "SCROLL RIGHT",
     "&mwh SCROLL_UP": "SCROLL UP",
     "&mwh SCROLL_DOWN": "SCROLL DOWN",
-    "&mmv MOVE_LEFT": "MOVE LEFT",
+    "&mmv MOVE_LEFT": "CURSOR LEFT",
     "&mmv MOVE_RIGHT": "CURSOR RIGHT",
     "&mmv MOVE_UP": "CURSOR UP",
     "&mmv MOVE_DOWN": "CURSOR DOWN",
     "&mwh_tg": "TOGGLE SCROLL",
+    "&caps_word": "CAPS WORD",
+    "&caps_lock": "CAPS LOCK",
+    "&kp LC(X)": "CUT",
+    "&kp LC(C)": "COPY",
+    "&kp LC(V)": "PASTE",
+    "&kp LC(LA(J))": "TMUX",
+    "&TMUX_SESSION": "TMUX  NEW SESSION",
+    "&TMUX_CMD": "TMUX COMMAND",
+    "&LTE": " <= ",
+    "&GTE": " >= ",
+    "&ARROW": " -> ",
+    "&FAT_ARROW": " => "
     }
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
     t: ▽
     type: trans
-  mark_alternate_layer_activators: false
+  mark_alternate_layer_activators: true
   qmk_remove_keycode_prefix:
   - KC_
   qmk_keycode_map:
@@ -337,4 +351,29 @@ parse_config:
     TILDE2: '~'
     RET: 'RETURN'
     BSPC: 'BACK SPACE'
-  zmk_combos: {}
+    PRINTSCREEN: 'PRINT SCREEN'
+    SLCK: 'SCROLL LOCK'
+    INS: 'INSERT'
+    PG_UP: 'PAGE UP'
+    PG_DN: 'PAGE DOWN'
+    LALT: 'ALT'
+    LGUI: 'GUI'
+    LSHFT: 'SHIFT'
+    LCTRL: 'CTRL'
+  zmk_combos:
+    combo_capsword:
+      draw_separate: true
+    combo_capslock:
+      draw_separate: true
+    combo_tmux:
+      draw_separate: true
+    combo_tmux_session:
+      draw_separate: true
+    combo_tmux_cmd:
+      draw_separate: true
+    combo_tab:
+      align: "bottom"
+      offset: 0.3
+    combo_tab_34:
+      align: "bottom"
+      offset: 0.3
