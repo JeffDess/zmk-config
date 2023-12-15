@@ -25,30 +25,31 @@
 ***********************/
 
 // CUT - Ctrl + X, active on base layer
-ZMK_COMBO(combo_cut, &kp LC(X), LB3 LB4, DEF)
+ZMK_COMBO(cut, &kp LC(X), LB3 LB4, DEF)
 
 // COPY - Ctrl + C, active on base layer
-ZMK_COMBO(combo_copy, &kp LC(C), LB2 LB3, DEF)
+ZMK_COMBO(copy, &kp LC(C), LB2 LB3, DEF)
 
 // PASTE - Ctrl + V, active on all layers
-ZMK_COMBO(combo_paste, &kp LC(V), LB1 LB2, DEF)
+ZMK_COMBO(paste, &kp LC(V), LB1 LB2, DEF)
 
 // PRINT SCREEN - PrintScreen, active on base layer
-ZMK_COMBO(combo_printscreen, &kp PRINTSCREEN, RT3 RT4, DEF)
+ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT3 RT4, DEF)
 
 // CAPS WORD - Both HR Shifts, active on base & accent layers
-ZMK_COMBO(combo_capsword, &caps_word, LM1 RM1, DEF ACC)
+ZMK_COMBO(capsword, &caps_word, LM1 RM1, DEF ACC)
+
 // CAPS LOCK - Both HR Controls, active on base & accent layers
 ZMK_COMBO(capslock, &caps_lock, LM2 RM2, DEF ACC)
 
 // TMUX Prefix - active on base layer
-ZMK_COMBO(combo_tmux, &kp TMUX, LM2 LM3, DEF, HR_TIMEOUT)
+ZMK_COMBO(tmux, &kp TMUX, LM2 LM3, DEF, HR_TIMEOUT)
 
 // TMUX Command - active on base layer
-ZMK_COMBO(combo_tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, DEF, HR_TIMEOUT)
+ZMK_COMBO(tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, DEF, HR_TIMEOUT)
 
 // TMUX New Session - active on base layer
-ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
+ZMK_COMBO(tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
 
 
 /***********************
@@ -56,14 +57,14 @@ ZMK_COMBO(combo_tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
 ***********************/
 
 // FAT ARROW - Left index & middle fingers on home row, active on symbol layer
-ZMK_COMBO(combo_fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
+ZMK_COMBO(fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
 
 // THIN ARROW - Left index & middle fingers on bottom row, active on symbol layer
-ZMK_COMBO(combo_arrow, &ARROW, LB1 LB2, SYM)
+ZMK_COMBO(arrow, &ARROW, LB1 LB2, SYM)
 
 // Lesser than or Equal - active on symbol layer
-ZMK_COMBO(combo_lte, &LTE, RB1 RB2, SYM)
+ZMK_COMBO(lte, &LTE, RB1 RB2, SYM)
 
 // Greater than or Equal - active on symbol layer
-ZMK_COMBO(combo_gte, &GTE, RB2 RB3, SYM)
+ZMK_COMBO(gte, &GTE, RB2 RB3, SYM)
 
