@@ -31,10 +31,10 @@ layers:
   - ','
   - .
   - {t: accent, h: toggle}
-  - {t: RETURN, h: nav}
-  - {t: ESC, h: nums, s: LEFT CLICK}
-  - {t: BACK SPACE, s: DEL}
-  - {t: SPACE, h: symbol}
+  - {t: '$$material:keyboard_return$$', h: nav}
+  - {t: ESC, h: nums, s: '$$material:left_click$$'}
+  - {t: '$$material:backspace$$', s: $$delete$$}
+  - {t: '$$tabler:space$$', h: symbol}
   accent:
   - ''
   - ''
@@ -106,30 +106,30 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - OUT TOG
+  - $$output-toggle$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - $$bt-clear$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: GUI, h: sticky}
-  - PREV
-  - PP
-  - NEXT
+  - $$tabler:player-track-prev-filled$$
+  - $$tabler:player-play-filled$$
+  - $$tabler:player-track-next-filled$$
   - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$tabler:arrow-big-left$$
+  - $$tabler:arrow-big-down$$
+  - $$tabler:arrow-big-up$$
+  - $$tabler:arrow-big-right$$
   - INSERT
   - BT PRV
   - BT NXT
-  - VOL DN
-  - VOL UP
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
   - ''
   - HOME
   - PAGE DOWN
@@ -199,30 +199,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TOGGLE SCROLL
+  - $$scroll$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT CLICK
-  - LEFT CLICK
+  - $$material:right_click$$
+  - $$material:left_click$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [21, 20]
-  k: CUT
+  k: $$tabler:cut$$
   l: [qwerty]
+  a: bottom
+  o: -0.7
+  d: false
 - p: [22, 21]
-  k: COPY
+  k: $$tabler:copy$$
   l: [qwerty]
 - p: [23, 22]
-  k: PASTE
+  k: $$tabler:clipboard$$
   l: [qwerty]
 - p: [8, 9]
-  k: PRINT SCREEN
+  k: $$tabler:camera$$
   l: [qwerty]
+  a: top
+  o: -0.7
+  d: false
 - p: [13, 16]
   k: CAPS WORD
   l: [qwerty, accent]
@@ -256,16 +262,19 @@ combos:
   k: ' >= '
   l: [symbol]
 - p: [32, 33]
-  k: TAB
+  k: $$material:keyboard_tab$$
   l: [qwerty]
   a: bottom
   o: 0.3
 - p: [3, 2]
-  k: LEFT CLICK
+  k: $$material:left_click$$
   l: [qwerty]
 - p: [1, 0]
-  k: RIGHT CLICK
+  k: $$material:right_click$$
   l: [qwerty]
+  a: top
+  o: -0.7
+  d: false
 - p: [2, 1]
-  k: TOGGLE SCROLL
+  k: $$scroll$$
   l: [qwerty]

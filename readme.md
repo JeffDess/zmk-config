@@ -37,7 +37,10 @@ The keymap has 6 layers:
 1. Numbers (NUM)
 1. Mouse (MOU)
 
-For the complete layout, head to the [corne.keymap](config/corne.keymap) file.
+![Keymap drawing of all layers and combos](images/keymaps/urchin_keymap.svg)
+
+For more details, head to the [urchin.keymap](config/urchin.keymap) or
+[corne.keymap](config/corne.keymap) source files.
 
 ## Behaviors
 

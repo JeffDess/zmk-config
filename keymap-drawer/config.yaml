@@ -37,15 +37,16 @@ draw_config:
     svg.keymap {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
         font-size: 14px;
+        font-weight: bold;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
-        fill: #24292e;
+        fill: white;
     }
 
     /* default key styling */
     rect.key {
-        fill: #f6f8fa;
-        stroke: #c9cccf;
+        fill: #1c2128;
+        stroke: #adbac7;
         stroke-width: 1;
     }
 
@@ -56,14 +57,14 @@ draw_config:
 
     /* color accent for combo boxes */
     rect.combo, rect.combo-separate {
-        fill: #c1efff;
-        stroke: white;
+        fill: #666;
+        stroke: #aaa;
         stroke-width: 2;
     }
 
     /* color accent for held keys */
     rect.held, rect.combo.held {
-        fill: #FFA066;
+        fill: #FF9E3B;
     }
 
     /* color accent for ghost (optional) keys */
@@ -81,14 +82,20 @@ draw_config:
     text.label {
         font-weight: bold;
         text-anchor: start;
-        fill: inherit;
+        fill: #adbac7;
         text-transform: uppercase;
-        font-size: 19px;
+        font-size: 28px;
+        stroke: #777;
+        stroke-width: 0px;
+        paint-order: stroke;
     }
 
     /* styling for combo tap, and key hold/shifted label text */
     text.combo, text.hold, text.shifted {
         font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        fill: white;
     }
 
     text.hold {
@@ -120,22 +127,125 @@ draw_config:
 
     /* Start Tabler Icons Cleanup */
     /* cannot use height/width with glyphs */
+
     .icon-tabler > path {
-        fill: inherit;
-        stroke: inherit;
-        stroke-width: 2;
+        fill: white;
+        stroke: none;
     }
+
+    .icon-tabler-cut > path {
+        fill: none;
+        stroke: white;
+    }
+
+    #tabler\:space {
+        transform: scale(1.8);
+        transform-box: fill-box;
+    }
+
+    .icon-tabler-space > path {
+        fill: none;
+        stroke: white;
+    }
+
+    .icon-tabler-copy > path {
+        fill: none;
+        stroke: white;
+    }
+
+    .icon-tabler-clipboard > path {
+        fill: none;
+        stroke: white;
+    }
+
+    .icon-tabler-bluetooth-x > path {
+        fill: none;
+        stroke: white;
+    }
+
+    .icon-tabler-camera > path {
+        fill: none;
+        stroke: white;
+    }
+
     /* hide tabler's default box */
     .icon-tabler > path[stroke="none"][fill="none"] {
         visibility: hidden;
     }
     /* End Tabler Icons Cleanup */
+
+    /* Material glyphs */
+    #material\:keyboard_return{
+      transform: scale(2);
+      transform-box: fill-box;
+    }
+
+    #material\:backspace{
+      transform: scale(2) translateY(1px);
+      transform-box: fill-box;
+    }
+
+    .shifted.material\:left_click {
+        transform: scale(1.8) translateY(10px);
+        transform-box: fill-box;
+    }
+
+    #material\:keyboard_tab {
+        transform: scale(1.5);
+        transform-box: fill-box;
+    }
+
+    /* Custom glyphs */
+    .bt-clear {
+        transform: scale(2) translate(2px, 1px);
+    }
+
+    #delete {
+      transform: scale(2) rotate(180deg) translate(-1px, -1px);
+      transform-box: fill-box;
+    }
+
+    .output-toggle {
+        transform: scale(2.5);
+        fill: none;
+        stroke: white;
+        stroke-width: 4px;
+    }
+
   svg_extra_style: ''
-  shrink_wide_legends: 4
+  shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
-  glyphs: {}
+  glyphs:
+    bt-clear: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bluetooth-x" width="32" height="32" viewBox="0 0 32 32" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M7 8l10 8l-5 4v-16l1 .802m0 6.396l-6 4.802" />
+        <path d="M16 6l4 4" />
+        <path d="M20 6l-4 4" />
+      </svg>
+    output-toggle: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="30.33" height="39.21" viewBox="0 0 8.03 10.37">
+          <g style="fill:#fff;fill-opacity:1">
+              <g style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none">
+                  <path d="M106.89 150.28a.53.53 0 1 0 1.06 0 .53.53 0 1 0-1.06 0" style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none" transform="translate(-100.98 -140.44)"/>
+                  <path d="M107.42 149.75v-3.04m-1.32 1.19v.8l1.32.79m0-.39 1.32-.54v-.66" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-dasharray:none;stroke-opacity:1" transform="translate(-100.98 -140.44)"/>
+                  <path d="M108.48 147.9h.53v-.53h-.53zm-2.63-.26a.26.26 0 1 0 .53 0 .26.26 0 1 0-.53 0m1.05-.93h1.05l-.53-.66Z" style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none" transform="translate(-100.98 -140.44)"/>
+              </g>
+              <path d="m98.5 149.47 2.65 2.11-1.32 1.06v-4.23l1.32 1.06-2.64 2.11" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-dasharray:none;stroke-opacity:1" transform="translate(-98.4 -148.03)"/>
+              <path d="m99.58 156.1 4.97-4.97" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" transform="translate(-98.4 -148.03)"/>
+          </g>
+      </svg>
+    delete: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M360-200q-22 0-40-11.5T289-241L120-480l169-239q13-18 31-29.5t40-11.5h420q24.75 0 42.375 17.625T840-700v440q0 24.75-17.625 42.375T780-200H360Zm420-60v-440 440Zm-431 0h431v-440H349L195-480l154 220Zm99-66 112-112 112 112 43-43-113-111 111-111-43-43-110 112-112-112-43 43 113 111-113 111 43 43Z"/></svg>
+    scroll: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.74" height="289.74" viewBox="0 0 76.66 76.66">
+          <g transform="translate(-55.59 -96.9)">
+              <circle cx="93.92" cy="135.22" r="13.53" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.30994;stroke-linecap:round"/>
+              <path d="M110.63 113.6 93.92 96.9 77.2 113.6h16.7ZM77.2 156.84l16.72 16.71 16.71-16.7H93.92Zm38.34-4.9 16.7-16.72-16.7-16.7v16.7zM72.3 118.51l-16.7 16.71 16.71 16.72v-16.72z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+          </g>
+      </svg>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
@@ -185,8 +295,8 @@ parse_config:
     "&kp RA(RBKT)": "~",
     "&kp SLSH": "/",
     "&math_micro": "µ",
-    "&mkp LCLK": "LEFT CLICK",
-    "&mkp RCLK": "RIGHT CLICK",
+    "&mkp RCLK": "$$material:right_click$$",
+    "&mkp LCLK": "$$material:left_click$$",
     "&mwh SCROLL_LEFT": "SCROLL LEFT",
     "&mwh SCROLL_RIGHT": "SCROLL RIGHT",
     "&mwh SCROLL_UP": "SCROLL UP",
@@ -195,19 +305,20 @@ parse_config:
     "&mmv MOVE_RIGHT": "CURSOR RIGHT",
     "&mmv MOVE_UP": "CURSOR UP",
     "&mmv MOVE_DOWN": "CURSOR DOWN",
-    "&mwh_tg": "TOGGLE SCROLL",
+    "&mwh_tg": "$$scroll$$",
     "&caps_word": "CAPS WORD",
     "&caps_lock": "CAPS LOCK",
-    "&kp LC(X)": "CUT",
-    "&kp LC(C)": "COPY",
-    "&kp LC(V)": "PASTE",
+    "&kp LC(X)": "$$tabler:cut$$",
+    "&kp LC(C)": "$$tabler:copy$$",
+    "&kp LC(V)": "$$tabler:clipboard$$",
     "&kp LC(LA(J))": "TMUX",
     "&TMUX_SESSION": "TMUX  NEW SESSION",
     "&TMUX_CMD": "TMUX COMMAND",
     "&LTE": " <= ",
     "&GTE": " >= ",
     "&ARROW": " -> ",
-    "&FAT_ARROW": " => "
+    "&FAT_ARROW": " => ",
+    "&out OUT_TOG": '$$output-toggle$$'
     }
   sticky_label: sticky
   toggle_label: toggle
@@ -349,9 +460,11 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    RET: 'RETURN'
-    BSPC: 'BACK SPACE'
-    PRINTSCREEN: 'PRINT SCREEN'
+    BSPC: '$$material:backspace$$'
+    SPACE: '$$tabler:space$$'
+    TAB: "$$material:keyboard_tab$$"
+    PRINTSCREEN: "$$tabler:camera$$"
+    RET: "$$material:keyboard_return$$"
     SLCK: 'SCROLL LOCK'
     INS: 'INSERT'
     PG_UP: 'PAGE UP'
@@ -360,6 +473,18 @@ parse_config:
     LGUI: 'GUI'
     LSHFT: 'SHIFT'
     LCTRL: 'CTRL'
+    CAPSLOCK: 'CAPS LOCK'
+    DEL: '$$delete$$'
+    C_VOL_UP: '$$tabler:volume$$'
+    C_VOL_DN: '$$tabler:volume-2$$'
+    C_PP: '$$tabler:player-play-filled$$'
+    C_PREV: '$$tabler:player-track-prev-filled$$'
+    C_NEXT: '$$tabler:player-track-next-filled$$'
+    LEFT: '$$tabler:arrow-big-left$$'
+    RIGHT: '$$tabler:arrow-big-right$$'
+    UP: '$$tabler:arrow-big-up$$'
+    DOWN: '$$tabler:arrow-big-down$$'
+    BT_CLR: '$$bt-clear$$'
   zmk_combos:
     combo_capsword:
       draw_separate: true
@@ -377,3 +502,15 @@ parse_config:
     combo_tab_34:
       align: "bottom"
       offset: 0.3
+    combo_rightclick:
+      align: "top"
+      offset: -0.7
+      dendron: false
+    combo_printscreen:
+      align: "top"
+      offset: -0.7
+      dendron: false
+    combo_cut:
+      align: "bottom"
+      offset: -0.7
+      dendron: false
