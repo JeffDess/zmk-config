@@ -8,7 +8,7 @@ parse () {
     KBD_NAME=$1
 
     if keymap -c "$KMD/config.yaml" \
-        parse -b "$KMD/$KBD_NAME"_keymap_tweaks.yaml \
+        parse \
         -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml; then
         echo "Keymap Parsed"
     else
