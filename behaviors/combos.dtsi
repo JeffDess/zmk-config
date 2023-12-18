@@ -51,6 +51,8 @@ ZMK_COMBO(tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, DEF, HR_TIMEOUT)
 // TMUX New Session - active on base layer
 ZMK_COMBO(tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
 
+// To Mouse Layer - active on base layer
+ZMK_COMBO(def_to_mou, &to MOU, LT1 LT4, DEF)
 
 /***********************
   SYMBOL LAYER
@@ -67,4 +69,11 @@ ZMK_COMBO(lte, &LTE, RB1 RB2, SYM)
 
 // Greater than or Equal - active on symbol layer
 ZMK_COMBO(gte, &GTE, RB2 RB3, SYM)
+
+/***********************
+  MOUSE LAYER
+***********************/
+
+// To Default Layer - active on base mouse layer
+ZMK_COMBO(mou_to_def, &to DEF, LT1 LT4, MOU)
 

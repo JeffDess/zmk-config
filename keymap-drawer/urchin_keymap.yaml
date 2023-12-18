@@ -249,6 +249,10 @@ combos:
   k: TMUX  NEW SESSION
   l: [qwerty]
   draw_separate: true
+- p: [3, 0]
+  k: {t: mouse, h: toggle}
+  l: [qwerty]
+  draw_separate: true
 - p: [13, 12]
   k: ' => '
   l: [symbol]
@@ -261,6 +265,10 @@ combos:
 - p: [27, 28]
   k: ' >= '
   l: [symbol]
+- p: [3, 0]
+  k: {t: qwerty, h: toggle}
+  l: [mouse]
+  draw_separate: true
 - p: [32, 33]
   k: $$material:keyboard_tab$$
   l: [qwerty]
