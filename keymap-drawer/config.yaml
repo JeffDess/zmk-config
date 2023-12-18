@@ -496,9 +496,7 @@ parse_config:
       draw_separate: true
     combo_tmux_cmd:
       draw_separate: true
-    combo_mou_to_def:
-      draw_separate: true
-    combo_def_to_mou:
+    combo_toggle_mouse:
       draw_separate: true
     combo_tab:
       align: "bottom"
