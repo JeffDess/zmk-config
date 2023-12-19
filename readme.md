@@ -35,29 +35,29 @@ simultaneously with Github Actions.
 
 | Icon                    | Label                       |
 |:-----------------------:|-----------------------------|
-| <img width="24px" alt="Mouse Left Click" src="images/icons/click_left.svg" />        | Mouse left click            |
-| <img width="24px" alt="Mouse Right Click" src="images/icons/click_right.svg" />       | Mouse right click           |
-| <img width="24px" alt="Mouse Scroll Toggle" src="images/icons/scroll.svg" />     | Toggle mouse scroll (trackball/scrollball) |
-| <img width="24px" alt="Mouse Scroll" src="images/icons/scroll_right.svg" />            | Directional mouse scroll    |
-| <img width="24px" alt="Mouse Cursor Move" src="images/icons/cursor_right.svg" />       | Move mouse pointer          |
-| <img width="24px" alt="Space" src="images/icons/space.svg" />                   | Space                       |
-| <img width="24px" alt="Backspace" src="images/icons/backspace.svg" />               | Backspace                   |
-| <img width="24px" alt="Delete" src="images/icons/delete.svg" />                  | Delete                      |
-| <img width="24px" alt="Tab" src="images/icons/tab.svg" />                     | Tab                         |
-| <img width="24px" alt="Enter" src="images/icons/return.svg" />                   | Return / Enter              |
-| <img width="24px" alt="Printscreen" src="images/icons/printscreen.svg" />             | Printscreen                 |
-| <img width="24px" alt="Cut" src="images/icons/cut.svg" />                     | Cut                         |
-| <img width="24px" alt="Copy" src="images/icons/copy.svg" />                    | Copy                        |
-| <img width="24px" alt="Paste" src="images/icons/paste.svg" />                   | Paste                       |
-| <img width="24px" alt="Media Play/Pause" src="images/icons/play_pause.svg" />        | Play / Pause                |
-| <img width="24px" alt="Media Previous Track" src="images/icons/media_prev.svg" />    | Previous track              |
-| <img width="24px" alt="Media Next Track" src="images/icons/media_next.svg" />        | Next track                  |
-| <img width="24px" alt="Media Volume Up" src="images/icons/vol_up.svg" />         | Volume up                   |
-| <img width="24px" alt="Media Volume Down" src="images/icons/vol_down.svg" />       | Volume down                 |
-| <img width="24px" alt="Bluetooth Clear" src="images/icons/bt_clear.svg" />         | Clear Bluetooth profile     |
-| <img width="24px" alt="Bluetooth Previous" src="images/icons/bt_prev.svg" />      | Previous Bluetooth profile  |
-| <img width="24px" alt="Bluetooth Next" src="images/icons/bt_next.svg" />          | Next Bluetooth profile      |
-| <img width="24px" alt="Bluetooth Output Toggle" src="images/icons/out_tog.svg" /> | Toggle Bluetooth/USB output |
+| <img width="24px" background="black" padding="10px" alt="Mouse Left Click" src="images/icons/click_left.svg" />        | Mouse left click            |
+| <img width="24px" background="black" padding="10px" alt="Mouse Right Click" src="images/icons/click_right.svg" />       | Mouse right click           |
+| <img width="24px" background="black" padding="10px" alt="Mouse Scroll Toggle" src="images/icons/scroll.svg" />     | Toggle mouse scroll (trackball/scrollball) |
+| <img width="24px" background="black" padding="10px" alt="Mouse Scroll" src="images/icons/scroll_right.svg" />            | Directional mouse scroll    |
+| <img width="24px" background="black" padding="10px" alt="Mouse Cursor Move" src="images/icons/cursor_right.svg" />       | Move mouse pointer          |
+| <img width="24px" background="black" padding="10px" alt="Space" src="images/icons/space.svg" />                   | Space                       |
+| <img width="24px" background="black" padding="10px" alt="Backspace" src="images/icons/backspace.svg" />               | Backspace                   |
+| <img width="24px" background="black" padding="10px" alt="Delete" src="images/icons/delete.svg" />                  | Delete                      |
+| <img width="24px" background="black" padding="10px" alt="Tab" src="images/icons/tab.svg" />                     | Tab                         |
+| <img width="24px" background="black" padding="10px" alt="Enter" src="images/icons/return.svg" />                   | Return / Enter              |
+| <img width="24px" background="black" padding="10px" alt="Printscreen" src="images/icons/printscreen.svg" />             | Printscreen                 |
+| <img width="24px" background="black" padding="10px" alt="Cut" src="images/icons/cut.svg" />                     | Cut                         |
+| <img width="24px" background="black" padding="10px" alt="Copy" src="images/icons/copy.svg" />                    | Copy                        |
+| <img width="24px" background="black" padding="10px" alt="Paste" src="images/icons/paste.svg" />                   | Paste                       |
+| <img width="24px" background="black" padding="10px" alt="Media Play/Pause" src="images/icons/play_pause.svg" />        | Play / Pause                |
+| <img width="24px" background="black" padding="10px" alt="Media Previous Track" src="images/icons/media_prev.svg" />    | Previous track              |
+| <img width="24px" background="black" padding="10px" alt="Media Next Track" src="images/icons/media_next.svg" />        | Next track                  |
+| <img width="24px" background="black" padding="10px" alt="Media Volume Up" src="images/icons/vol_up.svg" />         | Volume up                   |
+| <img width="24px" background="black" padding="10px" alt="Media Volume Down" src="images/icons/vol_down.svg" />       | Volume down                 |
+| <img width="24px" background="black" padding="10px" alt="Bluetooth Clear" src="images/icons/bt_clear.svg" />         | Clear Bluetooth profile     |
+| <img width="24px" background="black" padding="10px" alt="Bluetooth Previous" src="images/icons/bt_prev.svg" />      | Previous Bluetooth profile  |
+| <img width="24px" background="black" padding="10px" alt="Bluetooth Next" src="images/icons/bt_next.svg" />          | Next Bluetooth profile      |
+| <img width="24px" background="black" padding="10px" alt="Bluetooth Output Toggle" src="images/icons/out_tog.svg" /> | Toggle Bluetooth/USB output |
 
 For more details, head to the [urchin.keymap](config/urchin.keymap) or
 [corne.keymap](config/corne.keymap) source files.
