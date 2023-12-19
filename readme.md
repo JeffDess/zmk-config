@@ -1,5 +1,6 @@
 # ZMK Config
 
+
 ZMK firmware configuration for Corne and Urchin keyboards, optimized for
 English/French/Programming.
 
@@ -9,8 +10,8 @@ Since the Corne (36 keys) and Urchin (34 keys) have similar layouts, both
 keyboards use the same configuration. The only exception is the combos using
 thumb keys, which are in their own files ([combos_34](behaviors/combos_34.dtsi)
 and [combos_36](behaviors/combos_36.dtsi)). Keyboards also have their own keymap
-files, but in pratice they use the same mappings. This repos uses Github Actions
-to generate both firmwares simultaneously on each push.
+files, but in pratice they use the same mappings. Both firmwares are generated
+simultaneously with Github Actions.
 
 ![My Corne 36 keys keyboard](images/corne36.jpg)
 
@@ -28,16 +29,39 @@ to generate both firmwares simultaneously on each push.
 
 ## Keymap
 
-The keymap has 6 layers:
-
-1. QWERTY (DEF)
-1. Accents (ACC)
-1. Navigation (NAV)
-1. Symbols (SYM)
-1. Numbers (NUM)
-1. Mouse (MOU)
-
 ![Keymap drawing of all layers and combos](images/keymaps/urchin_keymap.svg)
+
+**Legend**
+<style>
+  td:first-child { background: #1c2128; line-height: 0.5;}
+  td>img { width: 24px; }
+</style>
+
+| Icon                    | Label                       |
+|:-----------------------:|-----------------------------|
+| ![Mouse Left Click](images/icons/click_left.svg)        | Mouse left click            |
+| ![Mouse Right Click](images/icons/click_right.svg)       | Mouse right click           |
+| ![Mouse Scroll Toggle](images/icons/scroll.svg)     | Toggle mouse scroll (trackball/scrollball) |
+| ![Mouse Scroll](images/icons/scroll_right.svg)            | Directional mouse scroll    |
+| ![Mouse Cursor Move](images/icons/cursor_right.svg)       | Move mouse pointer          |
+| ![Space](images/icons/space.svg)                   | Space                       |
+| ![Backspace](images/icons/backspace.svg)               | Backspace                   |
+| ![Delete](images/icons/delete.svg)                  | Delete                      |
+| ![Tab](images/icons/tab.svg)                     | Tab                         |
+| ![Enter](images/icons/return.svg)                   | Return / Enter              |
+| ![Printscreen](images/icons/printscreen.svg)             | Printscreen                 |
+| ![Cut](images/icons/cut.svg)                     | Cut                         |
+| ![Copy](images/icons/copy.svg)                    | Copy                        |
+| ![Paste](images/icons/paste.svg)                   | Paste                       |
+| ![Media Play/Pause](images/icons/play_pause.svg)        | Play / Pause                |
+| ![Media Previous Track](images/icons/media_prev.svg)    | Previous track              |
+| ![Media Next Track](images/icons/media_next.svg)        | Next track                  |
+| ![Media Volume Up](images/icons/vol_up.svg)         | Volume up                   |
+| ![Media Volume Down](images/icons/vol_down.svg)       | Volume down                 |
+| ![Bluetooth Clear](images/icons/bt_clear.svg)         | Clear Bluetooth profile     |
+| ![Bluetooth Previous](images/icons/bt_prev.svg)      | Previous Bluetooth profile  |
+| ![Bluetooth Next](images/icons/bt_next.svg)          | Next Bluetooth profile      |
+| ![Bluetooth Output Toggle](images/icons/out_tog.svg) | Toggle Bluetooth/USB output |
 
 For more details, head to the [urchin.keymap](config/urchin.keymap) or
 [corne.keymap](config/corne.keymap) source files.
@@ -68,3 +92,4 @@ whenever I switch keyboards.
 - [Corne Keyboard](https://github.com/foostan/crkbd)
 - [Urchin Keyboard](https://github.com/duckyb/urchin)
 - [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
+

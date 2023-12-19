@@ -9,6 +9,58 @@
 </svg>
 
 </svg>
+<svg id="bt-next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+    <g stroke="none">
+        <path d="M10.59.5h13.65v13.64H10.59Z"/>
+        <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="translate(10.59 .5) scale(.5686)"/>
+    </g>
+    \g&gt;
+    <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+    \g&gt;
+</svg>
+
+</svg>
+<svg id="bt-prev">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+    <g stroke="none">
+  <path d="M24.24 14.14H10.59V.5h13.65Z"/>
+  <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="rotate(180 12.12 7.07) scale(.5686)"/>
+  </g>
+  \g&gt;
+  <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+  \g&gt;
+</svg>
+
+</svg>
+<svg id="cursor-down">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.63 71.64">
+    <path d="m24.1 59.94 11.71 11.7 11.7-11.7H35.8Z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+    <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+</svg>
+
+</svg>
+<svg id="cursor-left">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.63 71.64">
+    <path d="M11.69 24.12 0 35.82l11.7 11.7v-11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+    <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+</svg>
+
+</svg>
+<svg id="cursor-right">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.63 71.64">
+    <path d="m59.94 47.52 11.69-11.7-11.7-11.7v11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+    <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+</svg>
+
+</svg>
+<svg id="cursor-up">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.63 71.64">
+    <path d="M47.5 11.69 35.82 0l-11.7 11.69H35.8z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+    <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+</svg>
+
+</svg>
 <svg id="delete">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M360-200q-22 0-40-11.5T289-241L120-480l169-239q13-18 31-29.5t40-11.5h420q24.75 0 42.375 17.625T840-700v440q0 24.75-17.625 42.375T780-200H360Zm420-60v-440 440Zm-431 0h431v-440H349L195-480l154 220Zm99-66 112-112 112 112 43-43-113-111 111-111-43-43-110 112-112-112-43 43 113 111-113 111 43 43Z"/></svg>
 
@@ -42,12 +94,47 @@
 </svg>
 
 </svg>
+<svg id="play-pause">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
+    <path fill="#fff" stroke="none" d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1"/>
+    <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
+</svg>
+
+</svg>
 <svg id="scroll">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.66 76.66">
     <g transform="translate(-55.59 -96.9)">
         <circle cx="93.92" cy="135.22" r="13.53" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.30994;stroke-linecap:round"/>
         <path d="M110.63 113.6 93.92 96.9 77.2 113.6h16.7ZM77.2 156.84l16.72 16.71 16.71-16.7H93.92Zm38.34-4.9 16.7-16.72-16.7-16.7v16.7zM72.3 118.51l-16.7 16.71 16.71 16.72v-16.72z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
     </g>
+</svg>
+
+</svg>
+<svg id="scroll-down">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.64 76.65">
+    <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+    <path d="m21.6 59.94 16.72 16.71 16.71-16.7H38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+</svg>
+
+</svg>
+<svg id="scroll-left">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.64 76.65">
+    <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+    <path d="M16.7 21.61 0 38.32l16.71 16.72V38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+</svg>
+
+</svg>
+<svg id="scroll-right">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.64 76.65">
+    <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+    <path d="m59.94 55.04 16.7-16.72-16.7-16.7v16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+</svg>
+
+</svg>
+<svg id="scroll-up">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.64 76.65">
+    <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+    <path d="M55.03 16.7 38.32 0 21.6 16.7h16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
 </svg>
 
 </svg>
@@ -124,15 +211,6 @@
   <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
   <path d="M9.15 14.85l8.85 -10.85" />
   <path d="M6 4l8.85 10.85" />
-</svg>
-
-
-
-</svg>
-<svg id="tabler:player-play-filled">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="currentColor" />
 </svg>
 
 
@@ -294,9 +372,26 @@ path.combo {
     stroke: none;
 }
 
-.icon-tabler-cut > path {
+.icon-tabler-cut > path,
+.icon-tabler-space > path,
+.icon-tabler-copy > path,
+.icon-tabler-clipboard > path,
+.icon-tabler-camera > path,
+.icon-tabler-volume > path,
+.icon-tabler-volume-2 > path,
+.icon-tabler-bluetooth-x > path,
+.icon-tabler-bluetooth-prev > path,
+.icon-tabler-bluetooth-next > path {
     fill: none;
     stroke: white;
+}
+
+#tabler\:cut,
+#tabler\:copy,
+#tabler\:clipboard,
+#tabler\:camera {
+   transform: scale(1.4);
+   transform-box: fill-box;
 }
 
 #tabler\:space {
@@ -304,29 +399,18 @@ path.combo {
     transform-box: fill-box;
 }
 
-.icon-tabler-space > path {
-    fill: none;
-    stroke: white;
+#tabler\:volume,
+#tabler\:volume-2 {
+    transform: scale(1.7);
+    transform-box: fill-box;
 }
 
-.icon-tabler-copy > path {
-    fill: none;
-    stroke: white;
-}
-
-.icon-tabler-clipboard > path {
-    fill: none;
-    stroke: white;
-}
-
-.icon-tabler-bluetooth-x > path {
-    fill: none;
-    stroke: white;
-}
-
-.icon-tabler-camera > path {
-    fill: none;
-    stroke: white;
+#tabler\:arrow-big-up,
+#tabler\:arrow-big-down,
+#tabler\:arrow-big-left,
+#tabler\:arrow-big-right {
+    transform: scale(1.3);
+    transform-box: fill-box;
 }
 
 /* hide tabler's default box */
@@ -347,10 +431,12 @@ path.combo {
 }
 
 .shifted.material\:left_click {
-    transform: scale(1.8) translateY(10px);
+    transform: scale(1.2) translateY(5px);
     transform-box: fill-box;
 }
 
+#material\:left_click,
+#material\:right_click,
 #material\:keyboard_tab {
     transform: scale(1.5);
     transform-box: fill-box;
@@ -358,12 +444,54 @@ path.combo {
 
 /* Custom glyphs */
 .bt-clear {
-    transform: scale(2) translate(2px, 1px);
+    transform: scale(2.4) translate(2px, 1.5px);
+}
+
+.bt-prev,
+.bt-next {
+    transform: scale(1.5) translate(2px);
 }
 
 #delete {
   transform: scale(2) rotate(180deg) translate(-1px, -1px);
   transform-box: fill-box;
+}
+
+.combo.scroll {
+    transform: scale(1.2) translate(-19px, -6px);
+}
+
+.scroll,
+.scroll-right {
+    transform: scale(1.5);
+}
+
+.scroll-down {
+    transform: scale(1.5) translateY(-2px);
+}
+
+.scroll-up {
+    transform: scale(1.5) translateY(2px);
+}
+
+.scroll-left {
+    transform: scale(1.5) translate(2px);
+}
+
+.cursor-right {
+    transform: scale(1.8);
+}
+
+.cursor-down {
+    transform: scale(1.8) translateY(-1px);
+}
+
+.cursor-up {
+    transform: scale(1.9) translateY(1px);
+}
+
+.cursor-left {
+    transform: scale(1.8) translate(1px);
 }
 
 .output-toggle {
@@ -502,8 +630,8 @@ path.combo {
 </g>
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">accent</tspan></text>
-<text x="0" y="23" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
+<text x="0" y="0" class="key tap">accent</text>
+<text x="0" y="23" class="key hold">toggle</text>
 </g>
 <g transform="translate(224, 238)" class="key keypos-30">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -524,7 +652,7 @@ path.combo {
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 <use href="#tabler:space" xlink:href="#tabler:space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:space"/>
-<text x="0" y="23" class="key hold"><tspan style="font-size: 83%">symbol</tspan></text>
+<text x="0" y="23" class="key hold">symbol</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="40" y="166" width="32" height="32" class="combo"/>
@@ -885,7 +1013,7 @@ path.combo {
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 <text x="0" y="0" class="key tap">GUI</text>
-<text x="0" y="23" class="key hold"><tspan style="font-size: 83%">sticky</tspan></text>
+<text x="0" y="23" class="key hold">sticky</text>
 </g>
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -893,7 +1021,7 @@ path.combo {
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<use href="#tabler:player-play-filled" xlink:href="#tabler:player-play-filled" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:player-play-filled"/>
+<use href="#play-pause" xlink:href="#play-pause" x="-6" y="-7" height="14" width="12.923076923076923" class="key tap glyph play-pause"/>
 </g>
 <g transform="translate(196, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -920,19 +1048,15 @@ path.combo {
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">INSERT</tspan></text>
+<text x="0" y="0" class="key tap">INSERT</text>
 </g>
 <g transform="translate(28, 192)" class="key keypos-20">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">PRV</tspan>
-</text>
+<use href="#bt-prev" xlink:href="#bt-prev" x="-7" y="-7" height="14" width="14.0" class="key tap glyph bt-prev"/>
 </g>
 <g transform="translate(84, 157)" class="key keypos-21">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">NXT</tspan>
-</text>
+<use href="#bt-next" xlink:href="#bt-next" x="-7" y="-7" height="14" width="14.0" class="key tap glyph bt-next"/>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -968,20 +1092,23 @@ path.combo {
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">SCROLL</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">LOCK</tspan>
+<tspan x="0" dy="-0.6em">SCROLL</tspan><tspan x="0" dy="1.2em">LOCK</tspan>
 </text>
 </g>
 <g transform="translate(224, 238)" class="key held keypos-30">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key held"/>
 </g>
-<g transform="translate(280, 252)" class="key keypos-31">
-<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
+<g transform="translate(280, 252)" class="key trans keypos-31">
+<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(392, 252)" class="key keypos-32">
-<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
+<g transform="translate(392, 252)" class="key trans keypos-32">
+<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(448, 238)" class="key keypos-33">
-<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
+<g transform="translate(448, 238)" class="key trans keypos-33">
+<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 </g>
 </g>
@@ -1167,51 +1294,35 @@ path.combo {
 </g>
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">SCROLL</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">LEFT</tspan>
-</text>
+<use href="#scroll-left" xlink:href="#scroll-left" x="-7" y="-7" height="14" width="13.998173515981735" class="key tap glyph scroll-left"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">SCROLL</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">UP</tspan>
-</text>
+<use href="#scroll-up" xlink:href="#scroll-up" x="-7" y="-7" height="14" width="13.998173515981735" class="key tap glyph scroll-up"/>
 </g>
 <g transform="translate(196, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">SCROLL</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">DOWN</tspan>
-</text>
+<use href="#scroll-down" xlink:href="#scroll-down" x="-7" y="-7" height="14" width="13.998173515981735" class="key tap glyph scroll-down"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">SCROLL</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">RIGHT</tspan>
-</text>
+<use href="#scroll-right" xlink:href="#scroll-right" x="-7" y="-7" height="14" width="13.998173515981735" class="key tap glyph scroll-right"/>
 </g>
 <g transform="translate(420, 108)" class="key keypos-15">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">CURSOR</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">LEFT</tspan>
-</text>
+<use href="#cursor-left" xlink:href="#cursor-left" x="-7" y="-7" height="14" width="13.998045784477945" class="key tap glyph cursor-left"/>
 </g>
 <g transform="translate(476, 100)" class="key keypos-16">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">CURSOR</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">DOWN</tspan>
-</text>
+<use href="#cursor-down" xlink:href="#cursor-down" x="-7" y="-7" height="14" width="13.998045784477945" class="key tap glyph cursor-down"/>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">CURSOR</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">UP</tspan>
-</text>
+<use href="#cursor-up" xlink:href="#cursor-up" x="-7" y="-7" height="14" width="13.998045784477945" class="key tap glyph cursor-up"/>
 </g>
 <g transform="translate(588, 101)" class="key keypos-18">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">CURSOR</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">RIGHT</tspan>
-</text>
+<use href="#cursor-right" xlink:href="#cursor-right" x="-7" y="-7" height="14" width="13.998045784477945" class="key tap glyph cursor-right"/>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -1255,13 +1366,11 @@ path.combo {
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 <use href="#material:left_click" xlink:href="#material:left_click" x="-7" y="-7" height="14" width="14.0" class="key tap glyph material:left_click"/>
 </g>
-<g transform="translate(392, 252)" class="key trans keypos-32">
-<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(392, 252)" class="key keypos-32">
+<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 </g>
-<g transform="translate(448, 238)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(448, 238)" class="key keypos-33">
+<rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 </g>
 </g>
 </g>
@@ -1605,7 +1714,7 @@ path.combo {
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key  combo-separate"/>
 <text x="0" y="0" class="key  combo-separate tap">
-<tspan x="0" dy="-0.6em" style="font-size: 71%">TMUX</tspan><tspan x="0" dy="1.2em" style="font-size: 71%">COMMAND</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 86%">TMUX</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">COMMAND</tspan>
 </text>
 </g>
 <g transform="translate(14, 99)" class="key keypos-1">
@@ -1717,7 +1826,8 @@ path.combo {
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key  combo-separate"/>
 <text x="0" y="0" class="key  combo-separate tap">
-<tspan x="0" dy="-0.6em" style="font-size: 62%">TMUX NEW</tspan><tspan x="0" dy="1.2em" style="font-size: 62%">SESSION</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 86%">TMUX</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">NEW</tspan>
+<tspan x="0" dy="1.2em" style="font-size: 86%">SESSION</tspan>
 </text>
 </g>
 <g transform="translate(14, 99)" class="key keypos-1">
@@ -1829,7 +1939,7 @@ path.combo {
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key  combo-separate"/>
 <text x="0" y="0" class="key  combo-separate tap">mouse</text>
-<text x="0" y="23" class="key  combo-separate hold"><tspan style="font-size: 83%">toggle</tspan></text>
+<text x="0" y="23" class="key  combo-separate hold">toggle</text>
 </g>
 <g transform="translate(14, 99)" class="key held keypos-1">
 <rect rx="6" ry="6" x="-11" y="-11" width="22" height="22" class="key held"/>

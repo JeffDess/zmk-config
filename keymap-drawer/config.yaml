@@ -133,9 +133,26 @@ draw_config:
         stroke: none;
     }
 
-    .icon-tabler-cut > path {
+    .icon-tabler-cut > path,
+    .icon-tabler-space > path,
+    .icon-tabler-copy > path,
+    .icon-tabler-clipboard > path,
+    .icon-tabler-camera > path,
+    .icon-tabler-volume > path,
+    .icon-tabler-volume-2 > path,
+    .icon-tabler-bluetooth-x > path,
+    .icon-tabler-bluetooth-prev > path,
+    .icon-tabler-bluetooth-next > path {
         fill: none;
         stroke: white;
+    }
+
+    #tabler\:cut,
+    #tabler\:copy,
+    #tabler\:clipboard,
+    #tabler\:camera {
+       transform: scale(1.4);
+       transform-box: fill-box;
     }
 
     #tabler\:space {
@@ -143,29 +160,18 @@ draw_config:
         transform-box: fill-box;
     }
 
-    .icon-tabler-space > path {
-        fill: none;
-        stroke: white;
+    #tabler\:volume,
+    #tabler\:volume-2 {
+        transform: scale(1.7);
+        transform-box: fill-box;
     }
 
-    .icon-tabler-copy > path {
-        fill: none;
-        stroke: white;
-    }
-
-    .icon-tabler-clipboard > path {
-        fill: none;
-        stroke: white;
-    }
-
-    .icon-tabler-bluetooth-x > path {
-        fill: none;
-        stroke: white;
-    }
-
-    .icon-tabler-camera > path {
-        fill: none;
-        stroke: white;
+    #tabler\:arrow-big-up,
+    #tabler\:arrow-big-down,
+    #tabler\:arrow-big-left,
+    #tabler\:arrow-big-right {
+        transform: scale(1.3);
+        transform-box: fill-box;
     }
 
     /* hide tabler's default box */
@@ -186,10 +192,12 @@ draw_config:
     }
 
     .shifted.material\:left_click {
-        transform: scale(1.8) translateY(10px);
+        transform: scale(1.2) translateY(5px);
         transform-box: fill-box;
     }
 
+    #material\:left_click,
+    #material\:right_click,
     #material\:keyboard_tab {
         transform: scale(1.5);
         transform-box: fill-box;
@@ -197,12 +205,54 @@ draw_config:
 
     /* Custom glyphs */
     .bt-clear {
-        transform: scale(2) translate(2px, 1px);
+        transform: scale(2.4) translate(2px, 1.5px);
+    }
+
+    .bt-prev,
+    .bt-next {
+        transform: scale(1.5) translate(2px);
     }
 
     #delete {
       transform: scale(2) rotate(180deg) translate(-1px, -1px);
       transform-box: fill-box;
+    }
+
+    .combo.scroll {
+        transform: scale(1.2) translate(-19px, -6px);
+    }
+
+    .scroll,
+    .scroll-right {
+        transform: scale(1.5);
+    }
+
+    .scroll-down {
+        transform: scale(1.5) translateY(-2px);
+    }
+
+    .scroll-up {
+        transform: scale(1.5) translateY(2px);
+    }
+
+    .scroll-left {
+        transform: scale(1.5) translate(2px);
+    }
+
+    .cursor-right {
+        transform: scale(1.8);
+    }
+
+    .cursor-down {
+        transform: scale(1.8) translateY(-1px);
+    }
+
+    .cursor-up {
+        transform: scale(1.9) translateY(1px);
+    }
+
+    .cursor-left {
+        transform: scale(1.8) translate(1px);
     }
 
     .output-toggle {
@@ -213,7 +263,7 @@ draw_config:
     }
 
   svg_extra_style: ''
-  shrink_wide_legends: 5
+  shrink_wide_legends: 6
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -225,6 +275,26 @@ draw_config:
         <path d="M16 6l4 4" />
         <path d="M20 6l-4 4" />
       </svg>
+    bt-next: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+          <g stroke="none">
+              <path d="M10.59.5h13.65v13.64H10.59Z"/>
+              <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="translate(10.59 .5) scale(.5686)"/>
+          </g>
+          \g&gt;
+          <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+          \g&gt;
+      </svg>
+    bt-prev: |
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+            <g stroke="none">
+          <path d="M24.24 14.14H10.59V.5h13.65Z"/>
+          <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="rotate(180 12.12 7.07) scale(.5686)"/>
+          </g>
+          \g&gt;
+          <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+          \g&gt;
+        </svg>
     output-toggle: |
       <svg xmlns="http://www.w3.org/2000/svg" width="30.33" height="39.21" viewBox="0 0 8.03 10.37">
           <g style="fill:#fff;fill-opacity:1">
@@ -245,6 +315,51 @@ draw_config:
               <circle cx="93.92" cy="135.22" r="13.53" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.30994;stroke-linecap:round"/>
               <path d="M110.63 113.6 93.92 96.9 77.2 113.6h16.7ZM77.2 156.84l16.72 16.71 16.71-16.7H93.92Zm38.34-4.9 16.7-16.72-16.7-16.7v16.7zM72.3 118.51l-16.7 16.71 16.71 16.72v-16.72z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
           </g>
+      </svg>
+    scroll-left: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="M16.7 21.61 0 38.32l16.71 16.72V38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-up: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="M55.03 16.7 38.32 0 21.6 16.7h16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-down: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="m21.6 59.94 16.72 16.71 16.71-16.7H38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-right: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="m59.94 55.04 16.7-16.72-16.7-16.7v16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    cursor-left: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="M11.69 24.12 0 35.82l11.7 11.7v-11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-down: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="m24.1 59.94 11.71 11.7 11.7-11.7H35.8Z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-up: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="M47.5 11.69 35.82 0l-11.7 11.69H35.8z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-right: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="m59.94 47.52 11.69-11.7-11.7-11.7v11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    play-pause: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
+          <path fill="#fff" stroke="none" d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1"/>
+          <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
       </svg>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
@@ -297,14 +412,14 @@ parse_config:
     "&math_micro": "µ",
     "&mkp RCLK": "$$material:right_click$$",
     "&mkp LCLK": "$$material:left_click$$",
-    "&mwh SCROLL_LEFT": "SCROLL LEFT",
-    "&mwh SCROLL_RIGHT": "SCROLL RIGHT",
-    "&mwh SCROLL_UP": "SCROLL UP",
-    "&mwh SCROLL_DOWN": "SCROLL DOWN",
-    "&mmv MOVE_LEFT": "CURSOR LEFT",
-    "&mmv MOVE_RIGHT": "CURSOR RIGHT",
-    "&mmv MOVE_UP": "CURSOR UP",
-    "&mmv MOVE_DOWN": "CURSOR DOWN",
+    "&mwh SCROLL_LEFT": "$$scroll-left$$",
+    "&mwh SCROLL_RIGHT": "$$scroll-right$$",
+    "&mwh SCROLL_UP": "$$scroll-up$$",
+    "&mwh SCROLL_DOWN": "$$scroll-down$$",
+    "&mmv MOVE_LEFT": "$$cursor-left$$",
+    "&mmv MOVE_RIGHT": "$$cursor-right$$",
+    "&mmv MOVE_UP": "$$cursor-up$$",
+    "&mmv MOVE_DOWN": "$$cursor-down$$",
     "&mwh_tg": "$$scroll$$",
     "&caps_word": "CAPS WORD",
     "&caps_lock": "CAPS LOCK",
@@ -312,7 +427,7 @@ parse_config:
     "&kp LC(C)": "$$tabler:copy$$",
     "&kp LC(V)": "$$tabler:clipboard$$",
     "&kp LC(LA(J))": "TMUX",
-    "&TMUX_SESSION": "TMUX  NEW SESSION",
+    "&TMUX_SESSION": "TMUX NEW SESSION",
     "&TMUX_CMD": "TMUX COMMAND",
     "&LTE": " <= ",
     "&GTE": " >= ",
@@ -477,7 +592,7 @@ parse_config:
     DEL: '$$delete$$'
     C_VOL_UP: '$$tabler:volume$$'
     C_VOL_DN: '$$tabler:volume-2$$'
-    C_PP: '$$tabler:player-play-filled$$'
+    C_PP: '$$play-pause$$'
     C_PREV: '$$tabler:player-track-prev-filled$$'
     C_NEXT: '$$tabler:player-track-next-filled$$'
     LEFT: '$$tabler:arrow-big-left$$'
@@ -485,6 +600,8 @@ parse_config:
     UP: '$$tabler:arrow-big-up$$'
     DOWN: '$$tabler:arrow-big-down$$'
     BT_CLR: '$$bt-clear$$'
+    BT_NXT: '$$bt-next$$'
+    BT_PRV: '$$bt-prev$$'
   zmk_combos:
     combo_capsword:
       draw_separate: true

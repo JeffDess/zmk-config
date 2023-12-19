@@ -118,7 +118,7 @@ layers:
   - ''
   - {t: GUI, h: sticky}
   - $$tabler:player-track-prev-filled$$
-  - $$tabler:player-play-filled$$
+  - $$play-pause$$
   - $$tabler:player-track-next-filled$$
   - ''
   - $$tabler:arrow-big-left$$
@@ -126,8 +126,8 @@ layers:
   - $$tabler:arrow-big-up$$
   - $$tabler:arrow-big-right$$
   - INSERT
-  - BT PRV
-  - BT NXT
+  - $$bt-prev$$
+  - $$bt-next$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ''
@@ -137,9 +137,9 @@ layers:
   - END
   - SCROLL LOCK
   - {type: held}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   nums:
   - F1
   - F2
@@ -175,41 +175,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - '0'
-  mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - SCROLL LEFT
-  - SCROLL UP
-  - SCROLL DOWN
-  - SCROLL RIGHT
-  - CURSOR LEFT
-  - CURSOR DOWN
-  - CURSOR UP
-  - CURSOR RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$scroll$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$material:right_click$$
-  - $$material:left_click$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
+    $$cursor-right$$, '', '', '', '', $$scroll$$, '', '', '', '', '', '', '$$material:right_click$$', '$$material:left_click$$', '', '']
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
@@ -246,7 +213,7 @@ combos:
   l: [qwerty]
   draw_separate: true
 - p: [12, 11, 10]
-  k: TMUX  NEW SESSION
+  k: TMUX NEW SESSION
   l: [qwerty]
   draw_separate: true
 - p: [3, 0]
