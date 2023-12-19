@@ -1,0 +1,635 @@
+draw_config:
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 32.0
+  combo_h: 32.0
+  key_rx: 6.0
+  key_ry: 6.0
+  n_columns: 1
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
+  inner_pad_w: 3.0
+  inner_pad_h: 3.0
+  outer_pad_w: 30.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: false
+  small_pad: 2.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  draw_key_sides: false
+  key_side_pars:
+    rel_x: 0
+    rel_y: 4
+    rel_w: 12
+    rel_h: 12
+    rx: 4
+    ry: 4
+  svg_style: |
+    /* inherit to force styles through use tags */
+    svg path {
+        fill: inherit;
+    }
+
+    /* font and background color specifications */
+    svg.keymap {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 14px;
+        font-weight: bold;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: white;
+    }
+
+    /* default key styling */
+    rect.key {
+        fill: #1c2128;
+        stroke: #adbac7;
+        stroke-width: 1;
+    }
+
+    /* default key side styling, only used is draw_key_sides is set */
+    rect.side {
+        filter: brightness(90%);
+    }
+
+    /* color accent for combo boxes */
+    rect.combo, rect.combo-separate {
+        fill: #666;
+        stroke: #aaa;
+        stroke-width: 2;
+    }
+
+    /* color accent for held keys */
+    rect.held, rect.combo.held {
+        fill: #FF9E3B;
+    }
+
+    /* color accent for ghost (optional) keys */
+    rect.ghost, rect.combo.ghost {
+        stroke-dasharray: 4, 4;
+        stroke-width: 2;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+
+    /* styling for layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        fill: #adbac7;
+        text-transform: uppercase;
+        font-size: 28px;
+        stroke: #777;
+        stroke-width: 0px;
+        paint-order: stroke;
+    }
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        fill: white;
+    }
+
+    text.hold {
+        text-anchor: middle;
+        dominant-baseline: auto;
+    }
+
+    text.shifted {
+        text-anchor: middle;
+        dominant-baseline: hanging;
+    }
+
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans {
+        fill: #7b7e81;
+    }
+
+    /* styling for combo dendrons */
+    path.combo {
+        stroke-width: 1;
+        stroke: gray;
+        fill: none;
+    }
+
+    /* Start Tabler Icons Cleanup */
+    /* cannot use height/width with glyphs */
+
+    .icon-tabler > path {
+        fill: white;
+        stroke: none;
+    }
+
+    .icon-tabler-cut > path,
+    .icon-tabler-space > path,
+    .icon-tabler-copy > path,
+    .icon-tabler-clipboard > path,
+    .icon-tabler-camera > path,
+    .icon-tabler-volume > path,
+    .icon-tabler-volume-2 > path,
+    .icon-tabler-bluetooth-x > path,
+    .icon-tabler-bluetooth-prev > path,
+    .icon-tabler-bluetooth-next > path {
+        fill: none;
+        stroke: white;
+    }
+
+    #tabler\:cut,
+    #tabler\:copy,
+    #tabler\:clipboard,
+    #tabler\:camera {
+       transform: scale(1.4);
+       transform-box: fill-box;
+    }
+
+    #tabler\:space {
+        transform: scale(1.8);
+        transform-box: fill-box;
+    }
+
+    #tabler\:volume,
+    #tabler\:volume-2 {
+        transform: scale(1.7);
+        transform-box: fill-box;
+    }
+
+    #tabler\:arrow-big-up,
+    #tabler\:arrow-big-down,
+    #tabler\:arrow-big-left,
+    #tabler\:arrow-big-right {
+        transform: scale(1.3);
+        transform-box: fill-box;
+    }
+
+    /* hide tabler's default box */
+    .icon-tabler > path[stroke="none"][fill="none"] {
+        visibility: hidden;
+    }
+    /* End Tabler Icons Cleanup */
+
+    /* Material glyphs */
+    #material\:keyboard_return{
+      transform: scale(2);
+      transform-box: fill-box;
+    }
+
+    #material\:backspace{
+      transform: scale(2) translateY(1px);
+      transform-box: fill-box;
+    }
+
+    .shifted.material\:left_click {
+        transform: scale(1.2) translateY(5px);
+        transform-box: fill-box;
+    }
+
+    #material\:left_click,
+    #material\:right_click,
+    #material\:keyboard_tab {
+        transform: scale(1.5);
+        transform-box: fill-box;
+    }
+
+    /* Custom glyphs */
+    .bt-clear {
+        transform: scale(2.4) translate(2px, 1.5px);
+    }
+
+    .bt-prev,
+    .bt-next {
+        transform: scale(1.5) translate(2px);
+    }
+
+    #delete {
+      transform: scale(2) rotate(180deg) translate(-1px, -1px);
+      transform-box: fill-box;
+    }
+
+    .combo.scroll {
+        transform: scale(1.2) translate(-19px, -6px);
+    }
+
+    .scroll,
+    .scroll-right {
+        transform: scale(1.5);
+    }
+
+    .scroll-down {
+        transform: scale(1.5) translateY(-2px);
+    }
+
+    .scroll-up {
+        transform: scale(1.5) translateY(2px);
+    }
+
+    .scroll-left {
+        transform: scale(1.5) translate(2px);
+    }
+
+    .cursor-right {
+        transform: scale(1.8);
+    }
+
+    .cursor-down {
+        transform: scale(1.8) translateY(-1px);
+    }
+
+    .cursor-up {
+        transform: scale(1.9) translateY(1px);
+    }
+
+    .cursor-left {
+        transform: scale(1.8) translate(1px);
+    }
+
+    .output-toggle {
+        transform: scale(2.5);
+        fill: none;
+        stroke: white;
+        stroke-width: 4px;
+    }
+
+  svg_extra_style: ''
+  shrink_wide_legends: 6
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs:
+    bt-clear: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bluetooth-x" width="32" height="32" viewBox="0 0 32 32" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M7 8l10 8l-5 4v-16l1 .802m0 6.396l-6 4.802" />
+        <path d="M16 6l4 4" />
+        <path d="M20 6l-4 4" />
+      </svg>
+    bt-next: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+          <g stroke="none">
+              <path d="M10.59.5h13.65v13.64H10.59Z"/>
+              <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="translate(10.59 .5) scale(.5686)"/>
+          </g>
+          \g&gt;
+          <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+          \g&gt;
+      </svg>
+    bt-prev: |
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-bluetooth-next">
+            <g stroke="none">
+          <path d="M24.24 14.14H10.59V.5h13.65Z"/>
+          <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="rotate(180 12.12 7.07) scale(.5686)"/>
+          </g>
+          \g&gt;
+          <path d="m1.69 7.1 12.45 9.96-6.23 4.98V2.1l1.25 1m0 7.97-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+          \g&gt;
+        </svg>
+    output-toggle: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="30.33" height="39.21" viewBox="0 0 8.03 10.37">
+          <g style="fill:#fff;fill-opacity:1">
+              <g style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none">
+                  <path d="M106.89 150.28a.53.53 0 1 0 1.06 0 .53.53 0 1 0-1.06 0" style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none" transform="translate(-100.98 -140.44)"/>
+                  <path d="M107.42 149.75v-3.04m-1.32 1.19v.8l1.32.79m0-.39 1.32-.54v-.66" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-dasharray:none;stroke-opacity:1" transform="translate(-100.98 -140.44)"/>
+                  <path d="M108.48 147.9h.53v-.53h-.53zm-2.63-.26a.26.26 0 1 0 .53 0 .26.26 0 1 0-.53 0m1.05-.93h1.05l-.53-.66Z" style="fill:#fff;fill-opacity:1;stroke-width:.365;stroke-dasharray:none" transform="translate(-100.98 -140.44)"/>
+              </g>
+              <path d="m98.5 149.47 2.65 2.11-1.32 1.06v-4.23l1.32 1.06-2.64 2.11" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-dasharray:none;stroke-opacity:1" transform="translate(-98.4 -148.03)"/>
+              <path d="m99.58 156.1 4.97-4.97" style="fill:none;fill-opacity:1;stroke:#fff;stroke-width:.365;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" transform="translate(-98.4 -148.03)"/>
+          </g>
+      </svg>
+    delete: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M360-200q-22 0-40-11.5T289-241L120-480l169-239q13-18 31-29.5t40-11.5h420q24.75 0 42.375 17.625T840-700v440q0 24.75-17.625 42.375T780-200H360Zm420-60v-440 440Zm-431 0h431v-440H349L195-480l154 220Zm99-66 112-112 112 112 43-43-113-111 111-111-43-43-110 112-112-112-43 43 113 111-113 111 43 43Z"/></svg>
+    scroll: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.74" height="289.74" viewBox="0 0 76.66 76.66">
+          <g transform="translate(-55.59 -96.9)">
+              <circle cx="93.92" cy="135.22" r="13.53" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.30994;stroke-linecap:round"/>
+              <path d="M110.63 113.6 93.92 96.9 77.2 113.6h16.7ZM77.2 156.84l16.72 16.71 16.71-16.7H93.92Zm38.34-4.9 16.7-16.72-16.7-16.7v16.7zM72.3 118.51l-16.7 16.71 16.71 16.72v-16.72z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+          </g>
+      </svg>
+    scroll-left: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="M16.7 21.61 0 38.32l16.71 16.72V38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-up: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="M55.03 16.7 38.32 0 21.6 16.7h16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-down: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="m21.6 59.94 16.72 16.71 16.71-16.7H38.32Z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    scroll-right: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
+          <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
+          <path d="m59.94 55.04 16.7-16.72-16.7-16.7v16.7z" style="color:#000;fill:#fff;stroke-linecap:round;-inkscape-stroke:none"/>
+      </svg>
+    cursor-left: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="M11.69 24.12 0 35.82l11.7 11.7v-11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-down: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="m24.1 59.94 11.71 11.7 11.7-11.7H35.8Z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-up: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="M47.5 11.69 35.82 0l-11.7 11.69H35.8z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    cursor-right: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
+          <path d="m59.94 47.52 11.69-11.7-11.7-11.7v11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
+          <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    play-pause: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
+          <path fill="#fff" stroke="none" d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1"/>
+          <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
+      </svg>
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
+parse_config:
+  preprocess: true
+  skip_binding_parsing: false
+  raw_binding_map: {
+    "&TREM E": "Ë",
+    "&TREM I": "Ï",
+    "&TREM O": "Ö",
+    "&TREM U": "Ü",
+    "&A_GR": "À",
+    "&A_CI": "Â",
+    # "&hrme SL 0": "È",
+    # "&hrmi SL 0": "Î",
+    "&E_GR": "È",
+    "&CIRC E": "Ê",
+    "&E_CU": "É",
+    "&I_CI": "Î",
+    "&O_CI": "Ô",
+    "&U_CI": "Û",
+    "&U_GR": "Ù",
+    "&CEDIL": "Ç",
+    "&KPD ACC_TR": "¨",
+    "&KPD ACC_GR": "`",
+    "&KPD ACC_CI": "^",
+    "&kp QUEST": "?",
+    "&kp RA(COMMA)": "<",
+    "&kp RA(DOT)": ">",
+    "&GRA": "`",
+    "&CAR": "^",
+    "&kp LBRAC": "{",
+    "&kp RBRAC": "}",
+    "&kp LBKET": "[",
+    "&kp RBKET": "]",
+    "&kp PIP": "|",
+    "&laquo": "«",
+    "&raquo": "»",
+    "&math_1_4": "¼",
+    "&math_1_2": "½",
+    "&math_3_4": "¾",
+    "&math_pm": "±",
+    "&kp DEG": "°",
+    "&kp RA(RBKT)": "~",
+    "&kp SLSH": "/",
+    "&math_micro": "µ",
+    "&mkp RCLK": "$$material:right_click$$",
+    "&mkp LCLK": "$$material:left_click$$",
+    "&mwh SCROLL_LEFT": "$$scroll-left$$",
+    "&mwh SCROLL_RIGHT": "$$scroll-right$$",
+    "&mwh SCROLL_UP": "$$scroll-up$$",
+    "&mwh SCROLL_DOWN": "$$scroll-down$$",
+    "&mmv MOVE_LEFT": "$$cursor-left$$",
+    "&mmv MOVE_RIGHT": "$$cursor-right$$",
+    "&mmv MOVE_UP": "$$cursor-up$$",
+    "&mmv MOVE_DOWN": "$$cursor-down$$",
+    "&mwh_tg": "$$scroll$$",
+    "&caps_word": "CAPS WORD",
+    "&caps_lock": "CAPS LOCK",
+    "&kp LC(X)": "$$tabler:cut$$",
+    "&kp LC(C)": "$$tabler:copy$$",
+    "&kp LC(V)": "$$tabler:clipboard$$",
+    "&kp LC(LA(J))": "TMUX",
+    "&TMUX_SESSION": "TMUX NEW SESSION",
+    "&TMUX_CMD": "TMUX COMMAND",
+    "&LTE": " <= ",
+    "&GTE": " >= ",
+    "&ARROW": " -> ",
+    "&FAT_ARROW": " => ",
+    "&out OUT_TOG": '$$output-toggle$$'
+    }
+  sticky_label: sticky
+  toggle_label: toggle
+  trans_legend:
+    t: ▽
+    type: trans
+  mark_alternate_layer_activators: true
+  qmk_remove_keycode_prefix:
+  - KC_
+  qmk_keycode_map:
+    XXXXXXX: ''
+    'NO': ''
+    MINUS: '-'
+    MINS: '-'
+    EQUAL: '='
+    EQL: '='
+    LEFT_BRACKET: '['
+    LBRC: '['
+    RIGHT_BRACKET: ']'
+    BACKSLASH: \
+    BSLS: \
+    NONUS_HASH: '#'
+    NUHS: '#'
+    SEMICOLON: ;
+    SCLN: ;
+    QUOTE: ''''
+    QUOT: ''''
+    GRAVE: '`'
+    GRV: '`'
+    COMMA: ','
+    COMM: ','
+    DOT: .
+    SLASH: /
+    SLSH: /
+    TILDE: '~'
+    TILD: '~'
+    EXCLAIM: '!'
+    EXLM: '!'
+    AT: '@'
+    HASH: '#'
+    DOLLAR: $
+    DLR: $
+    PERCENT: '%'
+    PERC: '%'
+    CIRCUMFLEX: ^
+    CIRC: ^
+    AMPERSAND: '&'
+    AMPR: '&'
+    ASTERISK: '*'
+    ASTR: '*'
+    LEFT_PAREN: (
+    LPRN: (
+    RIGHT_PAREN: )
+    RPRN: )
+    UNDERSCORE: _
+    UNDS: _
+    PLUS: +
+    LEFT_CURLY_BRACE: '{'
+    LCBR: '{'
+    RIGHT_CURLY_BRACE: '}'
+    RCBR: '}'
+    PIPE: '|'
+    COLON: ':'
+    COLN: ':'
+    DOUBLE_QUOTE: '"'
+    DQUO: '"'
+    DQT: '"'
+    LEFT_ANGLE_BRACKET: <
+    LABK: <
+    LT: <
+    RIGHT_ANGLE_BRACKET: '>'
+    RABK: '>'
+    GT: '>'
+    QUESTION: '?'
+    QUES: '?'
+  zmk_remove_keycode_prefix: []
+  zmk_keycode_map:
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    BSPC: '$$material:backspace$$'
+    SPACE: '$$tabler:space$$'
+    TAB: "$$material:keyboard_tab$$"
+    PRINTSCREEN: "$$tabler:camera$$"
+    RET: "$$material:keyboard_return$$"
+    SLCK: 'SCROLL LOCK'
+    INS: 'INSERT'
+    PG_UP: 'PAGE UP'
+    PG_DN: 'PAGE DOWN'
+    LALT: 'ALT'
+    LGUI: 'GUI'
+    LSHFT: 'SHIFT'
+    LCTRL: 'CTRL'
+    CAPSLOCK: 'CAPS LOCK'
+    DEL: '$$delete$$'
+    C_VOL_UP: '$$tabler:volume$$'
+    C_VOL_DN: '$$tabler:volume-2$$'
+    C_PP: '$$play-pause$$'
+    C_PREV: '$$tabler:player-track-prev-filled$$'
+    C_NEXT: '$$tabler:player-track-next-filled$$'
+    LEFT: '$$tabler:arrow-big-left$$'
+    RIGHT: '$$tabler:arrow-big-right$$'
+    UP: '$$tabler:arrow-big-up$$'
+    DOWN: '$$tabler:arrow-big-down$$'
+    BT_CLR: '$$bt-clear$$'
+    BT_NXT: '$$bt-next$$'
+    BT_PRV: '$$bt-prev$$'
+  zmk_combos:
+    combo_capsword:
+      draw_separate: true
+    combo_capslock:
+      draw_separate: true
+    combo_tmux:
+      draw_separate: true
+    combo_tmux_session:
+      draw_separate: true
+    combo_tmux_cmd:
+      draw_separate: true
+    combo_toggle_mouse:
+      draw_separate: true
+    combo_tab:
+      align: "bottom"
+      offset: 0.3
+    combo_tab_34:
+      align: "bottom"
+      offset: 0.3
+    combo_rightclick:
+      align: "top"
+      offset: -0.7
+      dendron: false
+    combo_printscreen:
+      align: "top"
+      offset: -0.7
+      dendron: false
+    combo_cut:
+      align: "bottom"
+      offset: -0.7
+      dendron: false

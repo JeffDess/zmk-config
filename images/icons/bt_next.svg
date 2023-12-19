@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.36" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-track-next-filled">
+    <g stroke="none">
+        <path d="M10.72.52h13.64v13.65H10.72Z"/>
+        <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="translate(10.72 .52) scale(.5686)"/>
+    </g>
+    \g&gt;
+    <path stroke="none" d="M0 0h24v24H0Z"/>
+    <path d="m1.81 7.12 12.46 9.96-6.23 4.98V2.14l1.24 1m0 7.96-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+    \g&gt;
+</svg>
