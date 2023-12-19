@@ -32,155 +32,32 @@ simultaneously with Github Actions.
 ![Keymap drawing of all layers and combos](images/keymaps/urchin_keymap.svg)
 
 **Legend**
-<table>
-<thead>
-  <tr>
-    <th align="center" bgcolor="#1c2128">Icon</th>
-    <th>Label</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td align="center" bgcolor="#1c2128" bgcolor="black">
-    <img width="24px" alt="Mouse Left Click" src="images/icons/click_left.svg" style="max-width: 100%;">
-  </td>
-  <td>Mouse left click</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Mouse Right Click" src="images/icons/click_right.svg" style="max-width: 100%;">
-  </td>
-  <td>Mouse right click</td>
-</tr>
-<tr>
-   <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Mouse Scroll Toggle" src="images/icons/scroll.svg" style="max-width: 100%;">
-   </td>
-   <td>Toggle mouse scroll (trackball/scrollball)</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Mouse Scroll" src="images/icons/scroll_right.svg" style="max-width: 100%;">
-  </td>
-  <td>Directional mouse scroll</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Mouse Cursor Move" src="images/icons/cursor_right.svg" style="max-width: 100%;">
-  </td>
-  <td>Move mouse pointer</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Space" src="images/icons/space.svg" style="max-width: 100%;">
-  </td>
-  <td>Space</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Backspace" src="images/icons/backspace.svg" style="max-width: 100%;">
-  </td>
-  <td>Backspace</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Delete" src="images/icons/delete.svg" style="max-width: 100%;">
-  </td>
-  <td>Delete</td>
-</tr>
-<tr>
- <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Tab" src="images/icons/tab.svg" style="max-width: 100%;">
-   </td>
- <td>Tab</td>
-</tr>
-<tr>
- <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Enter" src="images/icons/return.svg" style="max-width: 100%;">
-   </td>
- <td>Return / Enter</td>
-</tr>
-<tr>
- <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Printscreen" src="images/icons/printscreen.svg" style="max-width: 100%;">
-   </td>
- <td>Printscreen</td>
-</tr>
-<tr>
- <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Cut" src="images/icons/cut.svg" style="max-width: 100%;">
-   </td>
- <td>Cut</td>
-</tr>
-<tr>
- <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Copy" src="images/icons/copy.svg" style="max-width: 100%;">
-  </td>
-  <td>Copy</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Paste" src="images/icons/paste.svg" style="max-width: 100%;">
-  </td>
-  <td>Paste</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Media Play/Pause" src="images/icons/play_pause.svg" style="max-width: 100%;">
-  </td>
-  <td>Play / Pause</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Media Previous Track" src="images/icons/media_prev.svg" style="max-width: 100%;">
-  </td>
-  <td>Previous track</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Media Next Track" src="images/icons/media_next.svg" style="max-width: 100%;">
-  </td>
- <td>Next track</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Media Volume Up" src="images/icons/vol_up.svg" style="max-width: 100%;">
-  </td>
-  <td>Volume up</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Media Volume Down" src="images/icons/vol_down.svg" style="max-width: 100%;">
-  </td>
-  <td>Volume down</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Bluetooth Clear" src="images/icons/bt_clear.svg" style="max-width: 100%;">
-  </td>
-  <td>Clear Bluetooth profile</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Bluetooth Previous" src="images/icons/bt_prev.svg" style="max-width: 100%;">
-  </td>
-  <td>Previous Bluetooth profile</td>
-</tr>
-<tr>
-  <td align="center" bgcolor="#1c2128">
-    <img width="24px" alt="Bluetooth Next" src="images/icons/bt_next.svg" style="max-width: 100%;">
-  </td>
-  <td>Next Bluetooth profile</td>
-</tr>
-<tr>
-   <td align="center" bgcolor="#1c2128">
-     <img width="24px" alt="Bluetooth Output Toggle" src="images/icons/out_tog.svg" style="max-width: 100%;">
-  </td>
-  <td>Toggle Bluetooth/USB output</td>
-</tr>
-</tbody>
-</table>
 
+| Icon                    | Label                       |
+|:-----------------------:|-----------------------------|
+| <img width="24px" alt="Mouse Left Click" src="images/icons/click_left.svg" />        | Mouse left click            |
+| <img width="24px" alt="Mouse Right Click" src="images/icons/click_right.svg" />       | Mouse right click           |
+| <img width="24px" alt="Mouse Scroll Toggle" src="images/icons/scroll.svg" />     | Toggle mouse scroll (trackball/scrollball) |
+| <img width="24px" alt="Mouse Scroll" src="images/icons/scroll_right.svg" />            | Directional mouse scroll    |
+| <img width="24px" alt="Mouse Cursor Move" src="images/icons/cursor_right.svg" />       | Move mouse pointer          |
+| <img width="24px" alt="Space" src="images/icons/space.svg" />                   | Space                       |
+| <img width="24px" alt="Backspace" src="images/icons/backspace.svg" />               | Backspace                   |
+| <img width="24px" alt="Delete" src="images/icons/delete.svg" />                  | Delete                      |
+| <img width="24px" alt="Tab" src="images/icons/tab.svg" />                     | Tab                         |
+| <img width="24px" alt="Enter" src="images/icons/return.svg" />                   | Return / Enter              |
+| <img width="24px" alt="Printscreen" src="images/icons/printscreen.svg" />             | Printscreen                 |
+| <img width="24px" alt="Cut" src="images/icons/cut.svg" />                     | Cut                         |
+| <img width="24px" alt="Copy" src="images/icons/copy.svg" />                    | Copy                        |
+| <img width="24px" alt="Paste" src="images/icons/paste.svg" />                   | Paste                       |
+| <img width="24px" alt="Media Play/Pause" src="images/icons/play_pause.svg" />        | Play / Pause                |
+| <img width="24px" alt="Media Previous Track" src="images/icons/media_prev.svg" />    | Previous track              |
+| <img width="24px" alt="Media Next Track" src="images/icons/media_next.svg" />        | Next track                  |
+| <img width="24px" alt="Media Volume Up" src="images/icons/vol_up.svg" />         | Volume up                   |
+| <img width="24px" alt="Media Volume Down" src="images/icons/vol_down.svg" />       | Volume down                 |
+| <img width="24px" alt="Bluetooth Clear" src="images/icons/bt_clear.svg" />         | Clear Bluetooth profile     |
+| <img width="24px" alt="Bluetooth Previous" src="images/icons/bt_prev.svg" />      | Previous Bluetooth profile  |
+| <img width="24px" alt="Bluetooth Next" src="images/icons/bt_next.svg" />          | Next Bluetooth profile      |
+| <img width="24px" alt="Bluetooth Output Toggle" src="images/icons/out_tog.svg" /> | Toggle Bluetooth/USB output |
 
 For more details, head to the [urchin.keymap](config/urchin.keymap) or
 [corne.keymap](config/corne.keymap) source files.
