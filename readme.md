@@ -33,7 +33,7 @@ simultaneously with Github Actions.
 
 **Legend**
 
-| Icon                    | Label                       |
+| Icon                    | Description                 |
 |:-----------------------:|-----------------------------|
 | ![Mouse Left Click](images/icons/click_left.svg)        | Mouse left click            |
 | ![Mouse Right Click](images/icons/click_right.svg)       | Mouse right click           |
