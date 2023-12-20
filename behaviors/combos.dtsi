@@ -65,7 +65,7 @@ ZMK_COMBO(fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
 ZMK_COMBO(arrow, &ARROW, LB1 LB2, SYM)
 
 // Markdown Code Block Fence - Right index & middle fingers on top row, active on symbol layer
-ZMK_COMBO(code_block, &MDCB, RT1 RT2, SYM)
+ZMK_COMBO(code_block, &CODE_BLOCK, RT1 RT2, SYM)
 
 // Lesser than or Equal - active on symbol layer
 ZMK_COMBO(lte, &LTE, RB1 RB2, SYM)
