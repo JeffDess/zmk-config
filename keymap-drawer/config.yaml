@@ -433,6 +433,7 @@ parse_config:
     "&GTE": " >= ",
     "&ARROW": " -> ",
     "&FAT_ARROW": " => ",
+    "&MDCB": "```",
     "&out OUT_TOG": '$$output-toggle$$'
     }
   sticky_label: sticky

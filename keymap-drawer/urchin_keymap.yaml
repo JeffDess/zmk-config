@@ -226,6 +226,9 @@ combos:
 - p: [23, 22]
   k: ' -> '
   l: [symbol]
+- p: [6, 7]
+  k: '```'
+  l: [symbol]
 - p: [26, 27]
   k: ' <= '
   l: [symbol]
