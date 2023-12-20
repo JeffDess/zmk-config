@@ -32,11 +32,6 @@ simultaneously with Github Actions.
 ![Keymap drawing of all layers and combos](images/keymaps/urchin_keymap.svg)
 
 **Legend**
-<style>
-  td:first-child { background: #1c2128; line-height: 0.5;}
-  td>img { width: 24px; }
-  td>svg>path { stroke: white }
-</style>
 
 | Icon                    | Label                       |
 |:-----------------------:|-----------------------------|
