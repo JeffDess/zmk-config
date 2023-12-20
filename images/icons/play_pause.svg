@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewbox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled" style="background-color: #1c2128">
-    <path fill="#fff" stroke="none" d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1"/>
-    <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
+    <path d="M1.47 0H7c.81 0 1.47.65 1.47 1.47V7c0 .81-.66 1.47-1.47 1.47H1.47C.65 8.47 0 7.8 0 7V1.47C0 .65.65 0 1.47 0Z" style="fill:#1c2128;fill-opacity:1;stroke:#adbac7;stroke-width:.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" transform="matrix(3.20687 0 0 3.20682 .42 .42)"/>
+    <g fill="#fff" stroke="none">
+        <path d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1" transform="matrix(.64 0 0 .64 5.63 6.32)"/>
+        <path d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none" transform="matrix(.64 0 0 .64 5.63 6.32)"/>
+    </g>
 </svg>

@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24.36" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-track-next-filled" style="background-color: #1c2128">
-    <g stroke="none">
-        <path d="M24.36 14.17H10.72V.52h13.64Z"/>
-        <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="rotate(180 12.18 7.08) scale(.5686)"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-track-next-filled">
     \g&gt;
-    <path stroke="none" d="M0 0h24v24H0Z"/>
-    <path d="m1.81 7.12 12.46 9.96-6.23 4.98V2.14l1.24 1m0 7.96-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1"/>
+    <path d="M1.47 0H7c.81 0 1.47.65 1.47 1.47V7c0 .81-.66 1.47-1.47 1.47H1.47C.65 8.47 0 7.8 0 7V1.47C0 .65.65 0 1.47 0Z" style="fill:#1c2128;fill-opacity:1;stroke:#adbac7;stroke-width:.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" transform="matrix(3.20687 0 0 3.20682 .45 .45)"/>
+    <g stroke="none">
+        <path d="M23.89 15.78H12.84V4.72H23.9z"/>
+        <path fill="currentColor" d="M2 5v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 2 5Zm11 0v14a1 1 0 0 0 1.66.75l8-7a1 1 0 0 0 0-1.5l-8-7A1 1 0 0 0 13 5Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-opacity:1" transform="rotate(180 11.95 7.88) scale(.4606)"/>
+    </g>
+    <path stroke="none" d="M4.16 4.3H23.6v19.44H4.16Z"/>
+    <path d="m1.81 7.12 12.46 9.96-6.23 4.98V2.14l1.24 1m0 7.96-7.47 5.98" style="stroke:#fff;stroke-width:2.49081;stroke-opacity:1" transform="matrix(.81 0 0 .81 4.16 4.3)"/>
     \g&gt;
 </svg>

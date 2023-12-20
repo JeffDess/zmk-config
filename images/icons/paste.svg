@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-clipboard" style="background-color: #1c2128">
-    <style>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg2" width="28" height="28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-clipboard" version="1.1">
+    <style id="style1">
         path{stroke:#fff}
     </style>
-    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-    <path d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/>
+    <path id="rect1" d="M1.47 0H7c.81 0 1.47.65 1.47 1.47V7c0 .81-.66 1.47-1.47 1.47H1.47C.65 8.47 0 7.8 0 7V1.47C0 .65.65 0 1.47 0Z" style="fill:#1c2128;fill-opacity:1;stroke:#adbac7;stroke-width:.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" transform="matrix(3.20687 0 0 3.20682 .42 .42)"/>
+    <g id="g2" transform="translate(0 2)">
+        <path id="path1" d="M11 5H9a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+        <path id="path2" d="M11 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/>
+    </g>
 </svg>

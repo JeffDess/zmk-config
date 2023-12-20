@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960" style="background-color: #1c2128">
-    <path fill="#fff" d="M360-200q-20 0-37.5-9T294-234L120-480l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H360Zm400-80v-400 400Zm-400 0h400v-400H360L218-480l142 200Zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 -960 1120 1120">
+    <path d="M1.47 0H7c.81 0 1.47.65 1.47 1.47V7c0 .81-.66 1.47-1.47 1.47H1.47C.65 8.47 0 7.8 0 7V1.47C0 .65.65 0 1.47 0Z" style="fill:#1c2128;fill-opacity:1;stroke:#adbac7;stroke-width:.264583;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" transform="matrix(128.27481 0 0 128.27293 16.97 -943.03)"/>
+    <path fill="#fff" d="M440-120q-20 0-37.5-9T374-154L200-400l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T920-600v400q0 33-23.5 56.5T840-120zm400-80v-400zm-400 0h400v-400H440L298-400zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104z"/>
 </svg>
