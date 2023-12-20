@@ -20,10 +20,6 @@ ZMK_BEHAVIOR(ARROW, macro, bindings =
     <&kp SPACE>;
 )
 
-// Markdown code block fence: '```'
-ZMK_BEHAVIOR(CODE_BLOCK, macro, bindings =
-    <&GRA &GRA &GRA>;
-)
 // Greater than or equal to: ' >= '
 ZMK_BEHAVIOR(GTE, macro, bindings =
     <&kp SPACE>,
