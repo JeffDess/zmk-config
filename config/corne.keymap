@@ -8,10 +8,9 @@
 #define HOST_OS LINUX // Needed for unicode international_chars
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/french.dtsi"
-#include "../zmk-nodefree-config/symbols/math.dtsi"
-#include "../zmk-nodefree-config/symbols/typography.dtsi"
-
+#include "../chars/french.dtsi"
+#include "../chars/math.dtsi"
+#include "../chars/typography.dtsi"
 #include "../layouts/canadian-multilingual-standard.dtsi"
 #include "../behaviors/combos_36.dtsi"
 #include "../behaviors/hold-tap.dtsi"
