@@ -34,7 +34,7 @@ layers:
   - {t: '$$material:keyboard_return$$', h: nav}
   - {t: ESC, h: nums, s: '$$material:left_click$$'}
   - {t: '$$material:backspace$$', s: $$delete$$}
-  - {t: '$$tabler:space$$', h: symbol}
+  - {t: '$$tabler:space$$', h: symbol, s: $$nbsp$$}
   accent:
   - ''
   - ''

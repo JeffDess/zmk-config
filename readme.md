@@ -41,6 +41,7 @@ simultaneously with Github Actions.
 | ![Mouse Scroll](images/icons/scroll_right.svg)            | Directional mouse scroll    |
 | ![Mouse Cursor Move](images/icons/cursor_right.svg)       | Move mouse pointer          |
 | ![Space](images/icons/space.svg)                   | Space                       |
+| ![Non-Breaking Space](images/icons/space_nb.svg)      | Non-Breaking Space          |
 | ![Backspace](images/icons/backspace.svg)               | Backspace                   |
 | ![Delete](images/icons/delete.svg)                  | Delete                      |
 | ![Tab](images/icons/tab.svg)                     | Tab                         |

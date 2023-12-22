@@ -80,6 +80,13 @@
 <svg id="material:right_click">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m492-240 19-63q64-11 106.5-60.5T660-480q0-75-52.5-127.5T480-660q-68 0-117 42.5T303-511l-63 20q5-97 74-163t166-66q100 0 170 70t70 170q0 97-66 166t-162 74ZM139-60l-79-79 171-171-151-50 400-120L360-80l-50-151L139-60Z"/></svg>
 </svg>
+<svg id="nbsp">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 1120 1120">
+  <path fill="#fff" d="M240.21-188.49v-240h80v160h480v-160h80v240z"/>
+  <path d="M571.53-325.45h-60.52l-82.4-193.05h-2.36q4.56 22.06 4.56 47.4v145.65h-45.94v-266.51h60.88l81.67 191.04h2q-3.46-19.14-3.46-45.57v-145.47h45.57zm27.04-266.51h67.99q41.56 0 60.52 16.22 18.96 16.05 18.96 51.23 0 23.15-10.03 38.83-10.02 15.49-27.34 18.77v1.82q22.6 5.66 32.63 21.15 10.03 15.5 10.03 41.2 0 36.27-19.5 56.87-19.33 20.42-53.06 20.42h-80.2zm46.66 107.19h22.79q15.68 0 22.06-8.39 6.38-8.38 6.38-24.97 0-16.6-7.3-23.7-7.29-7.3-22.96-7.3h-20.97zm0 41.38v74.55h24.98q15.5 0 22.96-9.47 7.66-9.48 7.66-29.35 0-35.73-31.35-35.73z" aria-label="NB" style="fill:#fff;stroke-width:42.72;stroke-linejoin:round" transform="translate(.21 11.51)"/>
+</svg>
+
+</svg>
 <svg id="output-toggle">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.03 10.37">
     <g style="fill:#fff;fill-opacity:1">
@@ -457,6 +464,11 @@ path.combo {
   transform-box: fill-box;
 }
 
+#nbsp {
+    transform: scale(2.5);
+    transform-box: fill-box;
+}
+
 .combo.scroll {
     transform: scale(1.2) translate(-19px, -6px);
 }
@@ -653,6 +665,7 @@ path.combo {
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 <use href="#tabler:space" xlink:href="#tabler:space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:space"/>
 <text x="0" y="23" class="key hold">symbol</text>
+<use href="#nbsp" xlink:href="#nbsp" x="-5" y="-23" height="10" width="10.0" class="key shifted glyph nbsp"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="40" y="166" width="32" height="32" class="combo"/>
