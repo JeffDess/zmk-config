@@ -12,6 +12,7 @@
 #define NAV 3
 #define NUM 4
 #define MOU 5
+#define GAM 6
 
 // Modifier keys
 #define GL LGUI
@@ -29,4 +30,4 @@
 #define MAC_OS 2
 
 // Apps
-#define TMUX LC(LA(J))  // Tmux -> Ctrl + Alt + J
+#define TMUX LC(LA(J)) // Tmux -> Ctrl + Alt + J
