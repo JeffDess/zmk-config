@@ -36,6 +36,7 @@ simultaneously with Github Actions.
 | Icon                    | Description                 |
 |:-----------------------:|-----------------------------|
 | ![Mouse Left Click](images/icons/click_left.svg)        | Mouse left click            |
+| ![Mouse Middle Click](images/icons/click_middle.svg)      | Mouse middle click          |
 | ![Mouse Right Click](images/icons/click_right.svg)       | Mouse right click           |
 | ![Mouse Scroll Toggle](images/icons/scroll.svg)     | Toggle mouse scroll (trackball/scrollball) |
 | ![Mouse Scroll](images/icons/scroll_right.svg)            | Directional mouse scroll    |
