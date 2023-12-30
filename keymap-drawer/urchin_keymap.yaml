@@ -177,6 +177,8 @@ layers:
   - '0'
   mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
     $$cursor-right$$, '', '', '', '', $$scroll$$, '', '', '', '', '', '', '$$material:right_click$$', '$$material:left_click$$', '', '']
+  game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
+    '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M]
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
@@ -219,6 +221,10 @@ combos:
 - p: [3, 0]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
+  draw_separate: true
+- p: [6, 9]
+  k: {t: mouse, h: toggle}
+  l: [qwerty, game]
   draw_separate: true
 - p: [13, 12]
   k: ' => '
