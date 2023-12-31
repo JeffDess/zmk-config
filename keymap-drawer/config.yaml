@@ -244,6 +244,11 @@ draw_config:
         transform: scale(1.5) translate(2px);
     }
 
+    .click-middle {
+        transform: scale(1.7) translate(2px, 1px);
+        transform-box: fill-box;
+    }
+
     .cursor-right {
         transform: scale(1.8);
     }
@@ -326,7 +331,6 @@ draw_config:
         <path fill="#fff" d="M240.21-188.49v-240h80v160h480v-160h80v240z"/>
         <path d="M571.53-325.45h-60.52l-82.4-193.05h-2.36q4.56 22.06 4.56 47.4v145.65h-45.94v-266.51h60.88l81.67 191.04h2q-3.46-19.14-3.46-45.57v-145.47h45.57zm27.04-266.51h67.99q41.56 0 60.52 16.22 18.96 16.05 18.96 51.23 0 23.15-10.03 38.83-10.02 15.49-27.34 18.77v1.82q22.6 5.66 32.63 21.15 10.03 15.5 10.03 41.2 0 36.27-19.5 56.87-19.33 20.42-53.06 20.42h-80.2zm46.66 107.19h22.79q15.68 0 22.06-8.39 6.38-8.38 6.38-24.97 0-16.6-7.3-23.7-7.29-7.3-22.96-7.3h-20.97zm0 41.38v74.55h24.98q15.5 0 22.96-9.47 7.66-9.48 7.66-29.35 0-35.73-31.35-35.73z" aria-label="NB" style="fill:#fff;stroke-width:42.72;stroke-linejoin:round" transform="translate(.21 11.51)"/>
       </svg>
-
     scroll-left: |
       <svg xmlns="http://www.w3.org/2000/svg" width="289.66" height="289.7" viewBox="0 0 76.64 76.65">
           <path d="M51.85 38.32a13.53 13.53 0 0 1-13.53 13.53 13.53 13.53 0 0 1-13.53-13.53 13.53 13.53 0 0 1 13.53-13.53 13.53 13.53 0 0 1 13.53 13.53z" style="fill:#fff;stroke-width:.30994;stroke-linecap:round"/>
@@ -366,6 +370,10 @@ draw_config:
       <svg xmlns="http://www.w3.org/2000/svg" width="270.72" height="270.76" viewBox="0 0 71.63 71.64">
           <path d="m59.94 47.52 11.69-11.7-11.7-11.7v11.7z" style="color:#000;fill:#fff;stroke-width:.7;stroke-linecap:round;-inkscape-stroke:none"/>
           <path d="m46.57 53.66-13.9-13.9-4.06 12.27-9.75-32.5 32.5 9.75-12.26 4.06 13.89 13.9z" style="fill:#fff;fill-opacity:1;stroke-width:.0812514"/>
+      </svg>
+    click-middle: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 -960 1120 1120">
+          <path fill="#fff" d="m738.2-366.06-41.73-77.07q29-47.38 22.98-102.18-6-54.8-46.31-95.1Q626.47-687.1 560-687.1t-113.14 46.67q-40.3 40.3-46.31 95.11-6.01 54.8 22.98 102.18l-41.72 77.07q-64.35-71.42-62.23-166.88 2.13-95.46 70.71-164.04Q461.01-767.7 560-767.7q99 0 169.7 70.72 68.6 68.58 70.72 164.04 2.12 95.46-62.23 166.88zM615.85 10.83H504.14V-231L362-159.58l198-367.7 197.99 367.7L615.86-231Z"/>
       </svg>
     play-pause: |
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
@@ -423,6 +431,7 @@ parse_config:
     "&math_micro": "µ",
     "&mkp RCLK": "$$material:right_click$$",
     "&mkp LCLK": "$$material:left_click$$",
+    "&mkp MCLK": "$$click-middle$$",
     "&mwh SCROLL_LEFT": "$$scroll-left$$",
     "&mwh SCROLL_RIGHT": "$$scroll-right$$",
     "&mwh SCROLL_UP": "$$scroll-up$$",

@@ -51,8 +51,11 @@ ZMK_COMBO(tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, DEF, HR_TIMEOUT)
 // TMUX New Session - active on base layer
 ZMK_COMBO(tmux_session, &TMUX_SESSION, LM2 LM3 LM4, DEF, HR_TIMEOUT)
 
-// To Mouse Layer - active on base layer
+// Toggle Mouse Layer - active on base and mouse layers
 ZMK_COMBO(toggle_mouse, &tog MOU, LT1 LT4, DEF MOU)
+
+// Toggle Game Layer - active on base and game layer
+ZMK_COMBO(toggle_mouse, &tog MOU, RT1 RT4, DEF GAM)
 
 /***********************
   SYMBOL LAYER
