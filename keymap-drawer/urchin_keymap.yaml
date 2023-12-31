@@ -223,7 +223,7 @@ combos:
   l: [qwerty, mouse]
   draw_separate: true
 - p: [6, 9]
-  k: {t: mouse, h: toggle}
+  k: {t: game, h: toggle}
   l: [qwerty, game]
   draw_separate: true
 - p: [13, 12]
