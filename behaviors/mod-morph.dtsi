@@ -50,4 +50,3 @@ ZMK_BEHAVIOR(sp_nbsp_sym, mod_morph,
     bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-

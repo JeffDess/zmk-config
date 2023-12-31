@@ -72,4 +72,3 @@ ZMK_COMBO(lte, &LTE, RB1 RB2, SYM)
 
 // Greater than or Equal - active on symbol layer
 ZMK_COMBO(gte, &GTE, RB2 RB3, SYM)
-

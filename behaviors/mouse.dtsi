@@ -51,4 +51,3 @@ ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, 0)
 
 // Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
 ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, 0)
-

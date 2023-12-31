@@ -15,4 +15,3 @@
 
 // TAB - Inner right thumbs, active on all layer
 ZMK_COMBO(tab_34, &kp TAB, RH0 RH1, 0)
-
