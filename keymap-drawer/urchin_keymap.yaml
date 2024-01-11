@@ -217,49 +217,49 @@ layers:
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
-  l: [qwerty]
+  l: [qwerty, colemak]
   a: bottom
   o: -0.7
   d: false
 - p: [22, 21]
   k: $$tabler:copy$$
-  l: [qwerty]
+  l: [qwerty, colemak]
 - p: [23, 22]
   k: $$tabler:clipboard$$
-  l: [qwerty]
+  l: [qwerty, colemak]
 - p: [8, 9]
   k: $$tabler:camera$$
-  l: [qwerty]
+  l: [qwerty, colemak]
   a: top
   o: -0.7
   d: false
 - p: [13, 16]
   k: CAPS WORD
-  l: [qwerty, accent]
+  l: [qwerty, accent, colemak]
   draw_separate: true
 - p: [12, 17]
   k: CAPS LOCK
-  l: [qwerty, accent]
+  l: [qwerty, accent, colemak]
   draw_separate: true
 - p: [12, 11]
   k: TMUX
-  l: [qwerty]
+  l: [qwerty, colemak]
   draw_separate: true
 - p: [12, 11, 19]
   k: TMUX COMMAND
-  l: [qwerty]
+  l: [qwerty, colemak]
   draw_separate: true
 - p: [12, 11, 10]
   k: TMUX NEW SESSION
-  l: [qwerty]
+  l: [qwerty, colemak]
   draw_separate: true
 - p: [3, 0]
   k: {t: mouse, h: toggle}
-  l: [qwerty, mouse]
+  l: [qwerty, mouse, colemak]
   draw_separate: true
 - p: [6, 9]
   k: {t: game, h: toggle}
-  l: [qwerty, game]
+  l: [qwerty, game, colemak]
   draw_separate: true
 - p: [13, 12]
   k: ' => '
@@ -275,18 +275,22 @@ combos:
   l: [symbol]
 - p: [32, 33]
   k: $$material:keyboard_tab$$
-  l: [qwerty]
+  l: [qwerty, colemak]
   a: bottom
   o: 0.3
+- p: [31, 32]
+  k: {t: colemak, h: toggle}
+  l: [qwerty, colemak]
+  draw_separate: true
 - p: [3, 2]
   k: $$material:left_click$$
-  l: [qwerty]
+  l: [qwerty, colemak]
 - p: [1, 0]
   k: $$material:right_click$$
-  l: [qwerty]
+  l: [qwerty, colemak]
   a: top
   o: -0.7
   d: false
 - p: [2, 1]
   k: $$scroll$$
-  l: [qwerty]
+  l: [qwerty, colemak]
