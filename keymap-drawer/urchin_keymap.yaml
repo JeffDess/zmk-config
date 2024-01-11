@@ -70,6 +70,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  colemak:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: GUI}
+  - {t: R, h: ALT}
+  - {t: S, h: CTRL}
+  - {t: T, h: SHIFT}
+  - G
+  - M
+  - {t: N, h: SHIFT}
+  - {t: E, h: CTRL}
+  - {t: I, h: ALT}
+  - {t: O, h: GUI}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   symbol:
   - '#'
   - '@'

@@ -8,11 +8,12 @@
 // Must match order in which they are defined
 #define DEF 0
 #define ACC 1
-#define SYM 2
-#define NAV 3
-#define NUM 4
-#define MOU 5
-#define GAM 6
+#define COL 2
+#define SYM 3
+#define NAV 4
+#define NUM 5
+#define MOU 6
+#define GAM 7
 
 // Modifier keys
 #define GL LGUI
