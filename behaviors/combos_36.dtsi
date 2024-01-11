@@ -14,8 +14,8 @@
   THUMBS
 ***********************/
 
-// TAB - Inner right thumbs, active on base layer
-ZMK_COMBO(tab, &kp TAB, RH0 RH1, DEF)
+// TAB - Inner right thumbs, active on base and Colemak layers
+ZMK_COMBO(tab, &kp TAB, RH0 RH1, DEF COL)
 
 // COLEMAK - Inner thumbs, active on base layer
 ZMK_COMBO(colemak, &to COL, LH0 RH0, DEF)
