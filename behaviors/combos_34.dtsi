@@ -19,3 +19,6 @@ ZMK_COMBO(tab_34, &kp TAB, RH0 RH1, DEF COL)
 
 // QWERTY/Colemak - Inner thumbs, active on base and Colemak layers
 ZMK_COMBO(colemak_34, &tog COL, LH0 RH0, DEF COL)
+
+// QWERTY/Ergo-L - Outer thumbs, active on base and Ergo-L layers
+ZMK_COMBO(ergol_34, &tog ERG, LH1 RH1, DEF ERG)

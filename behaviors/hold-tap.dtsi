@@ -3,6 +3,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 #include "../layouts/canadian-multilingual-standard.dtsi"
+#include "../config/constants.h"
 
 /* Home Row Mods */
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left-hand keys
@@ -43,7 +44,7 @@ ZMK_BEHAVIOR(hrmc, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&CIRC>;
+    bindings = <&kp>, <&CIRC 0>;
 )
 
 // homerow mods for grave
@@ -52,7 +53,7 @@ ZMK_BEHAVIOR(hrmg, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&AGRA>;
+    bindings = <&kp>, <&AGRA 0>;
 )
 
 // homerow mods for è
@@ -61,7 +62,16 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&E_GR>;
+    bindings = <&kp>, <&E_GR 0>;
+)
+
+// homerow mods for ê
+ZMK_BEHAVIOR(hrmec, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <hrm_tap_term>;
+    quick-tap-ms = <hrm_quick_tap>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_CI 0>;
 )
 
 // homerow mods for î
@@ -70,5 +80,5 @@ ZMK_BEHAVIOR(hrmi, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&I_CI>;
+    bindings = <&kp>, <&I_CI 0>;
 )

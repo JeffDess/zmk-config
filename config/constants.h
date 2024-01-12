@@ -9,11 +9,13 @@
 #define DEF 0
 #define ACC 1
 #define COL 2
-#define SYM 3
-#define NAV 4
-#define NUM 5
-#define MOU 6
-#define GAM 7
+#define ERG 3
+#define ACE 4
+#define SYM 5
+#define NAV 6
+#define NUM 7
+#define MOU 8
+#define GAM 9
 
 // Modifier keys
 #define GL LGUI

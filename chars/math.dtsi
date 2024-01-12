@@ -7,4 +7,3 @@ ZMK_UNICODE_SINGLE(math_3_4, N0, N0, B,  E)  // ¾
 ZMK_UNICODE_SINGLE(math_pm,    N0, N0, B,  N1) // ±
 ZMK_UNICODE_SINGLE(math_deg,   N0, N0, B,  N0) // °
 ZMK_UNICODE_SINGLE(math_micro, N0, N0, B,  N5) // µ
-

@@ -45,10 +45,10 @@ ZMK_BEHAVIOR(mwh_tg, macro, bindings =
 )
 
 // Mouse Left Click - Index and Middle finger of left hand, active on all layers
-ZMK_COMBO(leftclick, &mkp LCLK, LT1 LT2, DEF COL)
+ZMK_COMBO(leftclick, &mkp LCLK, LT1 LT2, DEF COL ERG)
 
 // Mouse Right Click - Pinky and Ring finger of left hand, active on all layers
-ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, DEF COL)
+ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, DEF COL ERG)
 
 // Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
-ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, DEF COL)
+ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, DEF COL ERG)

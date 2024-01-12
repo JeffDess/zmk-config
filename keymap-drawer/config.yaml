@@ -638,7 +638,13 @@ parse_config:
       draw_separate: true
     combo_toggle_game:
       draw_separate: true
+    combo_colemak:
+      draw_separate: true
     combo_colemak_34:
+      draw_separate: true
+    combo_ergol:
+      draw_separate: true
+    combo_ergol_34:
       draw_separate: true
     combo_tab:
       align: "bottom"
