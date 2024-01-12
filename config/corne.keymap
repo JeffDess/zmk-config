@@ -32,12 +32,11 @@ ZMK_LAYER_5COL(qwerty,
 
 ZMK_LAYER_5COL(accent,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     XXX         XXX         &TREM E     XXX          XXX            XXX         &TREM I       &TREM O       &TREM U      &KPD ACC_TR
+     XXX         XXX         &TREM E DEF XXX          XXX            XXX         &TREM I DEF   &TREM O DEF   &TREM U DEF &KPD ACC_TR DEF
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_GR       &CIRC E     &E_CU       &hrme SL 0   XXX            XXX         &hrmi SL 0    &O_CI         &U_CI        &KPD ACC_GR
+     &A_GR DEF  &CIRC E DEF &E_CU DEF    &hrme SL 0   XXX            XXX         &hrmi SL 0    &O_CI DEF     &U_CI DEF   &KPD ACC_GR DEF
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_CI       XXX         &CEDIL      XXX          XXX            XXX         XXX           XXX           &U_GR        &KPD ACC_CI
-// ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
+     &A_CI DEF   XXX         &CEDIL DEF  XXX          XXX            XXX         XXX           XXX           &U_GR DEF   &KPD ACC_CI DEF
                              ___         ___          ___            ___         ___           ___
 //                         ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
 )
