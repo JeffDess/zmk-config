@@ -46,10 +46,10 @@ ZMK_BEHAVIOR(num_esc_clk, mod_morph,
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
-// hold: symbol layer | tap: space | shift + tap: non-breaking space
+// hold: symbol layer | tap: space | ctrl + tap: non-breaking space
 ZMK_BEHAVIOR(sp_nbsp_sym, mod_morph,
     bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
 // tap: period | shift + tap: colon
