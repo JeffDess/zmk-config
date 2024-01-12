@@ -48,12 +48,10 @@ ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to DEF>;) // Î
 ZMK_BEHAVIOR(E_CI_E, macro, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
 
 // ` directly
-ZMK_BEHAVIOR(GRA, macro_one_param, bindings =
+ZMK_BEHAVIOR(GRA, macro, bindings =
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
-    <&macro_release &kp RALT>,
-    <&macro_param_1to1>,
-    <&to MACRO_PLACEHOLDER>;
+    <&macro_release &kp RALT>;
 )
 
 // ^ directly
