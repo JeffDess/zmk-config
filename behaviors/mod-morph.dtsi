@@ -66,6 +66,6 @@ ZMK_BEHAVIOR(comma_semi, mod_morph,
 
 // tap: period | shift + tap: colon
 ZMK_BEHAVIOR(trem_gr, mod_morph,
-    bindings = <&KBD ACC_TR ERG>, <&KBD ACC_GR ERG>;
+    bindings = <&KPD ACC_TR>, <&KPD ACC_GR>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
