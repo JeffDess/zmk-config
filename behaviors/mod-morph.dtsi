@@ -72,6 +72,6 @@ ZMK_BEHAVIOR(trem_gr, mod_morph,
 
 // tap: single apostrophe | shift + tap: double apostrophe
 ZMK_BEHAVIOR(sap_dap, mod_morph,
-    bindings = <&SAPOS>, <&DAPOS>;
+    bindings = <&kp SAPOS>, <&kp DAPOS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
