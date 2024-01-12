@@ -44,7 +44,7 @@ ZMK_BEHAVIOR(hrmc, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&CIRC 0>;
+    bindings = <&kp>, <&CIRC>;
 )
 
 // homerow mods for grave
@@ -53,7 +53,7 @@ ZMK_BEHAVIOR(hrmg, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&AGRA 0>;
+    bindings = <&kp>, <&AGRA>;
 )
 
 // homerow mods for è
@@ -62,7 +62,7 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&E_GR 0>;
+    bindings = <&kp>, <&E_GR>;
 )
 
 // homerow mods for ê
@@ -71,7 +71,7 @@ ZMK_BEHAVIOR(hrmec, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&E_CI 0>;
+    bindings = <&kp>, <&E_CI>;
 )
 
 // homerow mods for î
@@ -80,5 +80,5 @@ ZMK_BEHAVIOR(hrmi, hold_tap,
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&I_CI 0>;
+    bindings = <&kp>, <&I_CI>;
 )
