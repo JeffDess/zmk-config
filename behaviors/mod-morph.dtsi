@@ -58,14 +58,20 @@ ZMK_BEHAVIOR(dot_col, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: period | shift + tap: colon
+// tap: comma | shift + tap: semi-colon
 ZMK_BEHAVIOR(comma_semi, mod_morph,
     bindings = <&kp COMMA>, <&kp SEMI>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: period | shift + tap: colon
+// tap: trema | shift + tap: grave
 ZMK_BEHAVIOR(trem_gr, mod_morph,
     bindings = <&KPD ACC_TR ERG>, <&KPD ACC_GR ERG>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: single apostrophe | shift + tap: double apostrophe
+ZMK_BEHAVIOR(sap_dap, mod_morph,
+    bindings = <&SAPOS>, <&DAPOS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
