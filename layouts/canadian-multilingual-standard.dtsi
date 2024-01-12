@@ -57,10 +57,8 @@ ZMK_BEHAVIOR(GRA, macro_one_param, bindings =
 )
 
 // ^ directly
-ZMK_BEHAVIOR(CAR, macro_one_param, bindings =
-    <&macro_tap &kp LBKT &kp SPACE>,
-    <&macro_param_1to1>,
-    <&to MACRO_PLACEHOLDER>;
+ZMK_BEHAVIOR(CAR, macro, bindings =
+    <&macro_tap &kp LBKT &kp SPACE>;
 )
 
 // ¨ directly
