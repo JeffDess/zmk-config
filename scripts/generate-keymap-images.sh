@@ -40,5 +40,5 @@ draw () {
 KBD="urchin"
 
 parse "$KBD"
-# tweak "$KBD"
-# draw "$KBD" --keys-only
+tweak "$KBD"
+draw "$KBD" --keys-only
