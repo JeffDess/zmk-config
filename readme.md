@@ -1,13 +1,12 @@
 # ZMK Config
 
-
 ZMK firmware configuration for Corne and Urchin keyboards, optimized for
 English/French/Programming.
 
 ![My Urchin 34 keys keyboard](images/urchin.jpg)
 
 Since the Corne (36 keys) and Urchin (34 keys) have similar layouts, both
-keyboards use the same configuration. The only exception is the combos using
+keyboards share the same configuration. The only exception is the combos using
 thumb keys, which are in their own files ([combos_34](behaviors/combos_34.dtsi)
 and [combos_36](behaviors/combos_36.dtsi)). Keyboards also have their own keymap
 files, but in pratice they use the same mappings. Both firmwares are generated
@@ -17,11 +16,13 @@ simultaneously with Github Actions.
 
 ## Features
 
-- QWERTY layout
+- QWERTY, [Colemak-DH](https://colemakmods.github.io/mod-dh/)
+  and [Ergo-L](https://ergol.org) layouts
+- French characters support with dead key and one accent layer per layout
 - 5 columns with nice!nano v2 and nice!views
 - Home row mods
-- French characters support with a single dead key and accent layer
 - Mouse keys support
+- Gaming Layer (shifted WASD position, free of homerow mods)
 - Cursor/Scroll toggle with
   [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 - Easy to read files, thanks to the
@@ -75,7 +76,9 @@ The keymap uses a few behaviors in order to make everything work:
 
 ## Layouts
 
-The layout is currently based on
+The three alpha layers (QWERTY,
+[Colemak-DH](https://colemakmods.github.io/mod-dh/) and
+[Ergo-L](https://ergol.org)) are mapped to the
 [Canadian Multilingual Standard (CSA)](https://commons.wikimedia.org/wiki/File:KB_Canadian_Multilingual_Standard.svg),
 but it can easily be adapted to other layout by copying
 [canadian-multilingual-standard.dtsi](layouts/canadian-multilingual-standard.dtsi)
