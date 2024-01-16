@@ -417,6 +417,7 @@ parse_config:
     "&A_GR 2": "À",
     "&A_CI 2": "Â",
     "&hrme SL 2": "È",
+    "&hrmeg SL 2": "È",
     "&hrmi SL 2": "Î",
     "&E_GR 2": "È",
     "&CIRC E 2": "Ê",
@@ -694,6 +695,14 @@ parse_config:
       draw_separate: true
     combo_ergol_34:
       draw_separate: true
+    combo_ergol_colemak_34:
+      width: 0.1
+      height: 0.1
+      dendron: false
+    combo_colemak_ergol_34:
+      width: 0.1
+      height:  0.1
+      dendron: false
     combo_tab:
       align: "bottom"
       offset: 0.3

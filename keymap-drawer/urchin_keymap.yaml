@@ -385,12 +385,24 @@ combos:
   o: 0.3
 - p: [31, 32]
   k: {t: Colemak, h: toggle}
-  l: [QWERTY, Colemak, Ergo-L]
+  l: [QWERTY, Colemak]
   draw_separate: true
 - p: [30, 33]
   k: {t: Ergo-L, h: toggle}
-  l: [QWERTY, Ergo-L, Colemak]
+  l: [QWERTY, Ergo-L]
   draw_separate: true
+- p: [31, 32]
+  k: {t: Colemak, h: toggle}
+  l: [Ergo-L]
+  d: false
+  w: 0.1
+  h: 0.1
+- p: [30, 33]
+  k: {t: Ergo-L, h: toggle}
+  l: [Colemak]
+  d: false
+  w: 0.1
+  h: 0.1
 - p: [3, 2]
   k: $$material:left_click$$
   l: [QWERTY, Colemak, Ergo-L]

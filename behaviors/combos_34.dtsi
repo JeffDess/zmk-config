@@ -27,4 +27,4 @@ ZMK_COMBO(ergol_34, &tog ERG, LH1 RH1, DEF ERG)
 ZMK_COMBO(ergol_colemak_34, &to COL, LH0 RH0, ERG)
 
 // Colemak -> Ergo-L - Outer thumbs, active on Colemak
-ZMK_COMBO(colemak_ergol_34, &to ERG, LH0 RH0, COL)
+ZMK_COMBO(colemak_ergol_34, &to ERG, LH1 RH1, COL)
