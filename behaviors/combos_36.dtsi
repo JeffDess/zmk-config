@@ -21,4 +21,4 @@ ZMK_COMBO(tab, &kp TAB, RH0 RH1, DEF COL ERG)
 ZMK_COMBO(colemak, &tog COL, LH0 RH0, DEF COL ERG)
 
 // QWERTY/Ergo-L - Middle thumbs, active on all alpha layers
-ZMK_COMBO(ergol_34, &tog ERG, LH1 RH1, DEF ERG COL)
+ZMK_COMBO(ergol, &tog ERG, LH1 RH1, DEF ERG COL)
