@@ -1,0 +1,405 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  QWERTY:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
+  - {t: F, h: SHIFT}
+  - G
+  - H
+  - {t: J, h: SHIFT}
+  - {t: K, h: CTRL}
+  - {t: L, h: ALT}
+  - {t: ;, h: GUI}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: Accents, h: toggle}
+  - {t: '$$material:keyboard_return$$', h: Nav}
+  - {t: ESC, h: Numbers, s: '$$material:left_click$$'}
+  - {t: '$$material:backspace$$', s: $$delete$$}
+  - {t: '$$tabler:space$$', h: Symbols, s: $$nbsp$$}
+  Accents:
+  - ''
+  - ''
+  - Ë
+  - ''
+  - ''
+  - ''
+  - Ï
+  - Ö
+  - Ü
+  - ¨
+  - À
+  - Ê
+  - É
+  - È
+  - ''
+  - ''
+  - Î
+  - Ô
+  - Û
+  - '`'
+  - Â
+  - ''
+  - Ç
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ù
+  - ^
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Colemak:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: GUI}
+  - {t: R, h: ALT}
+  - {t: S, h: CTRL}
+  - {t: T, h: SHIFT}
+  - G
+  - M
+  - {t: N, h: SHIFT}
+  - {t: E, h: CTRL}
+  - {t: I, h: ALT}
+  - {t: O, h: GUI}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: ColeAcc, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ColeAcc:
+  - ''
+  - ''
+  - Ë
+  - ''
+  - ''
+  - ''
+  - Ï
+  - Ö
+  - Ü
+  - ¨
+  - À
+  - Ê
+  - É
+  - È
+  - ''
+  - ''
+  - Î
+  - Ô
+  - Û
+  - '`'
+  - Â
+  - ''
+  - Ç
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ù
+  - ^
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ErgoL:
+  - Q
+  - C
+  - O
+  - P
+  - W
+  - J
+  - M
+  - D
+  - {t: ErgoAcc, h: toggle}
+  - F
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: E, h: CTRL}
+  - {t: N, h: SHIFT}
+  - {t: ',', s: ;}
+  - L
+  - {t: R, h: SHIFT}
+  - {t: T, h: CTRL}
+  - {t: I, h: ALT}
+  - {t: U, h: GUI}
+  - Z
+  - X
+  - {t: '''', s: '"'}
+  - V
+  - B
+  - {t: ., s: ':'}
+  - H
+  - G
+  - Y
+  - K
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ErgoAcc:
+  - Æ
+  - Ç
+  - Œ
+  - Ô
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ¨, s: '`'}
+  - ''
+  - À
+  - É
+  - È
+  - È
+  - ''
+  - ''
+  - SHIFT
+  - Ï
+  - Û
+  - Ù
+  - Â
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Symbols:
+  - '#'
+  - '@'
+  - '{'
+  - '}'
+  - +
+  - ''
+  - '~'
+  - '`'
+  - $
+  - ''
+  - /
+  - {t: '-', s: '~'}
+  - (
+  - {t: ), h: SHIFT}
+  - '='
+  - ^
+  - '?'
+  - '!'
+  - '&'
+  - '|'
+  - '*'
+  - '%'
+  - '['
+  - ']'
+  - _
+  - ''
+  - <
+  - '>'
+  - «
+  - »
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  Nav:
+  - $$output-toggle$$
+  - ''
+  - ''
+  - ''
+  - $$bt-clear$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: GUI, h: sticky}
+  - $$tabler:player-track-prev-filled$$
+  - $$play-pause$$
+  - $$tabler:player-track-next-filled$$
+  - ''
+  - $$tabler:arrow-big-left$$
+  - $$tabler:arrow-big-down$$
+  - $$tabler:arrow-big-up$$
+  - $$tabler:arrow-big-right$$
+  - INSERT
+  - $$bt-prev$$
+  - $$bt-next$$
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
+  - ''
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - SCROLL LOCK
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Numbers:
+  - F1
+  - F2
+  - F3
+  - F4
+  - ±
+  - ¼
+  - '7'
+  - '8'
+  - '9'
+  - {t: '*', s: /}
+  - F5
+  - F6
+  - F7
+  - {t: F8, h: SHIFT}
+  - °
+  - ½
+  - '4'
+  - '5'
+  - '6'
+  - {t: +, s: '-'}
+  - F9
+  - F10
+  - F11
+  - F12
+  - µ
+  - ¾
+  - '1'
+  - '2'
+  - '3'
+  - {t: ',', s: .}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '0'
+  Mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
+    $$cursor-right$$, '', '', '', '', $$scroll$$, '', '', '', '', '', '', '$$material:right_click$$', '$$material:left_click$$', '', '']
+  Game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
+    '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M]
+combos:
+- p: [21, 20]
+  k: $$tabler:cut$$
+  l: [QWERTY, Colemak, ErgoL]
+  a: bottom
+  o: -0.7
+  d: false
+- p: [22, 21]
+  k: $$tabler:copy$$
+  l: [QWERTY, Colemak, ErgoL]
+- p: [23, 22]
+  k: $$tabler:clipboard$$
+  l: [QWERTY, Colemak, ErgoL]
+- p: [8, 9]
+  k: $$tabler:camera$$
+  l: [QWERTY, Colemak, ErgoL]
+  a: top
+  o: -0.7
+  d: false
+- p: [13, 16]
+  k: CAPS WORD
+  l: [QWERTY, Accents, Colemak, ErgoL]
+  draw_separate: true
+- p: [12, 17]
+  k: CAPS LOCK
+  l: [QWERTY, Accents, Colemak, ErgoL]
+  draw_separate: true
+- p: [12, 11]
+  k: TMUX
+  l: [QWERTY, Colemak, ErgoL]
+  draw_separate: true
+- p: [12, 11, 19]
+  k: TMUX COMMAND
+  l: [QWERTY, Colemak, ErgoL]
+  draw_separate: true
+- p: [12, 11, 10]
+  k: TMUX NEW SESSION
+  l: [QWERTY, Colemak, ErgoL]
+  draw_separate: true
+- p: [3, 0]
+  k: {t: Mouse, h: toggle}
+  l: [QWERTY, Mouse, Colemak, ErgoL]
+  draw_separate: true
+- p: [6, 9]
+  k: {t: Game, h: toggle}
+  l: [QWERTY, Game, Colemak, ErgoL]
+  draw_separate: true
+- p: [13, 12]
+  k: ' => '
+  l: [Symbols]
+- p: [23, 22]
+  k: ' -> '
+  l: [Symbols]
+- p: [26, 27]
+  k: ' <= '
+  l: [Symbols]
+- p: [27, 28]
+  k: ' >= '
+  l: [Symbols]
+- p: [32, 33]
+  k: $$material:keyboard_tab$$
+  l: [QWERTY, Colemak, ErgoL]
+  a: bottom
+  o: 0.3
+- p: [31, 32]
+  k: {t: Colemak, h: toggle}
+  l: [QWERTY, Colemak]
+  draw_separate: true
+- p: [30, 33]
+  k: {t: ErgoL, h: toggle}
+  l: [QWERTY, ErgoL]
+  draw_separate: true
+- p: [3, 2]
+  k: $$material:left_click$$
+  l: [QWERTY, Colemak, ErgoL]
+- p: [1, 0]
+  k: $$material:right_click$$
+  l: [QWERTY, Colemak, ErgoL]
+  a: top
+  o: -0.7
+  d: false
+- p: [2, 1]
+  k: $$scroll$$
+  l: [QWERTY, Colemak, ErgoL]
