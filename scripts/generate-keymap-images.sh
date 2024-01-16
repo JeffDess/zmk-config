@@ -9,7 +9,19 @@ parse () {
 
     if keymap -c "$KMD/config.yaml" \
         parse \
-        -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml; then
+        -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml \
+        -l "QWERTY" \
+        "QWERTY Accents"\
+        "Colemak"\
+        "Colemak Accents"\
+        "Ergo-L"\
+        "Ergo-L Accents"\
+        "Symbols"\
+        "Navigation"\
+        "Numbers"\
+        "Mouse"\
+        "Game"\
+        ; then
         echo "Keymap Parsed"
     else
         echo "Error parsing keymap"

@@ -83,7 +83,6 @@ draw_config:
         font-weight: bold;
         text-anchor: start;
         fill: #adbac7;
-        text-transform: uppercase;
         font-size: 28px;
         stroke: #777;
         stroke-width: 0px;
