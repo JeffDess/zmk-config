@@ -16,15 +16,6 @@ parse () {
     fi
 }
 
-tweak() {
-    KBD_NAME=$1
-    if sed -i 's/&E_GR/È/; s/&I_CI/Î/' "$KMD/$KBD_NAME"_keymap.yaml; then
-        echo "Keymap Tweaked"
-    else
-        echo "Error tweaking keymap"
-    fi
-}
-
 draw () {
     KBD_NAME=$1
     OPT=$2
@@ -40,5 +31,4 @@ draw () {
 KBD="urchin"
 
 parse "$KBD"
-tweak "$KBD"
 draw "$KBD" --keys-only
