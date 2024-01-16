@@ -65,6 +65,15 @@ ZMK_BEHAVIOR(hrme, hold_tap,
     bindings = <&kp>, <&E_GR_D>;
 )
 
+// homerow mods for è
+ZMK_BEHAVIOR(hrmeg, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <hrm_tap_term>;
+    quick-tap-ms = <hrm_quick_tap>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_GR_C>;
+)
+
 // homerow mods for ê
 ZMK_BEHAVIOR(hrmec, hold_tap,
     flavor = "balanced";
