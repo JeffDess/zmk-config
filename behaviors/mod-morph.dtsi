@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../layouts/canadian-multilingual-standard.dtsi"
+#include "../config/constants.h"
 
 // tap: backspace | shift + tap: delete
 ZMK_BEHAVIOR(bspc_del, mod_morph,
@@ -48,5 +49,29 @@ ZMK_BEHAVIOR(num_esc_clk, mod_morph,
 // hold: symbol layer | tap: space | shift + tap: non-breaking space
 ZMK_BEHAVIOR(sp_nbsp_sym, mod_morph,
     bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: period | shift + tap: colon
+ZMK_BEHAVIOR(dot_col, mod_morph,
+    bindings = <&kp DOT>, <&kp COLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: comma | shift + tap: semi-colon
+ZMK_BEHAVIOR(comma_semi, mod_morph,
+    bindings = <&kp COMMA>, <&kp SEMI>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: trema | shift + tap: grave
+ZMK_BEHAVIOR(trem_gr, mod_morph,
+    bindings = <&KPD ACC_TR ERG>, <&KPD ACC_GR ERG>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: single apostrophe | shift + tap: double apostrophe
+ZMK_BEHAVIOR(sap_dap, mod_morph,
+    bindings = <&kp SAPOS>, <&kp DAPOS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )

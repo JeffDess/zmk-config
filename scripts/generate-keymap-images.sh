@@ -9,19 +9,22 @@ parse () {
 
     if keymap -c "$KMD/config.yaml" \
         parse \
-        -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml; then
+        -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml \
+        -l "QWERTY" \
+        "QWERTY Accents"\
+        "Colemak"\
+        "Colemak Accents"\
+        "Ergo-L"\
+        "Ergo-L Accents"\
+        "Symbols"\
+        "Navigation"\
+        "Numbers"\
+        "Mouse"\
+        "Game"\
+        ; then
         echo "Keymap Parsed"
     else
         echo "Error parsing keymap"
-    fi
-}
-
-tweak() {
-    KBD_NAME=$1
-    if sed -i 's/&E_GR/È/; s/&I_CI/Î/' "$KMD/$KBD_NAME"_keymap.yaml; then
-        echo "Keymap Tweaked"
-    else
-        echo "Error tweaking keymap"
     fi
 }
 
@@ -40,5 +43,4 @@ draw () {
 KBD="urchin"
 
 parse "$KBD"
-tweak "$KBD"
 draw "$KBD" --keys-only

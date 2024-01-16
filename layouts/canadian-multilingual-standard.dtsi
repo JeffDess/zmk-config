@@ -14,6 +14,8 @@
 /* Canadian Multilingual Standard Mappings */
 
 #define SLSH   GRAVE         // /
+#define SAPOS  LS(COMMA)     // /
+#define DAPOS  LS(DOT)     // /
 #define DEG    RA(SEMI)      // °
 #define LBRAC  RA(N7)        // {
 #define RBRAC  RA(N8)        // }
@@ -29,39 +31,56 @@
 #define ACC_TR LS(LBKT)      // ¨
 
 // The following must return to the base layer after being pressed
-ZMK_BEHAVIOR(A_GR,  macro, bindings = <&kp BACKSLASH>, <&to DEF>;)  // À
-ZMK_BEHAVIOR(A_CI,  macro, bindings = <&fr_a_cf>,  <&to DEF>;)      // Â
-ZMK_BEHAVIOR(E_CU,  macro, bindings = <&kp SLASH>, <&to DEF>;)      // É
-ZMK_BEHAVIOR(E_GR,  macro, bindings = <&kp APOS>, <&to DEF>;)       // È
-ZMK_BEHAVIOR(E_CI,  macro, bindings = <&fr_e_cf>, <&to DEF>;)       // Ê
-ZMK_BEHAVIOR(I_CI,  macro, bindings = <&fr_i_cf>, <&to DEF>;)       // Î
-ZMK_BEHAVIOR(O_CI,  macro, bindings = <&fr_o_cf>, <&to DEF>;)       // Ô
-ZMK_BEHAVIOR(U_CI,  macro, bindings = <&fr_u_cf>, <&to DEF>;)       // Û
-ZMK_BEHAVIOR(U_GR,  macro, bindings = <&fr_u_gr>, <&to DEF>;)       // Ù
-ZMK_BEHAVIOR(CEDIL, macro, bindings = <&kp RBKT>, <&to DEF>;)       // Ç
+ZMK_BEHAVIOR(A_GR,  macro_one_param, bindings = <&kp BACKSLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)  // À
+ZMK_BEHAVIOR(A_CI,  macro_one_param, bindings = <&fr_a_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Â
+ZMK_BEHAVIOR(E_CU,  macro_one_param, bindings = <&kp SLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // É
+ZMK_BEHAVIOR(E_GR,  macro_one_param, bindings = <&kp APOS>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // È
+ZMK_BEHAVIOR(E_CI,  macro_one_param, bindings = <&fr_e_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ê
+ZMK_BEHAVIOR(I_CI,  macro_one_param, bindings = <&fr_i_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Î
+ZMK_BEHAVIOR(O_CI,  macro_one_param, bindings = <&fr_o_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ô
+ZMK_BEHAVIOR(U_CI,  macro_one_param, bindings = <&fr_u_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Û
+ZMK_BEHAVIOR(U_GR,  macro_one_param, bindings = <&fr_u_gr>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ù
+ZMK_BEHAVIOR(AE_L, macro_one_param, bindings = <&fr_ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Æ
+ZMK_BEHAVIOR(OE_L, macro_one_param, bindings = <&fr_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Œ
+ZMK_BEHAVIOR(CEDIL, macro_one_param, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
+
+// QWERTY Homerow Mods
+ZMK_BEHAVIOR(E_GR_D, macro, bindings = <&kp APOS>, <&to DEF>;) // È
+ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to DEF>;) // Î
+
+// Ergo-L Homerow Mods
+ZMK_BEHAVIOR(E_CI_E, macro, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
 
 // ` directly
 ZMK_BEHAVIOR(GRA, macro, bindings =
     <&macro_press &kp RALT>,
     <&macro_tap &kp LBKT &kp LBKT>,
-    <&macro_release &kp RALT>,
-    <&to DEF>;
+    <&macro_release &kp RALT>;
 )
 
 // ^ directly
 ZMK_BEHAVIOR(CAR, macro, bindings =
-    <&macro_tap &kp LBKT &kp SPACE>,
-    <&to DEF>;
+    <&macro_tap &kp LBKT &kp SPACE>;
 )
 
 // ¨ directly
-ZMK_BEHAVIOR(TREMA, macro, bindings =
+ZMK_BEHAVIOR(TREMA, macro_one_param, bindings =
     <&macro_tap &kp LS(LBKT) &kp SPACE>,
-    <&to DEF>;
+    <&macro_param_1to1>,
+    <&to MACRO_PLACEHOLDER>;
 )
 
 // ` to input
-ZMK_BEHAVIOR(AGRA, macro_one_param, bindings =
+ZMK_BEHAVIOR(AGRA, macro_two_param, bindings =
+    <&kp RA(LBKT)>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
+)
+
+// ` to input then to default layer
+ZMK_BEHAVIOR(AGRA_D, macro_one_param, bindings =
     <&kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
@@ -69,23 +88,34 @@ ZMK_BEHAVIOR(AGRA, macro_one_param, bindings =
 )
 
 // ´ to input
-ZMK_BEHAVIOR(AIGU, macro_one_param, bindings =
+ZMK_BEHAVIOR(AIGU, macro_two_param, bindings =
     <&kp RA(SLASH)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
 )
 
 // ¨ to input
-ZMK_BEHAVIOR(TREM, macro_one_param, bindings =
+ZMK_BEHAVIOR(TREM, macro_two_param, bindings =
     <&kp LS(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
 )
 
 // ^ to input
-ZMK_BEHAVIOR(CIRC, macro_one_param, bindings = 
+ZMK_BEHAVIOR(CIRC, macro_two_param, bindings = 
+    <&kp LBKT>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
+)
+
+// ^ to input then to default layer
+ZMK_BEHAVIOR(CIRC_D, macro_one_param, bindings = 
     <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
@@ -93,8 +123,9 @@ ZMK_BEHAVIOR(CIRC, macro_one_param, bindings =
 )
 
 // Keypress then return to default layer
-ZMK_BEHAVIOR(KPD, macro_one_param, bindings =
+ZMK_BEHAVIOR(KPD, macro_two_param, bindings =
     <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>,
-    <&to DEF>;
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
 )

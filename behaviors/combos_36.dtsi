@@ -3,6 +3,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
 #include "./combos.dtsi"
+#include "../config/constants.h"
 
 #pragma once
 
@@ -13,5 +14,11 @@
   THUMBS
 ***********************/
 
-// TAB - Inner right thumbs, active on all layer
-ZMK_COMBO(tab, &kp TAB, RH0 RH1, 0)
+// TAB - Inner right thumbs, active on all alpha layers
+ZMK_COMBO(tab, &kp TAB, RH0 RH1, DEF COL ERG)
+
+// QWERTY/Colemak - Inner thumbs, active on all alpha layers
+ZMK_COMBO(colemak, &tog COL, LH0 RH0, DEF COL ERG)
+
+// QWERTY/Ergo-L - Middle thumbs, active on all alpha layers
+ZMK_COMBO(ergol, &tog ERG, LH1 RH1, DEF ERG COL)

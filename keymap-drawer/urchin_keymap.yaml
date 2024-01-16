@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
-  qwerty:
+  QWERTY:
   - Q
   - W
   - E
@@ -30,12 +30,12 @@ layers:
   - M
   - ','
   - .
-  - {t: accent, h: toggle}
-  - {t: '$$material:keyboard_return$$', h: nav}
-  - {t: ESC, h: nums, s: '$$material:left_click$$'}
+  - {t: QWERTY Accents, h: toggle}
+  - {t: '$$material:keyboard_return$$', h: Navigation}
+  - {t: ESC, h: Numbers, s: '$$material:left_click$$'}
   - {t: '$$material:backspace$$', s: $$delete$$}
-  - {t: '$$tabler:space$$', h: symbol, s: $$nbsp$$}
-  accent:
+  - {t: '$$tabler:space$$', h: Symbols, s: $$nbsp$$}
+  QWERTY Accents:
   - ''
   - ''
   - Ë
@@ -49,10 +49,10 @@ layers:
   - À
   - Ê
   - É
-  - {t: 'È', h: SHIFT}
+  - È
   - ''
   - ''
-  - {t: 'Î', h: SHIFT}
+  - Î
   - Ô
   - Û
   - '`'
@@ -70,7 +70,147 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbol:
+  Colemak:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: GUI}
+  - {t: R, h: ALT}
+  - {t: S, h: CTRL}
+  - {t: T, h: SHIFT}
+  - G
+  - M
+  - {t: N, h: SHIFT}
+  - {t: E, h: CTRL}
+  - {t: I, h: ALT}
+  - {t: O, h: GUI}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: Colemak Accents, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Colemak Accents:
+  - ''
+  - ''
+  - Ë
+  - ''
+  - ''
+  - ''
+  - Ï
+  - Ö
+  - Ü
+  - ¨
+  - À
+  - Ê
+  - É
+  - È
+  - ''
+  - ''
+  - Î
+  - Ô
+  - Û
+  - '`'
+  - Â
+  - ''
+  - Ç
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ù
+  - ^
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Ergo-L:
+  - Q
+  - C
+  - O
+  - P
+  - W
+  - J
+  - M
+  - D
+  - {t: Ergo-L Accents, h: toggle}
+  - F
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: E, h: CTRL}
+  - {t: N, h: SHIFT}
+  - {t: ',', s: ;}
+  - L
+  - {t: R, h: SHIFT}
+  - {t: T, h: CTRL}
+  - {t: I, h: ALT}
+  - {t: U, h: GUI}
+  - Z
+  - X
+  - {t: '''', s: '"'}
+  - V
+  - B
+  - {t: ., s: ':'}
+  - H
+  - G
+  - Y
+  - K
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Ergo-L Accents:
+  - Æ
+  - Ç
+  - Œ
+  - Ô
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ¨, s: '`'}
+  - ''
+  - À
+  - É
+  - È
+  - Ê
+  - ''
+  - ''
+  - SHIFT
+  - Ï
+  - Û
+  - Ù
+  - Â
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Symbols:
   - '#'
   - '@'
   - '{'
@@ -105,7 +245,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  nav:
+  Navigation:
   - $$output-toggle$$
   - ''
   - ''
@@ -140,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  nums:
+  Numbers:
   - F1
   - F2
   - F3
@@ -175,83 +315,91 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - '0'
-  mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
+  Mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
     $$cursor-right$$, '', '', '', '', $$scroll$$, '', '', '', '', '', '', '$$material:right_click$$', '$$material:left_click$$', '', '']
-  game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
+  Game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
     '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M]
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   a: bottom
   o: -0.7
   d: false
 - p: [22, 21]
   k: $$tabler:copy$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
 - p: [23, 22]
   k: $$tabler:clipboard$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
 - p: [8, 9]
   k: $$tabler:camera$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   a: top
   o: -0.7
   d: false
 - p: [13, 16]
   k: CAPS WORD
-  l: [qwerty, accent]
+  l: [QWERTY, QWERTY Accents, Colemak, Ergo-L]
   draw_separate: true
 - p: [12, 17]
   k: CAPS LOCK
-  l: [qwerty, accent]
+  l: [QWERTY, QWERTY Accents, Colemak, Ergo-L]
   draw_separate: true
 - p: [12, 11]
   k: TMUX
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   draw_separate: true
 - p: [12, 11, 19]
   k: TMUX COMMAND
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   draw_separate: true
 - p: [12, 11, 10]
   k: TMUX NEW SESSION
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   draw_separate: true
 - p: [3, 0]
-  k: {t: mouse, h: toggle}
-  l: [qwerty, mouse]
+  k: {t: Mouse, h: toggle}
+  l: [QWERTY, Mouse, Colemak, Ergo-L]
   draw_separate: true
 - p: [6, 9]
-  k: {t: game, h: toggle}
-  l: [qwerty, game]
+  k: {t: Game, h: toggle}
+  l: [QWERTY, Game, Colemak, Ergo-L]
   draw_separate: true
 - p: [13, 12]
   k: ' => '
-  l: [symbol]
+  l: [Symbols]
 - p: [23, 22]
   k: ' -> '
-  l: [symbol]
+  l: [Symbols]
 - p: [26, 27]
   k: ' <= '
-  l: [symbol]
+  l: [Symbols]
 - p: [27, 28]
   k: ' >= '
-  l: [symbol]
+  l: [Symbols]
 - p: [32, 33]
   k: $$material:keyboard_tab$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   a: bottom
   o: 0.3
+- p: [31, 32]
+  k: {t: Colemak, h: toggle}
+  l: [QWERTY, Colemak, Ergo-L]
+  draw_separate: true
+- p: [30, 33]
+  k: {t: Ergo-L, h: toggle}
+  l: [QWERTY, Ergo-L, Colemak]
+  draw_separate: true
 - p: [3, 2]
   k: $$material:left_click$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
 - p: [1, 0]
   k: $$material:right_click$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
   a: top
   o: -0.7
   d: false
 - p: [2, 1]
   k: $$scroll$$
-  l: [qwerty]
+  l: [QWERTY, Colemak, Ergo-L]
