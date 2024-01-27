@@ -50,6 +50,7 @@ ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to QWE>;) // Î
 
 // Colemak Homerow Mods
 ZMK_BEHAVIOR(E_GR_C, macro, bindings = <&kp APOS>, <&to COL>;) // È
+ZMK_BEHAVIOR(I_CI_C, macro, bindings = <&fr_i_cf>, <&to COL>;) // Î
 
 // Ergo-L Homerow Mods
 ZMK_BEHAVIOR(E_CI_E, macro, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
