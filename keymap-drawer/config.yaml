@@ -417,7 +417,7 @@ parse_config:
     "&A_GR 2": "À",
     "&A_CI 2": "Â",
     "&hrme SL 2": "È",
-    "&hrmeg SL 2": "È",
+    "&hrmeg SL 0": "È",
     "&hrmi SL 2": "Î",
     "&E_GR 2": "È",
     "&CIRC E 2": "Ê",
@@ -440,7 +440,8 @@ parse_config:
     "&A_CI 4": "Â",
     "&hrme SL 4": "È",
     "&hrmec SL 4": "Ê",
-    "&hrmi SL 4": "Î",
+    "&hrmic SL 0": "Î",
+    "&hrmiq SL 2": "Î",
     "&E_GR 4": "È",
     "&CIRC E 4": "Ê",
     "&E_CU 4": "É",
@@ -687,22 +688,20 @@ parse_config:
       draw_separate: true
     combo_toggle_game:
       draw_separate: true
-    combo_colemak:
+    combo_qwerty:
       draw_separate: true
-    combo_colemak_34:
+    combo_qwerty_34:
       draw_separate: true
     combo_ergol:
       draw_separate: true
     combo_ergol_34:
       draw_separate: true
-    combo_ergol_colemak_34:
-      width: 0.1
-      height: 0.1
-      dendron: false
-    combo_colemak_ergol_34:
-      width: 0.1
-      height:  0.1
-      dendron: false
+    combo_ergol_qwerty_34:
+      align: "top"
+      offset: 0.1
+    combo_qwerty_ergol_34:
+      align: "top"
+      offset: 0.1
     combo_tab:
       align: "bottom"
       offset: 0.3

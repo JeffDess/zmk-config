@@ -6,10 +6,10 @@
 
 // Layers
 // Must match order in which they are defined
-#define DEF 0
-#define ACC 1
-#define COL 2
-#define CAC 3
+#define COL 0
+#define CAC 1
+#define QWE 2
+#define QAC 3
 #define ERG 4
 #define EAC 5
 #define SYM 6

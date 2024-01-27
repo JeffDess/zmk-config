@@ -83,11 +83,20 @@ ZMK_BEHAVIOR(hrmec, hold_tap,
     bindings = <&kp>, <&E_CI_E>;
 )
 
-// homerow mods for î
-ZMK_BEHAVIOR(hrmi, hold_tap,
+// homerow mods for î (QWERTY)
+ZMK_BEHAVIOR(hrmiq, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
     bindings = <&kp>, <&I_CI_D>;
+)
+
+// homerow mods for î (Colemak)
+ZMK_BEHAVIOR(hrmic, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <hrm_tap_term>;
+    quick-tap-ms = <hrm_quick_tap>;
+    global-quick-tap;
+    bindings = <&kp>, <&I_CI_C>;
 )

@@ -5,11 +5,11 @@
 
 #pragma once
 
-#undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
-#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
+#undef CONFIG_ZMK_MACRO_QWEAULT_WAIT_MS
+#define CONFIG_ZMK_MACRO_QWEAULT_WAIT_MS 30
 
-#undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
-#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
+#undef CONFIG_ZMK_MACRO_QWEAULT_TAP_MS
+#define CONFIG_ZMK_MACRO_QWEAULT_TAP_MS 40
 
 /* Canadian Multilingual Standard Mappings */
 
@@ -45,11 +45,12 @@ ZMK_BEHAVIOR(OE_L, macro_one_param, bindings = <&fr_oe>, <&macro_param_1to1>, <&
 ZMK_BEHAVIOR(CEDIL, macro_one_param, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
 
 // QWERTY Homerow Mods
-ZMK_BEHAVIOR(E_GR_D, macro, bindings = <&kp APOS>, <&to DEF>;) // È
-ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to DEF>;) // Î
+ZMK_BEHAVIOR(E_GR_D, macro, bindings = <&kp APOS>, <&to QWE>;) // È
+ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to QWE>;) // Î
 
 // Colemak Homerow Mods
 ZMK_BEHAVIOR(E_GR_C, macro, bindings = <&kp APOS>, <&to COL>;) // È
+ZMK_BEHAVIOR(I_CI_C, macro, bindings = <&fr_i_cf>, <&to COL>;) // Î
 
 // Ergo-L Homerow Mods
 ZMK_BEHAVIOR(E_CI_E, macro, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
@@ -88,7 +89,7 @@ ZMK_BEHAVIOR(AGRA_D, macro_one_param, bindings =
     <&kp RA(LBKT)>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;
+    <&to QWE>;
 )
 
 // ´ to input
@@ -123,7 +124,7 @@ ZMK_BEHAVIOR(CIRC_D, macro_one_param, bindings =
     <&kp LBKT>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to DEF>;
+    <&to QWE>;
 )
 
 // Keypress then return to default layer
