@@ -1,41 +1,41 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
-  QWERTY:
+  Colemak:
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - {t: A, h: GUI}
-  - {t: S, h: ALT}
-  - {t: D, h: CTRL}
-  - {t: F, h: SHIFT}
+  - {t: R, h: ALT}
+  - {t: S, h: CTRL}
+  - {t: T, h: SHIFT}
   - G
-  - H
-  - {t: J, h: SHIFT}
-  - {t: K, h: CTRL}
-  - {t: L, h: ALT}
-  - {t: ;, h: GUI}
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: CTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: GUI}
   - Z
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
-  - {t: QWERTY Accents, h: toggle}
+  - {t: Colemak Accents, h: toggle}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: ESC, h: Numbers, s: '$$material:left_click$$'}
   - {t: '$$material:backspace$$', s: $$delete$$}
   - {t: '$$tabler:space$$', h: Symbols, s: $$nbsp$$}
-  QWERTY Accents:
+  Colemak Accents:
   - ''
   - ''
   - Ë
@@ -70,42 +70,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Colemak:
+  QWERTY:
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ;
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: GUI}
-  - {t: R, h: ALT}
-  - {t: S, h: CTRL}
-  - {t: T, h: SHIFT}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
+  - {t: F, h: SHIFT}
   - G
-  - M
-  - {t: N, h: SHIFT}
-  - {t: E, h: CTRL}
-  - {t: I, h: ALT}
-  - {t: O, h: GUI}
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: CTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: GUI}
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
-  - {t: Colemak Accents, h: toggle}
+  - {t: QWERTY Accents, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Colemak Accents:
+  QWERTY Accents:
   - ''
   - ''
   - Ë
@@ -157,9 +157,9 @@ layers:
   - {t: N, h: SHIFT}
   - {t: ',', s: ;}
   - L
-  - {t: R, h: SHIFT}
+  - {t: R, h: RSHFT}
   - {t: T, h: CTRL}
-  - {t: I, h: ALT}
+  - {t: I, h: RALT}
   - {t: U, h: GUI}
   - Z
   - X
@@ -340,11 +340,11 @@ combos:
   d: false
 - p: [13, 16]
   k: CAPS WORD
-  l: [QWERTY, QWERTY Accents, Colemak, Ergo-L]
+  l: [QWERTY, QWERTY Accents, Colemak, Colemak Accents, Ergo-L, Ergo-L Accents]
   draw_separate: true
 - p: [12, 17]
   k: CAPS LOCK
-  l: [QWERTY, QWERTY Accents, Colemak, Ergo-L]
+  l: [QWERTY, QWERTY Accents, Colemak, Colemak Accents, Ergo-L, Ergo-L Accents]
   draw_separate: true
 - p: [12, 11]
   k: TMUX
@@ -384,25 +384,23 @@ combos:
   a: bottom
   o: 0.3
 - p: [31, 32]
-  k: {t: Colemak, h: toggle}
-  l: [QWERTY, Colemak]
+  k: {t: QWERTY, h: toggle}
+  l: [Colemak, QWERTY]
   draw_separate: true
 - p: [30, 33]
   k: {t: Ergo-L, h: toggle}
-  l: [QWERTY, Ergo-L]
+  l: [Colemak, Ergo-L]
   draw_separate: true
 - p: [31, 32]
-  k: {t: Colemak, h: toggle}
+  k: {t: QWERTY, h: toggle}
   l: [Ergo-L]
-  d: false
-  w: 0.1
-  h: 0.1
+  a: top
+  o: 0.1
 - p: [30, 33]
   k: {t: Ergo-L, h: toggle}
-  l: [Colemak]
-  d: false
-  w: 0.1
-  h: 0.1
+  l: [QWERTY]
+  a: top
+  o: 0.1
 - p: [3, 2]
   k: $$material:left_click$$
   l: [QWERTY, Colemak, Ergo-L]

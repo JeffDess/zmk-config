@@ -10,10 +10,11 @@ parse () {
     if keymap -c "$KMD/config.yaml" \
         parse \
         -z "$ROOT/config/$KBD_NAME".keymap >"$KMD/$KBD_NAME"_keymap.yaml \
-        -l "QWERTY" \
-        "QWERTY Accents"\
+        -l \
         "Colemak"\
         "Colemak Accents"\
+        "QWERTY" \
+        "QWERTY Accents"\
         "Ergo-L"\
         "Ergo-L Accents"\
         "Symbols"\
