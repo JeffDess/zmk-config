@@ -67,7 +67,7 @@ layers:
   - Ù
   - ^
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Colemak, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   QWERTY:
@@ -137,7 +137,7 @@ layers:
   - Ù
   - ^
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Ergo-L:
@@ -207,7 +207,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Ergo-L, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Symbols:
