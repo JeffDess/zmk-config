@@ -64,13 +64,13 @@ Luckily, there is now a way to fix it.
 
 ## Fix Fcitx
 
-1. Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set to
-false:
+1. Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set 
+   to false:
 
       ```sh
       # Forward key event instead of commiting text if it is not handled
       PreferKeyEvent=False
-      ```00f9 
+      ```
 
       > Note: This option is also available in the `fcitx5-configtool` GUI under
       > _Wayland Input Method Interface_.
@@ -94,7 +94,7 @@ Everything should work fine now! 🚀
 
 ## Bonus
 
-Hit <key>Ctrl</key> + <key>;</key> and you have a
+Hit <kbd>Ctrl</kbd> + <kbd>;</kbd> and you have a
 [clipboard history](https://fcitx-im.org/wiki/Clipboard) for free.
 
 ## References
