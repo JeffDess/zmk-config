@@ -64,16 +64,18 @@ Luckily, there is now a way to fix it.
 
 ## Fix Fcitx
 
-Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set to
+1. Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set to
 false:
 
-```sh
-# Forward key event instead of commiting text if it is not handled
-PreferKeyEvent=False
-```
+      ```sh
+      # Forward key event instead of commiting text if it is not handled
+      PreferKeyEvent=False
+      ```00f9 
 
-> Note: This option is also available in the `fcitx5-configtool` GUI under
-> _Wayland Input Method Interface_.
+      > Note: This option is also available in the `fcitx5-configtool` GUI under
+      > _Wayland Input Method Interface_.
+
+1. Relaunch Fcitx with `fcitx --replace -d`
 
 Everything should work fine now! 🚀
 
