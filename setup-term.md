@@ -44,7 +44,7 @@ suggest to use Fcitx as it works equally good in Xorg and Wayland.
    XMODIFIERS=@im=fcitx
    ```
 
-1. Configure your session to [execute the `fcitx` command on startup](https://fcitx-im.org/wiki/Setup_Fcitx_5).
+1. Configure your session to [execute the `fcitx5` command on startup](https://fcitx-im.org/wiki/Setup_Fcitx_5).
 
 1. If using Wezterm, you could add this in your `wezterm.lua` to prevent
    any hiccups:
@@ -75,7 +75,7 @@ Luckily, there is now a way to fix it.
       > Note: This option is also available in the `fcitx5-configtool` GUI under
       > _Wayland Input Method Interface_.
 
-1. Relaunch Fcitx with `fcitx --replace -d`
+1. Relaunch Fcitx with `fcitx5 --replace -d`
 
 Everything should work fine now! 🚀
 
