@@ -32,10 +32,10 @@
 #define mkp_rg mkp RCLK
 
 // Scroll wheel
-#define mwh_lf msc SCROLL_LEFT
-#define mwh_rg msc SCROLL_RIGHT
-#define mwh_up msc SCROLL_UP
-#define mwh_dn msc SCROLL_DOWN
+#define mwh_lf msc SCRL_LEFT
+#define mwh_rg msc SCRL_RIGHT
+#define mwh_up msc SCRL_UP
+#define mwh_dn msc SCRL_DOWN
 
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice
 ZMK_BEHAVIOR(mwh_tg, macro, bindings =
