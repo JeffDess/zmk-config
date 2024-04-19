@@ -56,7 +56,7 @@ suggest to use Fcitx as it works equally good in Xorg and Wayland.
 
 After a reboot, unicode characters should now work correctly on X11.
 
-In Wayland tough, GUI apps may have been fixed but most terminals will randomly 
+In Wayland tough, GUI apps may have been fixed but most terminals will randomly
 render a unshifted version of a shifted character when you type (any key, except
 unicodes). For instance: "0" instead of ")", "9" instead of "(", and so on.
 
@@ -64,7 +64,7 @@ Luckily, there is now a way to fix it.
 
 ## Fix Fcitx
 
-1. Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set 
+1. Edit `~/.config/fcitx5/conf/waylandim.conf` and make sure this option is set
    to false:
 
       ```sh
@@ -84,7 +84,7 @@ Everything should work fine now! 🚀
 | Package | X11 | Wayland |
 |---------|:---:|:---------:|
 | `fcitx5` | Any | [5.1.6](https://github.com/fcitx/fcitx5/releases/tag/5.1.6) |
-| `kitty` | Any<sup>1</sup> | [Nightly build](https://github.com/kovidgoyal/kitty/releases/tag/nightly) (Not in stable yet)         |
+| `kitty` | Any<sup>1</sup> | [0.34.0](https://sw.kovidgoyal.net/kitty/changelog/#id2) (not in package managers yet)<br> [Nightly build](https://github.com/kovidgoyal/kitty/releases/tag/nightly)         |
 | `wezterm` | Stable [20240203-110809-5046fc22](https://github.com/wez/wezterm/releases/tag/20240203-110809-5046fc22)| Any |
 | `foot` | Any | Any |
 | `alacritty` | Untested | Any |
