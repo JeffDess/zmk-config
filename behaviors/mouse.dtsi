@@ -45,11 +45,11 @@ ZMK_BEHAVIOR(mwh_tg, macro, bindings =
   <&kp KP_NUMLOCK &kp KP_NUMLOCK>;
 )
 
-// Mouse Left Click - Index and Middle finger of left hand, active on all layers
+// Mouse Left Click - Index and Middle finger of left hand, active on alpha layers
 ZMK_COMBO(leftclick, &mkp LCLK, LT1 LT2, QWE COL ERG)
 
-// Mouse Right Click - Pinky and Ring finger of left hand, active on all layers
+// Mouse Right Click - Pinky and Ring finger of left hand, active on alpha layers
 ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, QWE COL ERG)
 
-// Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
+// Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on alpha layers
 ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, QWE COL ERG)
