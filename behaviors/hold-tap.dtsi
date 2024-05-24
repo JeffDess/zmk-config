@@ -17,7 +17,7 @@
 /* https://github.com/urob/zmk-config#timeless-homerow-mods */
 
 /* left-hand HRMs */
-ZMK_BEHAVIOR(hml, hold_tap,
+ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
@@ -28,7 +28,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
 )
 
 /* right-hand HRMs */
-ZMK_BEHAVIOR(hmr, hold_tap,
+ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
@@ -39,7 +39,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 )
 
 // homerow mods for circumflex
-ZMK_BEHAVIOR(hrmc, hold_tap,
+ZMK_HOLD_TAP(hrmc,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -48,7 +48,7 @@ ZMK_BEHAVIOR(hrmc, hold_tap,
 )
 
 // homerow mods for grave
-ZMK_BEHAVIOR(hrmg, hold_tap,
+ZMK_HOLD_TAP(hrmg,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -57,7 +57,7 @@ ZMK_BEHAVIOR(hrmg, hold_tap,
 )
 
 // homerow mods for è
-ZMK_BEHAVIOR(hrme, hold_tap,
+ZMK_HOLD_TAP(hrme,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -66,7 +66,7 @@ ZMK_BEHAVIOR(hrme, hold_tap,
 )
 
 // homerow mods for è
-ZMK_BEHAVIOR(hrmeg, hold_tap,
+ZMK_HOLD_TAP(hrmeg,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -75,7 +75,7 @@ ZMK_BEHAVIOR(hrmeg, hold_tap,
 )
 
 // homerow mods for ê
-ZMK_BEHAVIOR(hrmec, hold_tap,
+ZMK_HOLD_TAP(hrmec,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -84,7 +84,7 @@ ZMK_BEHAVIOR(hrmec, hold_tap,
 )
 
 // homerow mods for î (QWERTY)
-ZMK_BEHAVIOR(hrmiq, hold_tap,
+ZMK_HOLD_TAP(hrmiq,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
@@ -93,7 +93,7 @@ ZMK_BEHAVIOR(hrmiq, hold_tap,
 )
 
 // homerow mods for î (Colemak)
-ZMK_BEHAVIOR(hrmic, hold_tap,
+ZMK_HOLD_TAP(hrmic,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;

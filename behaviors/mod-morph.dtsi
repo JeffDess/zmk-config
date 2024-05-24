@@ -5,73 +5,73 @@
 #include "../config/constants.h"
 
 // tap: backspace | shift + tap: delete
-ZMK_BEHAVIOR(bspc_del, mod_morph,
+ZMK_MOD_MORPH(bspc_del,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: backspace | shift + tap: delete | hold: nav layer
-ZMK_BEHAVIOR(bs_del_nav, mod_morph,
+ZMK_MOD_MORPH(bs_del_nav,
     bindings = <&lt NAV BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: plus | shift + tap: minus
-ZMK_BEHAVIOR(plus_minus, mod_morph,
+ZMK_MOD_MORPH(plus_minus,
     bindings = <&kp PLUS>, <&kp MINUS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: multiply | shift + tap: divide
-ZMK_BEHAVIOR(multi_div, mod_morph,
+ZMK_MOD_MORPH(multi_div,
     bindings = <&kp STAR>, <&kp FSLH>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: dash | shift + tap: tilde
-ZMK_BEHAVIOR(dash_tilde, mod_morph,
+ZMK_MOD_MORPH(dash_tilde,
     bindings = <&kp MINUS>, <&kp TILDS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: comma | shift + tap: period
-ZMK_BEHAVIOR(comma_dot, mod_morph,
+ZMK_MOD_MORPH(comma_dot,
     bindings = <&kp COMMA>, <&kp DOT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // hold: num layer | tap: escape | shift OR ctrl + tap : mouse click
-ZMK_BEHAVIOR(num_esc_clk, mod_morph,
+ZMK_MOD_MORPH(num_esc_clk,
     bindings = <&lt NUM ESC>, <&mkp LCLK>;
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
 // hold: symbol layer | tap: space | shift + tap: non-breaking space
-ZMK_BEHAVIOR(sp_nbsp_sym, mod_morph,
+ZMK_MOD_MORPH(sp_nbsp_sym,
     bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
     mods = <(MOD_LSFT)>;
 )
 
 // tap: period | shift + tap: colon
-ZMK_BEHAVIOR(dot_col, mod_morph,
+ZMK_MOD_MORPH(dot_col,
     bindings = <&kp DOT>, <&kp COLON>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: comma | shift + tap: semi-colon
-ZMK_BEHAVIOR(comma_semi, mod_morph,
+ZMK_MOD_MORPH(comma_semi,
     bindings = <&kp COMMA>, <&kp SEMI>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: trema | shift + tap: grave
-ZMK_BEHAVIOR(trem_gr, mod_morph,
+ZMK_MOD_MORPH(trem_gr,
     bindings = <&KPD ACC_TR ERG>, <&KPD ACC_GR ERG>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: single apostrophe | shift + tap: double apostrophe
-ZMK_BEHAVIOR(sap_dap, mod_morph,
+ZMK_MOD_MORPH(sap_dap,
     bindings = <&kp SAPOS>, <&kp DAPOS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
