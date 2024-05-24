@@ -8,14 +8,16 @@
 
 // Fat arrow padded with spaces: ' => '
 ZMK_MACRO(FAT_ARROW, bindings =
-    <&kp SPACE &kp EQUAL>,
+    <&kp SPACE>,
+    <&kp EQUAL>,
     <&kp RA(DOT)>,
     <&kp SPACE>;
 )
 
 // Thin arrow padded with spaces: ' -> '
 ZMK_MACRO(ARROW, bindings =
-    <&kp SPACE &kp MINUS>,
+    <&kp SPACE >,
+    <&kp MINUS>,
     <&kp RA(DOT)>,
     <&kp SPACE>;
 )
@@ -23,14 +25,16 @@ ZMK_MACRO(ARROW, bindings =
 // Greater than or equal to: ' >= '
 ZMK_MACRO(GTE, bindings =
     <&kp SPACE>,
-    <&kp GRTHAN>, <&kp EQUAL>,
+    <&kp GRTHAN>,
+    <&kp EQUAL>,
     <&kp SPACE>;
 )
 
 // Less than or equal to: ' <= '
 ZMK_MACRO(LTE, bindings =
     <&kp SPACE>,
-    <&kp LETHAN>, <&kp EQUAL>,
+    <&kp LETHAN>,
+    <&kp EQUAL>,
     <&kp SPACE>;
 )
 
