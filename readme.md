@@ -26,7 +26,7 @@ simultaneously with Github Actions.
 - Cursor/Scroll toggle with
   [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 - Easy to read files, thanks to the
-  [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) helper
+  [zmk-helpers](https://github.com/urob/zmk-helpers) helper
 
 ## Keymap
 
@@ -98,4 +98,3 @@ terminal](setup-term.md) to make it work correctly.
 - [Corne Keyboard](https://github.com/foostan/crkbd)
 - [Urchin Keyboard](https://github.com/duckyb/urchin)
 - [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
-

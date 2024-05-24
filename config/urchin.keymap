@@ -7,7 +7,7 @@
 #include "constants.h"
 #define HOST_OS LINUX // Needed for unicode international_chars
 
-#include "../zmk-nodefree-config/helper.h"
+#include "zmk-helpers/helper.h"
 #include "../chars/french.dtsi"
 #include "../chars/math.dtsi"
 #include "../chars/typography.dtsi"
