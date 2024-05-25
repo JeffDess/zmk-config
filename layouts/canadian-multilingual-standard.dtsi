@@ -5,11 +5,11 @@
 
 #pragma once
 
-#undef CONFIG_ZMK_MACRO_QWEAULT_WAIT_MS
-#define CONFIG_ZMK_MACRO_QWEAULT_WAIT_MS 30
+#undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
 
-#undef CONFIG_ZMK_MACRO_QWEAULT_TAP_MS
-#define CONFIG_ZMK_MACRO_QWEAULT_TAP_MS 40
+#undef CONFIG_ZMK_MACRO_DEFAULT_TAP_MS
+#define CONFIG_ZMK_MACRO_DEFAULT_TAP_MS 40
 
 /* Canadian Multilingual Standard Mappings */
 
@@ -40,9 +40,9 @@ ZMK_MACRO_ONE_PARAM(I_CI, bindings = <&fr_i_cf>, <&macro_param_1to1>, <&to MACRO
 ZMK_MACRO_ONE_PARAM(O_CI, bindings = <&fr_o_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ô
 ZMK_MACRO_ONE_PARAM(U_CI, bindings = <&fr_u_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Û
 ZMK_MACRO_ONE_PARAM(U_GR, bindings = <&fr_u_gr>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ù
-ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&fr_ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)         // Æ
-ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&fr_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)         // Œ
-ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // Ç
+ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&fr_ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Æ
+ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&fr_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Œ
+ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
 
 // QWERTY Homerow Mods
 ZMK_MACRO(E_GR_D, bindings = <&kp APOS>, <&to QWE>;) // È
