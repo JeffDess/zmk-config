@@ -1,11 +1,4 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/36.h"
 #include "./combos.dtsi"
-#include "../config/constants.h"
-
-#pragma once
 
 // NOTE: Only thumb keys are different between 34/36 layouts
 //       All other combos should be in ./combos.dtsi

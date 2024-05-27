@@ -1,11 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/36.h"
-#include "../config/constants.h"
-
 // Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
 // Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
 

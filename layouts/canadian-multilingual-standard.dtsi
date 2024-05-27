@@ -1,10 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/36.h"
-
-#pragma once
-
 #undef CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS
 #define CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS 30
 
@@ -46,7 +39,7 @@ ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACR
 
 // QWERTY Homerow Mods
 ZMK_BEHAVIOR(E_GR_D, macro, bindings = <&kp APOS>, <&to QWE>;) // È
-ZMK_MACRO(I_CI_D, bindings = <&fr_i_cf>, <&to QWE>;) // Î
+ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to QWE>;) // Î
 
 // Colemak Homerow Mods
 ZMK_MACRO(E_GR_C, bindings = <&kp APOS>, <&to COL>;) // È

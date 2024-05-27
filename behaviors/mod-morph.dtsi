@@ -1,9 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "../layouts/canadian-multilingual-standard.dtsi"
-#include "../config/constants.h"
-
 // tap: backspace | shift + tap: delete
 ZMK_MOD_MORPH(bspc_del,
     bindings = <&kp BSPC>, <&kp DEL>;

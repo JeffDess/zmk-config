@@ -1,11 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "../config/constants.h"
-#include "../layouts/canadian-multilingual-standard.dtsi"
-
-#pragma once
-
 // Fat arrow padded with spaces: ' => '
 ZMK_MACRO(FAT_ARROW, bindings =
     <&kp SPACE>,

@@ -1,12 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/36.h"
-#include "../config/constants.h"
-#include "../behaviors/macros.dtsi"
-
-#pragma once
-
 // Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
