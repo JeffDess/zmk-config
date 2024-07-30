@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris/sweep}
+layout: {qmk_keyboard: ferris_rotated}
 layers:
   Colemak:
   - Q
