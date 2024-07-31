@@ -34,7 +34,10 @@
 ZMK_MACRO(mwh_tg, bindings =
   <&macro_tap_time 1>,
   <&macro_wait_time 18>,
-  <&kp KP_NUMLOCK &kp KP_NUMLOCK>;
+  <&macro_press &kp KP_NUMLOCK>,
+  <&macro_release &kp KP_NUMLOCK>;
+)
+
 )
 
 // Mouse Left Click - Index and Middle finger of left hand, active on alpha layers
