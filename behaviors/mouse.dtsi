@@ -38,6 +38,14 @@ ZMK_MACRO(mwh_tg, bindings =
   <&macro_release &kp KP_NUMLOCK>;
 )
 
+// Cycle DPI presets on Ploopy Nano by pressing CapsLock twice
+ZMK_MACRO(mmv_dpi, bindings =
+  <&macro_tap_time 1>,
+  <&macro_wait_time 18>,
+  <&macro_press &kp KP_CAPSLOCK>,
+  <&macro_release &kp KP_CAPSLOCK>;
+)
+
 )
 
 // Mouse Left Click - Index and Middle finger of left hand, active on alpha layers
