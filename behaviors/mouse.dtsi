@@ -64,3 +64,6 @@ ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, QWE COL ERG)
 
 // Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on alpha layers
 ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, QWE COL ERG)
+
+// Enter QMK bootloader mode on ploopy nano - active on mouse layer
+ZMK_COMBO(mouseboot, &mkp_boot, RB4 RB3, MOU)
