@@ -49,7 +49,7 @@ ZMK_MACRO(mkp_boot, bindings =
   <&macro_tap_time 1>,
   <&macro_wait_time 10>,
   <&macro_press &kp CAPSLOCK>,
-  <&macro_press &kp KP_NUMLOCK &kp KP_NUMLOCK>,
+  <&kp KP_NUMLOCK &kp KP_NUMLOCK>,
   <&macro_release &kp CAPSLOCK>;
 )
 
@@ -63,4 +63,4 @@ ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, QWE COL ERG)
 ZMK_COMBO(scrolltoggle, &mwh_tg, LT2 LT3, QWE COL ERG)
 
 // Enter QMK bootloader mode on ploopy nano - active on mouse layer
-ZMK_COMBO(mouseboot, &mkp_boot, RB4 RB3, MOU)
+ZMK_COMBO(mouseboot, &mkp_boot, LT3 LT4, MOU)
