@@ -23,10 +23,10 @@ simultaneously with Github Actions.
 - Home row mods
 - Mouse keys support
 - Gaming Layer (shifted WASD position, free of homerow mods)
-- Cursor/Scroll toggle with
+- Cursor/Scroll toggle, DPI cycling and bootloader mode keybindings for
   [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
-- Easy to read files, thanks to the
-  [zmk-helpers](https://github.com/urob/zmk-helpers) helper
+- Easy to read files, thanks to
+  [zmk-helpers](https://github.com/urob/zmk-helpers)
 
 ## Keymap
 
