@@ -42,18 +42,18 @@ ZMK_MACRO(mwh_tg, bindings =
 ZMK_MACRO(mmv_dpi, bindings =
   <&macro_tap_time 1>,
   <&macro_wait_time 18>,
-  <&macro_press &kp KP_CAPSLOCK>,
-  <&macro_release &kp KP_CAPSLOCK>;
+  <&macro_press &kp CAPSLOCK>,
+  <&macro_release &kp CAPSLOCK>;
 )
 
 // Bootloader mode on Ploopy Nano by pressing CapsLock  twice
 ZMK_MACRO(mkp_boot, bindings =
   <&macro_tap_time 1>,
   <&macro_wait_time 10>,
-  <&macro_press &kp KP_CAPSLOCK>,
+  <&macro_press &kp CAPSLOCK>,
   <&macro_press &kp KP_NUMLOCK>,
   <&macro_release &kp KP_NUMLOCK>,
-  <&macro_release &kp KP_CAPSLOCK>;
+  <&macro_release &kp CAPSLOCK>;
 )
 
 // Mouse Left Click - Index and Middle finger of left hand, active on alpha layers
