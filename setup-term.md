@@ -84,7 +84,7 @@ Everything should work fine now! 🚀
 | Package | X11 | Wayland |
 |---------|:---:|:---------:|
 | `fcitx5` | Any | [5.1.6](https://github.com/fcitx/fcitx5/releases/tag/5.1.6) |
-| `kitty` | Any<sup>1</sup> | [0.34.0](https://sw.kovidgoyal.net/kitty/changelog/#id2) (not in package managers yet)<br> [Nightly build](https://github.com/kovidgoyal/kitty/releases/tag/nightly)         |
+| `kitty` | Any<sup>1</sup> | [0.34.0](https://sw.kovidgoyal.net/kitty/changelog/#id2)
 | `wezterm` | Stable [20240203-110809-5046fc22](https://github.com/wez/wezterm/releases/tag/20240203-110809-5046fc22)| Any |
 | `foot` | Any | Any |
 | `alacritty` | Untested | Any |
