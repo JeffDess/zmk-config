@@ -26,6 +26,7 @@ parse () {
         echo "Keymap Parsed"
     else
         echo "Error parsing keymap"
+        exit 1
     fi
 }
 
@@ -38,10 +39,31 @@ draw () {
         echo "Keymap Drawned"
     else
         echo "Error drawing keymap"
+        exit 1
     fi
 }
 
-KBD="urchin"
+launch_preview () {
+   echo "Launching preview in Firefox"
+   firefox images/keymaps/urchin_keymap.svg &
+}
 
-parse "$KBD"
-draw "$KBD" --keys-only
+init() {
+    KBD="urchin"
+    parse "$KBD"
+    draw "$KBD" --keys-only
+}
+
+case "$1" in
+    '-p'|'--preview')
+        init
+        echo "Launching preview in Firefox"
+        firefox images/keymaps/urchin_keymap.svg &
+        ;;
+    '-h'|'--help')
+        echo 'Add -p or --preview to launch preview in Firefox'
+        ;;
+    *)
+        init
+        ;;
+esac
