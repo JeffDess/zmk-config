@@ -95,29 +95,11 @@ ZMK_HOLD_TAP(hrmic,
 )
 
 
-// homerow mods for scroll down (Mouse)
-ZMK_HOLD_TAP(hrmmd,
+// homerow mods for scroll (Mouse)
+ZMK_HOLD_TAP(hrmw,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&mwh_dn>;
-)
-
-// homerow mods for scroll up (Mouse)
-ZMK_HOLD_TAP(hrmmu,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&mwh_up>;
-)
-
-// homerow mods for scroll left (Mouse)
-ZMK_HOLD_TAP(hrmml,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&mwh_lf>;
+    bindings = <&kp>, <&msc>;
 )

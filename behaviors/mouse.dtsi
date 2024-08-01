@@ -30,6 +30,11 @@
 #define mwh_up msc SCRL_UP
 #define mwh_dn msc SCRL_DOWN
 
+#define MWL SCRL_LEFT
+#define MWR SCRL_RIGHT
+#define MWU SCRL_UP
+#define MWD SCRL_DOWN
+
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice
 ZMK_MACRO(mwh_tg, bindings =
   <&macro_tap_time 1>,
