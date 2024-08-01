@@ -391,6 +391,9 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map: {
+    "&hrmmd SL 0": { t: "$$scroll-down$$", h: 'SHIFT'},
+    "&hrmmu CL 0": { t: "$$scroll-up$$", h: 'CTRL'},
+    "&hrmml AL 0": { t: "$$scroll-left$$", h: 'ALT'},
     "&TREM E 0": "Ë",
     "&TREM I 0": "Ï",
     "&TREM O 0": "Ö",
@@ -486,6 +489,10 @@ parse_config:
     "&msc SCRL_RIGHT": "$$scroll-right$$",
     "&msc SCRL_UP": "$$scroll-up$$",
     "&msc SCRL_DOWN": "$$scroll-down$$",
+    "&mwh_lf": "$$scroll-left$$",
+    "&mwh_rg": "$$scroll-right$$",
+    "&mwh_up": "$$scroll-up$$",
+    "&mwh_dn": "$$scroll-down$$",
     "&mmv MOVE_LEFT": "$$cursor-left$$",
     "&mmv MOVE_RIGHT": "$$cursor-right$$",
     "&mmv MOVE_UP": "$$cursor-up$$",
