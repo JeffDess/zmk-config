@@ -315,8 +315,41 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - '0'
-  Mouse: ['', '', '', '', '', '', '', '', '', '', '', $$scroll-left$$, $$scroll-up$$, $$scroll-down$$, $$scroll-right$$, $$cursor-left$$, $$cursor-down$$, $$cursor-up$$,
-    $$cursor-right$$, '', '', '', '', $$scroll$$, '', '', '', '', '', '', '$$material:right_click$$', '$$material:left_click$$', '', '']
+  Mouse:
+  - ''
+  - ''
+  - $$scroll$$
+  - DPI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: $$scroll-left$$, h: ALT}
+  - {t: $$scroll-up$$, h: CTRL}
+  - {t: $$scroll-down$$, h: SHIFT}
+  - $$scroll-right$$
+  - $$cursor-left$$
+  - $$cursor-down$$
+  - $$cursor-up$$
+  - $$cursor-right$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$material:right_click$$
+  - $$material:left_click$$
+  - ''
+  - ''
   Game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
     '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M]
 combos:
@@ -413,3 +446,6 @@ combos:
 - p: [2, 1]
   k: $$scroll$$
   l: [QWERTY, Colemak, Ergo-L]
+- p: [1, 0]
+  k: QMK BOOT
+  l: [Mouse]
