@@ -490,6 +490,8 @@ parse_config:
     "&mmv MOVE_RIGHT": "$$cursor-right$$",
     "&mmv MOVE_UP": "$$cursor-up$$",
     "&mmv MOVE_DOWN": "$$cursor-down$$",
+    "&mmv_dpi": "DPI",
+    "&mkp_boot": "QMK BOOT",
     "&mwh_tg": "$$scroll$$",
     "&caps_word": "CAPS WORD",
     "&caps_lock": "CAPS LOCK",
