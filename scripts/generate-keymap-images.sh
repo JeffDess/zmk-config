@@ -61,6 +61,7 @@ case "$1" in
         firefox images/keymaps/urchin_keymap.svg &
         ;;
     '-h'|'--help')
+        echo 'Draw keymap from configuration and export as SVG'
         echo 'Add -p or --preview to launch preview in Firefox'
         ;;
     *)
