@@ -7,8 +7,8 @@
 /* Canadian Multilingual Standard Mappings */
 
 #define SLSH   GRAVE         // /
-#define SAPOS  LS(COMMA)     // /
-#define DAPOS  LS(DOT)     // /
+#define SAPOS  LS(COMMA)     // '
+#define DAPOS  LS(DOT)       // "
 #define DEG    RA(SEMI)      // °
 #define LBRAC  RA(N7)        // {
 #define RBRAC  RA(N8)        // }
@@ -23,6 +23,8 @@
 #define ACC_GR RA(LBKT)      // `
 #define ACC_TR LS(LBKT)      // ¨
 
+#define UGR &u_grave_
+
 // The following must return to the base layer after being pressed
 ZMK_MACRO_ONE_PARAM(A_GR, bindings = <&kp BACKSLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)  // À
 ZMK_MACRO_ONE_PARAM(A_CI, bindings = <&fr_a_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Â
@@ -32,10 +34,11 @@ ZMK_MACRO_ONE_PARAM(E_CI, bindings = <&fr_e_cf>, <&macro_param_1to1>, <&to MACRO
 ZMK_MACRO_ONE_PARAM(I_CI, bindings = <&fr_i_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Î
 ZMK_MACRO_ONE_PARAM(O_CI, bindings = <&fr_o_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ô
 ZMK_MACRO_ONE_PARAM(U_CI, bindings = <&fr_u_cf>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Û
-ZMK_MACRO_ONE_PARAM(U_GR, bindings = <&fr_u_gr>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ù
+ZMK_MACRO_ONE_PARAM(U_GR, bindings = <&macro_param_1to2>, <&AGRA U MACRO_PLACEHOLDER>;)       // Ù
 ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&fr_ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Æ
 ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&fr_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Œ
 ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
+
 
 // QWERTY Homerow Mods
 ZMK_MACRO(E_GR_D, bindings = <&kp APOS>, <&to QWE>;) // È
@@ -70,8 +73,20 @@ ZMK_MACRO_ONE_PARAM(TREMA, bindings =
 // ` to input
 ZMK_MACRO_TWO_PARAM(AGRA, bindings =
     <&kp RA(LBKT)>,
-    <&macro_param_1to1>,
+    <&macro_param_2to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_param_1to1>,
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
+)
+
+ZMK_MOD_MORPH(u_grave_,
+    bindings = <&AGRA U 0>, <&AGRA U LSHIFT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_MACRO_TWO_PARAM(MA, bindings =
+    <&macro_param_1to1>,
+    <&u_grave_>,
     <&macro_param_2to1>,
     <&to MACRO_PLACEHOLDER>;
 )
