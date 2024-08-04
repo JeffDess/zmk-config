@@ -74,9 +74,11 @@ ZMK_MACRO_ONE_PARAM(TREMA, bindings =
 ZMK_MACRO_TWO_PARAM(AGRA, bindings =
     <&kp RA(LBKT)>,
     <&macro_param_2to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_press &kp MACRO_PLACEHOLDER>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>;
+    <&macro_tap &kp MACRO_PLACEHOLDER>,
+    <&macro_param_2to1>,
+    <&macro_release &kp MACRO_PLACEHOLDER>;
 )
 
 ZMK_MOD_MORPH(u_grave_,
