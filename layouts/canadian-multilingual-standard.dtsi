@@ -73,22 +73,18 @@ ZMK_MACRO_ONE_PARAM(TREMA, bindings =
 // ` to input
 ZMK_MACRO_TWO_PARAM(AGRA, bindings =
     <&kp RA(LBKT)>,
-    <&macro_param_2to1>,
-    <&macro_press &kp MACRO_PLACEHOLDER>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&macro_param_2to1>,
-    <&macro_release &kp MACRO_PLACEHOLDER>;
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 ZMK_MOD_MORPH(u_grave_,
-    bindings = <&AGRA U 0>, <&AGRA U LSHIFT>;
+    bindings = <&AGRA U 0>, <&AGRA LS(U) 0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 ZMK_MACRO_TWO_PARAM(MA, bindings =
     <&macro_param_1to1>,
-    <&u_grave_>,
+    <&MACRO_PLACEHOLDER>,
     <&macro_param_2to1>,
     <&to MACRO_PLACEHOLDER>;
 )
