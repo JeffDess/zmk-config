@@ -33,7 +33,11 @@
 #define MATH_7_8 RC(7) // ⅞
 
 /* Symbols */
-#define MATH_PM    RA(1) // ±
+ZMK_MACRO(MATH_PM, bindings = 
+    <&macro_press &kp K_APP>, 
+    <&kp RA(1)>,
+    <&macro_release &kp K_APP>;
+)                            // ±
 #define MATH_DEG   RA(SEMI)  // °
 #define MATH_MICRO RA(M)     // µ
 
