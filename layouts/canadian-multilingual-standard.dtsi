@@ -139,3 +139,13 @@ ZMK_MACRO_TWO_PARAM(KPD, bindings =
     <&macro_param_2to1>,
     <&to MACRO_PLACEHOLDER>;
 )
+
+/* Fractions */
+ZMK_MACRO(MATH_1_4, bindings = <&kp RC(0)>;)     // ¼
+ZMK_MACRO(MATH_1_2, bindings = <&kp RC(PLUS)>;)  // ½
+ZMK_MACRO(MATH_3_4, bindings = <&kp RC(MINUS)>;) // ¾
+
+/* Symbols */
+ZMK_MACRO(MATH_pm,    bindings = <&kp RA(1)>;)    // ±
+ZMK_MACRO(MATH_deg,   bindings = <&kp RA(SEMI)>;) // °
+ZMK_MACRO(MATH_micro, bindings = <&kp RA(M)>;)    // µ
