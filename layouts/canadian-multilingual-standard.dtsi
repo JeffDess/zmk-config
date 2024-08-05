@@ -6,22 +6,40 @@
 
 /* Canadian Multilingual Standard Mappings */
 
-#define SLSH   GRAVE         // /
-#define SAPOS  LS(COMMA)     // '
-#define DAPOS  LS(DOT)       // "
-#define DEG    RA(SEMI)      // °
-#define LBRAC  RA(N7)        // {
-#define RBRAC  RA(N8)        // }
-#define LBKET  RA(N9)        // [
-#define RBKET  RA(N0)        // ]
-#define QUEST  LS(N6)        // ?
-#define PIP    RA(GRAVE)     // |
-#define TILDS  RA(RBKT)      // ~
-#define LETHAN RA(COMMA)     // ≤
-#define GRTHAN RA(DOT)       // ≥
-#define ACC_CI LBKT          // ^
-#define ACC_GR RA(LBKT)      // `
-#define ACC_TR LS(LBKT)      // ¨
+#define SLSH   GRAVE     // /
+#define SAPOS  LS(COMMA) // '
+#define DAPOS  LS(DOT)   // "
+#define DEG    RA(SEMI)  // °
+#define LBRAC  RA(N7)    // {
+#define RBRAC  RA(N8)    // }
+#define LBKET  RA(N9)    // [
+#define RBKET  RA(N0)    // ]
+#define QUEST  LS(N6)    // ?
+#define PIP    RA(GRAVE) // |
+#define TILDS  RA(RBKT)  // ~
+#define LETHAN RA(COMMA) // ≤
+#define GRTHAN RA(DOT)   // ≥
+#define ACC_AI RA(SLASH) // ´
+#define ACC_CI LBKT      // ^
+#define ACC_GR RA(LBKT)  // `
+#define ACC_TR LS(LBKT)  // ¨
+
+/* Fractions */
+#define MATH_1_4 RA(4) // ¼
+#define MATH_1_2 RA(5) // ½
+#define MATH_3_4 RA(6) // ¾
+#define MATH_3_8 RC(5) // ⅜
+#define MATH_5_8 RC(6) // ⅝
+#define MATH_7_8 RC(7) // ⅞
+
+/* Symbols */
+#define MATH_PM    RC(9)    // ±
+#define MATH_DEG   RA(SEMI) // °
+#define MATH_MICRO RA(M)    // µ
+
+/* Typography */
+#define LAQUO RA(Z) // «
+#define RAQUO RA(X) // »
 
 // Mod-morph - lowercase / uppercase accented characters
 ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC A>, <&CIRC LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // â / Â
@@ -80,21 +98,21 @@ ZMK_MACRO(CAR, bindings =
 
 // ¨ directly
 ZMK_MACRO_ONE_PARAM(TREMA, bindings =
-    <&macro_tap &kp LS(LBKT) &kp SPACE>,
+    <&macro_tap &kp ACC_TR &kp SPACE>,
     <&macro_param_1to1>,
     <&to MACRO_PLACEHOLDER>;
 )
 
 // ` to input
 ZMK_MACRO_ONE_PARAM(AGRA, bindings =
-    <&kp RA(LBKT)>,
+    <&kp ACC_GR>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 // ` to input then to default layer
 ZMK_MACRO_ONE_PARAM(AGRA_D, bindings =
-    <&kp RA(LBKT)>,
+    <&kp ACC_GR>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to QWE>;
@@ -102,7 +120,7 @@ ZMK_MACRO_ONE_PARAM(AGRA_D, bindings =
 
 // ´ to input
 ZMK_MACRO_TWO_PARAM(AIGU, bindings =
-    <&kp RA(SLASH)>,
+    <&kp ACC_AI>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&macro_param_2to1>,
@@ -111,21 +129,21 @@ ZMK_MACRO_TWO_PARAM(AIGU, bindings =
 
 // ¨ to input
 ZMK_MACRO_ONE_PARAM(TREM, bindings =
-    <&kp LS(LBKT)>,
+    <&kp ACC_TR>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 // ^ to input
 ZMK_MACRO_ONE_PARAM(CIRC, bindings =
-    <&kp LBKT>,
+    <&kp ACC_CI>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 // ^ to input then to default layer
 ZMK_MACRO_ONE_PARAM(CIRC_D, bindings =
-    <&kp LBKT>,
+    <&kp ACC_CI>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>,
     <&to QWE>;
@@ -138,22 +156,3 @@ ZMK_MACRO_TWO_PARAM(KPD, bindings =
     <&macro_param_2to1>,
     <&to MACRO_PLACEHOLDER>;
 )
-
-/* Fractions */
-ZMK_MACRO(MATH_1_4, bindings = <&kp RA(4)>;) // ¼
-ZMK_MACRO(MATH_1_2, bindings = <&kp RA(5)>;) // ½
-ZMK_MACRO(MATH_3_4, bindings = <&kp RA(6)>;) // ¾
-ZMK_MACRO(MATH_3_8, bindings = <&kp RC(5)>;) // ⅜
-ZMK_MACRO(MATH_5_8, bindings = <&kp RC(6)>;) // ⅝
-ZMK_MACRO(MATH_7_8, bindings = <&kp RC(7)>;) // ⅞
-
-/* Symbols */
-ZMK_MACRO(MATH_pm,    bindings = <&kp RC(9)>;)    // ±
-ZMK_MACRO(MATH_deg,   bindings = <&kp RA(SEMI)>;) // °
-ZMK_MACRO(MATH_micro, bindings = <&kp RA(M)>;)    // µ
-
-/* Typography */
-ZMK_MACRO(LAQUO,      bindings = <&kp RA(Z)>;)    // «
-ZMK_MACRO(RAQUO,      bindings = <&kp RA(X)>;)    // »
-
-
