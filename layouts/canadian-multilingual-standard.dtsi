@@ -25,21 +25,17 @@
 #define ACC_TR LS(LBKT)  // ¨
 
 /* Fractions */
-#define MATH_1_4 RA(RC(4)) // ¼
-#define MATH_1_2 RA(RC(5)) // ½
-#define MATH_3_4 RA(RC(6)) // ¾
-#define MATH_3_8 RC(5) // ⅜
-#define MATH_5_8 RC(6) // ⅝
-#define MATH_7_8 RC(7) // ⅞
+#define MATH_1_4 RA(N4) // ¼
+#define MATH_1_2 RA(N5) // ½
+#define MATH_3_4 RA(N6) // ¾
+#define MATH_3_8 RC(N5) // ⅜
+#define MATH_5_8 RC(N6) // ⅝
+#define MATH_7_8 RC(N7) // ⅞
 
 /* Symbols */
-ZMK_MACRO(MATH_PM, bindings = 
-    <&macro_press &kp K_APP>, 
-    <&kp RA(1)>,
-    <&macro_release &kp K_APP>;
-)                            // ±
-#define MATH_DEG   RA(SEMI)  // °
-#define MATH_MICRO RA(M)     // µ
+#define MATH_PM    RA(N1)   // 
+#define MATH_DEG   RA(SEMI) // °
+#define MATH_MICRO RA(M)    // µ
 
 /* Typography */
 #define LAQUO RA(Z) // «
