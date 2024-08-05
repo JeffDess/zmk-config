@@ -31,7 +31,7 @@ ZMK_MOD_MORPH(morph_i_circ, bindings = <&CIRC I>, <&CIRC LS(I)>; mods = <(MOD_LS
 ZMK_MOD_MORPH(morph_i_trem, bindings = <&TREM I>, <&TREM LS(I)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ê / Ê
 ZMK_MOD_MORPH(morph_o_circ, bindings = <&CIRC O>, <&CIRC LS(O)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ô / Ô
 ZMK_MOD_MORPH(morph_o_trem, bindings = <&TREM O>, <&TREM LS(O)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ê / Ê
-ZMK_MOD_MORPH(morph_u_circ, bindings = <&CIRC I>, <&CIRC LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // û / Û
+ZMK_MOD_MORPH(morph_u_circ, bindings = <&CIRC U>, <&CIRC LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // û / Û
 ZMK_MOD_MORPH(morph_u_grav, bindings = <&AGRA U>, <&AGRA LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ù / Ù
 ZMK_MOD_MORPH(morph_u_trem, bindings = <&TREM U>, <&TREM LS(U)>; mods = <(MOD_LSFT|MOD_RSFT)>;) // ê / Ê
 ZMK_MOD_MORPH(morph__ae, bindings = <&kp RC(A)>, <&kp LS(RC(A))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
@@ -54,7 +54,6 @@ ZMK_MACRO_ONE_PARAM(U_TR, bindings = <&morph_u_trem>, <&macro_param_1to1>, <&to 
 ZMK_MACRO_ONE_PARAM(AE_L, bindings = <&morph__ae>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // Æ
 ZMK_MACRO_ONE_PARAM(OE_L, bindings = <&morph__oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // Œ
 ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
-
 
 // QWERTY Homerow Mods
 ZMK_MACRO(E_GR_D, bindings = <&kp APOS>, <&to QWE>;) // È
@@ -141,9 +140,9 @@ ZMK_MACRO_TWO_PARAM(KPD, bindings =
 )
 
 /* Fractions */
-ZMK_MACRO(MATH_1_4, bindings = <&kp RC(0)>;)     // ¼
-ZMK_MACRO(MATH_1_2, bindings = <&kp RC(PLUS)>;)  // ½
-ZMK_MACRO(MATH_3_4, bindings = <&kp RC(MINUS)>;) // ¾
+ZMK_MACRO(MATH_1_4, bindings = <&kp RC(0)>;)      // ¼
+ZMK_MACRO(MATH_1_2, bindings = <&kp RC(PLUS)>;)   // ½
+ZMK_MACRO(MATH_3_4, bindings = <&kp RC(MINUS)>;)  // ¾
 
 /* Symbols */
 ZMK_MACRO(MATH_pm,    bindings = <&kp RA(1)>;)    // ±
@@ -151,7 +150,7 @@ ZMK_MACRO(MATH_deg,   bindings = <&kp RA(SEMI)>;) // °
 ZMK_MACRO(MATH_micro, bindings = <&kp RA(M)>;)    // µ
 
 /* Typography */
-ZMK_MACRO(LAQUO,      bindings = <&kp RA(Z)>;)  // «
-ZMK_MACRO(RAQUO,      bindings = <&kp RA(X)>;) // »
+ZMK_MACRO(LAQUO,      bindings = <&kp RA(Z)>;)    // «
+ZMK_MACRO(RAQUO,      bindings = <&kp RA(X)>;)    // »
 
 
