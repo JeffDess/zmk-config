@@ -58,14 +58,14 @@ ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACR
 
 // QWERTY Homerow Mods
 ZMK_MACRO(E_GR_D, bindings = <&kp APOS>, <&to QWE>;) // È
-ZMK_MACRO(I_CI_D, bindings = <&fr_i_cf>, <&to QWE>;) // Î
+ZMK_MACRO(I_CI_D, bindings = <&morph_i_circ>, <&to QWE>;) // Î
 
 // Colemak Homerow Mods
 ZMK_MACRO(E_GR_C, bindings = <&kp APOS>, <&to COL>;) // È
-ZMK_MACRO(I_CI_C, bindings = <&fr_i_cf>, <&to COL>;) // Î
+ZMK_MACRO(I_CI_C, bindings = <&morph_i_circ>, <&to COL>;) // Î
 
 // Ergo-L Homerow Mods
-ZMK_MACRO(E_CI_E, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
+ZMK_MACRO(E_CI_E, bindings = <&morph_e_circ>, <&to ERG>;) // Ê
 
 // ` directly
 ZMK_MACRO(GRA, bindings =
