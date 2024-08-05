@@ -140,12 +140,15 @@ ZMK_MACRO_TWO_PARAM(KPD, bindings =
 )
 
 /* Fractions */
-ZMK_MACRO(MATH_1_4, bindings = <&kp RC(0)>;)      // ¼
-ZMK_MACRO(MATH_1_2, bindings = <&kp RC(PLUS)>;)   // ½
-ZMK_MACRO(MATH_3_4, bindings = <&kp RC(MINUS)>;)  // ¾
+ZMK_MACRO(MATH_1_4, bindings = <&kp RA(4)>;) // ¼
+ZMK_MACRO(MATH_1_2, bindings = <&kp RA(5)>;) // ½
+ZMK_MACRO(MATH_3_4, bindings = <&kp RA(6)>;) // ¾
+ZMK_MACRO(MATH_3_8, bindings = <&kp RC(5)>;) // ⅜
+ZMK_MACRO(MATH_5_8, bindings = <&kp RC(6)>;) // ⅝
+ZMK_MACRO(MATH_7_8, bindings = <&kp RC(7)>;) // ⅞
 
 /* Symbols */
-ZMK_MACRO(MATH_pm,    bindings = <&kp RA(1)>;)    // ±
+ZMK_MACRO(MATH_pm,    bindings = <&kp RC(9)>;)    // ±
 ZMK_MACRO(MATH_deg,   bindings = <&kp RA(SEMI)>;) // °
 ZMK_MACRO(MATH_micro, bindings = <&kp RA(M)>;)    // µ
 
