@@ -118,12 +118,10 @@ ZMK_MACRO_ONE_PARAM(TREM, bindings =
 )
 
 // ^ to input
-ZMK_MACRO_TWO_PARAM(CIRC, bindings =
+ZMK_MACRO_ONE_PARAM(CIRC, bindings =
     <&kp LBKT>,
     <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&macro_param_2to1>,
-    <&to MACRO_PLACEHOLDER>;
+    <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
 // ^ to input then to default layer
