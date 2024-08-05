@@ -149,3 +149,9 @@ ZMK_MACRO(MATH_3_4, bindings = <&kp RC(MINUS)>;) // ¾
 ZMK_MACRO(MATH_pm,    bindings = <&kp RA(1)>;)    // ±
 ZMK_MACRO(MATH_deg,   bindings = <&kp RA(SEMI)>;) // °
 ZMK_MACRO(MATH_micro, bindings = <&kp RA(M)>;)    // µ
+
+/* Typography */
+ZMK_MACRO(LAQUO,      bindings = <&kp RA(Z)>;)  // «
+ZMK_MACRO(RAQUO,      bindings = <&kp RA(X)>;) // »
+
+
