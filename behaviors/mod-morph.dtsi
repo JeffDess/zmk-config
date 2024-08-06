@@ -60,7 +60,7 @@ ZMK_MOD_MORPH(comma_semi,
 
 // tap: trema | shift + tap: grave
 ZMK_MOD_MORPH(trem_gr,
-    bindings = <&KPD ACC_TR ERG>, <&KPD ACC_GR ERG>;
+    bindings = <&KPT ACC_TR ERG>, <&KPT ACC_GR ERG>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
