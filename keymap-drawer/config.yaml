@@ -476,7 +476,7 @@ parse_config:
     "&kp DEG": "°",
     "&kp RA(RBKT)": "~",
     "&kp SLSH": "/",
-    "&kp ASLSH": "/ iOS",
+    "&kp KP_SLASH": "/",
     "&kp MATH_MICRO": "µ",
     "&mkp RCLK": "$$material:right_click$$",
     "&mkp LCLK": "$$material:left_click$$",
