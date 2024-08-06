@@ -24,7 +24,7 @@ ZMK_MOD_MORPH(multi_div,
 
 // tap: slash | shift + tap: backslash
 ZMK_MOD_MORPH(slsh_bslsh,
-    bindings = <&kp KP_SLASH>, <&kp NON_US_BACKSLASH>;
+    bindings = <&kp KP_SLASH>, <&kp LS(SLSH)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 

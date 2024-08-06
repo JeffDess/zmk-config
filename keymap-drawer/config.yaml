@@ -477,6 +477,7 @@ parse_config:
     "&kp RA(RBKT)": "~",
     "&kp SLSH": "/",
     "&kp KP_SLASH": "/",
+    "&kp LS(SLSH)": "\\",
     "&kp MATH_MICRO": "µ",
     "&mkp RCLK": "$$material:right_click$$",
     "&mkp LCLK": "$$material:left_click$$",
