@@ -92,7 +92,10 @@ ZMK_MACRO(I_CI_C, bindings = <&morph_i_circ>, <&to COL>;) // Î
 /* Ergo-L */
 ZMK_MACRO(E_CI_E, bindings = <&morph_e_circ>, <&to ERG>;) // Ê
 
+
 // ACCENTS MACROS
+
+/* Accents without letter */
 
 // ` directly
 ZMK_MACRO(GRA, bindings =
@@ -112,6 +115,8 @@ ZMK_MACRO_ONE_PARAM(TREMA, bindings =
     <&macro_param_1to1>,
     <&to MACRO_PLACEHOLDER>;
 )
+
+/* Accents applied to letter */
 
 // ` to input
 ZMK_MACRO_ONE_PARAM(AGRA, bindings =
@@ -143,8 +148,8 @@ ZMK_MACRO_ONE_PARAM(CIRC, bindings =
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
-// Keypress then return to default layer
-ZMK_MACRO_TWO_PARAM(KPD, bindings =
+// Keypress then return to specified layer
+ZMK_MACRO_TWO_PARAM(KPT, bindings =
     <&macro_param_1to1>,
     <&kp MACRO_PLACEHOLDER>,
     <&macro_param_2to1>,

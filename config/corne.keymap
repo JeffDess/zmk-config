@@ -31,11 +31,11 @@ ZMK_LAYER(Colemak,
 
 ZMK_LAYER(ColeAcc,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     XXX         XXX         &E_TR       COL XXX      XXX            XXX         &I_TR COL     &O_TR COL     &U_TR COL  &KPD ACC_TR COL
+     XXX         XXX         &E_TR       COL XXX      XXX            XXX         &I_TR COL     &O_TR COL     &U_TR COL  &KPT ACC_TR COL
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_GR COL   &E_CI COL   &E_CU COL  &hrmeg SL COL XXX            XXX        &hrmic SL COL  &O_CI COL     &U_CI COL  &KPD ACC_GR COL
+     &A_GR COL   &E_CI COL   &E_CU COL  &hrmeg SL COL XXX            XXX        &hrmic SL COL  &O_CI COL     &U_CI COL  &KPT ACC_GR COL
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_CI COL   XXX         &CEDIL COL  XXX          XXX            XXX         XXX           XXX           &U_GR COL  &KPD ACC_CI COL
+     &A_CI COL   XXX         &CEDIL COL  XXX          XXX            XXX         XXX           XXX           &U_GR COL  &KPT ACC_CI COL
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                              ___         ___          &to COL        ___         ___           ___
 //                         ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
@@ -55,11 +55,11 @@ ZMK_LAYER(QWERTY,
 
 ZMK_LAYER(QwertyAcc,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     XXX         XXX         &E_TR QWE   XXX          XXX            XXX         &I_TR QWE     &O_TR QWE     &U_TR QWE  &KPD ACC_TR QWE
+     XXX         XXX         &E_TR QWE   XXX          XXX            XXX         &I_TR QWE     &O_TR QWE     &U_TR QWE  &KPT ACC_TR QWE
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_GR QWE   &E_CI QWE   &E_CU QWE  &hrme SL QWE  XXX            XXX        &hrmiq SL QWE  &O_CI QWE     &U_CI QWE  &KPD ACC_GR QWE
+     &A_GR QWE   &E_CI QWE   &E_CU QWE  &hrme SL QWE  XXX            XXX        &hrmiq SL QWE  &O_CI QWE     &U_CI QWE  &KPT ACC_GR QWE
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &A_CI QWE   XXX         &CEDIL QWE  XXX          XXX            XXX         XXX           XXX           &U_GR QWE  &KPD ACC_CI QWE
+     &A_CI QWE   XXX         &CEDIL QWE  XXX          XXX            XXX         XXX           XXX           &U_GR QWE  &KPT ACC_CI QWE
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                              ___         ___          &to QWE        ___         ___           ___
 //                         ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
