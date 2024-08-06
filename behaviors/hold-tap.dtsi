@@ -31,58 +31,13 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;
 )
 
-// homerow mods for circumflex
-ZMK_HOLD_TAP(hrmc,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&CIRC_D>;
-)
-
-// homerow mods for grave
-ZMK_HOLD_TAP(hrmg,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&AGRA_D>;
-)
-
-// homerow mods for è
-ZMK_HOLD_TAP(hrme,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&E_GR_D>;
-)
-
-// homerow mods for è
+// homerow mods for è (Colemak)
 ZMK_HOLD_TAP(hrmeg,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
     bindings = <&kp>, <&E_GR_C>;
-)
-
-// homerow mods for ê
-ZMK_HOLD_TAP(hrmec,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&E_CI_E>;
-)
-
-// homerow mods for î (QWERTY)
-ZMK_HOLD_TAP(hrmiq,
-    flavor = "balanced";
-    tapping-term-ms = <hrm_tap_term>;
-    quick-tap-ms = <hrm_quick_tap>;
-    global-quick-tap;
-    bindings = <&kp>, <&I_CI_D>;
 )
 
 // homerow mods for î (Colemak)
@@ -94,12 +49,29 @@ ZMK_HOLD_TAP(hrmic,
     bindings = <&kp>, <&I_CI_C>;
 )
 
-
-// homerow mods for scroll (Mouse)
-ZMK_HOLD_TAP(hrmw,
+// homerow mods for î (QWERTY)
+ZMK_HOLD_TAP(hrmiq,
     flavor = "balanced";
     tapping-term-ms = <hrm_tap_term>;
     quick-tap-ms = <hrm_quick_tap>;
     global-quick-tap;
-    bindings = <&kp>, <&msc>;
+    bindings = <&kp>, <&I_CI_Q>;
+)
+
+// homerow mods for è (QWERTY)
+ZMK_HOLD_TAP(hrme,
+    flavor = "balanced";
+    tapping-term-ms = <hrm_tap_term>;
+    quick-tap-ms = <hrm_quick_tap>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_GR_Q>;
+)
+
+// homerow mods for ê (Ergo-L)
+ZMK_HOLD_TAP(hrmec,
+    flavor = "balanced";
+    tapping-term-ms = <hrm_tap_term>;
+    quick-tap-ms = <hrm_quick_tap>;
+    global-quick-tap;
+    bindings = <&kp>, <&E_CI_E>;
 )
