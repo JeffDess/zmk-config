@@ -22,6 +22,12 @@ ZMK_MOD_MORPH(multi_div,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: slash | shift + tap: backslash
+ZMK_MOD_MORPH(slsh_bslsh,
+    bindings = <&kp KP_SLASH>, <&kp BACKSLASH>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: dash | shift + tap: tilde
 ZMK_MOD_MORPH(dash_tilde,
     bindings = <&kp MINUS>, <&kp TILDS>;
