@@ -1,5 +1,11 @@
 # Terminal Emulator Setup For Unicode Keybindings
 
+> ⚠ My keymaps no longer have unicode characters, so this setup is not
+necessary anymore.
+>
+> However, if you do want to include unicode in your config, you might find this
+useful.
+
 If your keymap has unicode characters and you use a modern terminal emulator,
 you need few additional steps in order to make it work correctly.
 
