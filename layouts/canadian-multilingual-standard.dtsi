@@ -42,7 +42,7 @@
 // MOD-MORPH - lowercase / uppercase accented characters
 // NOTE: Only accents accessed with a dead key on CSA need to have this mod-morph
 // Otherwise the shift key will be pressed before the macro and will not be registering
-// It's not required for accents with direct acces such as: à é è ç
+// It's not required for accents with direct access such as: à é è ç
 ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC A>, <&CIRC LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
 ZMK_MOD_MORPH(morph_e_circ, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
 ZMK_MOD_MORPH(morph_e_trem, bindings = <&TREM E>, <&TREM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
