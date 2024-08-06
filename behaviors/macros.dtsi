@@ -42,3 +42,11 @@ ZMK_MACRO(TMUX_SESSION, bindings =
     <&kp LS(SEMI)>,
     <&kp N &kp E &kp W &kp SPACE &kp MINUS &kp S &kp SPACE>;
 )
+
+// Keypress then return to specified layer
+ZMK_MACRO_TWO_PARAM(KPT, bindings =
+    <&macro_param_1to1>,
+    <&kp MACRO_PLACEHOLDER>,
+    <&macro_param_2to1>,
+    <&to MACRO_PLACEHOLDER>;
+)

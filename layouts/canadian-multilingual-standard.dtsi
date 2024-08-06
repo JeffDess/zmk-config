@@ -147,11 +147,3 @@ ZMK_MACRO_ONE_PARAM(CIRC, bindings =
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
-
-// Keypress then return to specified layer
-ZMK_MACRO_TWO_PARAM(KPT, bindings =
-    <&macro_param_1to1>,
-    <&kp MACRO_PLACEHOLDER>,
-    <&macro_param_2to1>,
-    <&to MACRO_PLACEHOLDER>;
-)
