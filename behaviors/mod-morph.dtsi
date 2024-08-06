@@ -18,7 +18,7 @@ ZMK_MOD_MORPH(plus_minus,
 
 // tap: multiply | shift + tap: divide
 ZMK_MOD_MORPH(multi_div,
-    bindings = <&kp STAR>, <&kp FSLH>;
+    bindings = <&kp STAR>, <&kp KP_SLASH>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
