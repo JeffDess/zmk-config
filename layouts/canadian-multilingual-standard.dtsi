@@ -7,6 +7,7 @@
 /* Canadian Multilingual Standard Mappings */
 
 #define SLSH   GRAVE     // /
+#define ASLSH  RA(SLASH) // / on iOS
 #define SAPOS  LS(COMMA) // '
 #define DAPOS  LS(DOT)   // "
 #define DEG    RA(SEMI)  // °
