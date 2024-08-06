@@ -38,7 +38,11 @@
 #define LAQUO RA(Z) // «
 #define RAQUO RA(X) // »
 
+
 // MOD-MORPH - lowercase / uppercase accented characters
+// NOTE: Only accents accessed with a dead key on CSA need to have this mod-morph
+// Otherwise the shift key will be pressed before the macro and will not be registering
+// It's not required for accents with direct acces such as: à é è ç
 ZMK_MOD_MORPH(morph_a_circ, bindings = <&CIRC A>, <&CIRC LS(A)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // â / Â
 ZMK_MOD_MORPH(morph_e_circ, bindings = <&CIRC E>, <&CIRC LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
 ZMK_MOD_MORPH(morph_e_trem, bindings = <&TREM E>, <&TREM LS(E)>; mods = <(MOD_LSFT|MOD_RSFT)>;)  // ê / Ê
@@ -52,13 +56,14 @@ ZMK_MOD_MORPH(morph_u_trem, bindings = <&TREM U>, <&TREM LS(U)>; mods = <(MOD_LS
 ZMK_MOD_MORPH(morph__ae, bindings = <&kp RC(A)>, <&kp LS(RC(A))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // æ / Æ
 ZMK_MOD_MORPH(morph__oe, bindings = <&kp RC(E)>, <&kp LS(RC(E))>; mods = <(MOD_LSFT|MOD_RSFT)>;) // œ / Œ
 
+
 // KEYMAP MACROS
 // The following macros return to the specified layer after being pressed
-ZMK_MACRO_ONE_PARAM(A_GR, bindings = <&kp BACKSLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // À
 ZMK_MACRO_ONE_PARAM(A_CI, bindings = <&morph_a_circ>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Â
+ZMK_MACRO_ONE_PARAM(A_GR, bindings = <&kp BACKSLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // À
+ZMK_MACRO_ONE_PARAM(E_CI, bindings = <&morph_e_circ>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ê
 ZMK_MACRO_ONE_PARAM(E_CU, bindings = <&kp SLASH>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)     // É
 ZMK_MACRO_ONE_PARAM(E_GR, bindings = <&kp APOS>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)      // È
-ZMK_MACRO_ONE_PARAM(E_CI, bindings = <&morph_e_circ>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ê
 ZMK_MACRO_ONE_PARAM(E_TR, bindings = <&morph_e_trem>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ê
 ZMK_MACRO_ONE_PARAM(I_CI, bindings = <&morph_i_circ>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Î
 ZMK_MACRO_ONE_PARAM(I_TR, bindings = <&morph_i_trem>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;) // Ê
@@ -73,16 +78,18 @@ ZMK_MACRO_ONE_PARAM(CEDIL, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACR
 
 
 // ACCENTS HOME ROW MODS
+// NOTE: Accents on the home row are needed as it seems impossible to pass 
+// parameters to a hold-tap
 
-// QWERTY
-ZMK_MACRO(E_GR_D, bindings = <&kp APOS>, <&to QWE>;) // È
-ZMK_MACRO(I_CI_D, bindings = <&morph_i_circ>, <&to QWE>;) // Î
+/* QWERTY */
+ZMK_MACRO(E_GR_Q, bindings = <&kp APOS>, <&to QWE>;) // È
+ZMK_MACRO(I_CI_Q, bindings = <&morph_i_circ>, <&to QWE>;) // Î
 
-// Colemak
+/* Colemak */
 ZMK_MACRO(E_GR_C, bindings = <&kp APOS>, <&to COL>;) // È
 ZMK_MACRO(I_CI_C, bindings = <&morph_i_circ>, <&to COL>;) // Î
 
-// Ergo-L
+/* Ergo-L */
 ZMK_MACRO(E_CI_E, bindings = <&morph_e_circ>, <&to ERG>;) // Ê
 
 // ACCENTS MACROS
@@ -113,14 +120,6 @@ ZMK_MACRO_ONE_PARAM(AGRA, bindings =
     <&macro_tap &kp MACRO_PLACEHOLDER>;
 )
 
-// ` to input then to default layer
-ZMK_MACRO_ONE_PARAM(AGRA_D, bindings =
-    <&kp ACC_GR>,
-    <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to QWE>;
-)
-
 // ´ to input
 ZMK_MACRO_TWO_PARAM(AIGU, bindings =
     <&kp ACC_AI>,
@@ -142,14 +141,6 @@ ZMK_MACRO_ONE_PARAM(CIRC, bindings =
     <&kp ACC_CI>,
     <&macro_param_1to1>,
     <&macro_tap &kp MACRO_PLACEHOLDER>;
-)
-
-// ^ to input then to default layer
-ZMK_MACRO_ONE_PARAM(CIRC_D, bindings =
-    <&kp ACC_CI>,
-    <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to QWE>;
 )
 
 // Keypress then return to default layer
