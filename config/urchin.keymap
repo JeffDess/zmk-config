@@ -12,6 +12,7 @@
 #include "zmk-helpers/key-labels/36.h"
 #include "zmk-helpers/key-labels/34.h"
 #include "../layouts/canadian-multilingual-standard.dtsi"
+#include "../behaviors/soft-off.dtsi"
 #include "../behaviors/combos_34.dtsi"
 #include "../behaviors/mouse.dtsi"
 #include "../behaviors/hold-tap.dtsi"
