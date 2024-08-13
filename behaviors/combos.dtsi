@@ -11,6 +11,8 @@
 
 // NOTE: Other mouse keys related combos in ./mouse.dtsi
 
+// NOTE: Soft off combos in ./soft-off.dtsi
+
 /***********************
   BASE LAYER
 ***********************/

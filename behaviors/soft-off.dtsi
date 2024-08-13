@@ -1,0 +1,10 @@
+// NOTE: Only turn off it the key is held for N ms or longer
+&soft_off {
+    hold-time-ms = <3000>;
+};
+
+// Soft off left half, active on navigation layer
+ZMK_COMBO(off_left, &soft_off, LT3 LT4, NAV)
+
+// Soft off right half, active on symbols layer
+ZMK_COMBO(off_right, &soft_off, RT3 RT4, SYM)
