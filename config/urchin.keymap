@@ -93,9 +93,9 @@ ZMK_LAYER(ErgoAcc,
 
 ZMK_LAYER(Symbols,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     &kp HASH    &kp AT      &kp LBRAC   &kp RBRAC    &kp PLUS       XXX         &kp TILDS     &GRA          &kp DLLR     &soft_off
+     &kp HASH    &kp AT      &kp LBRAC   &kp RBRAC    &kp PLUS       XXX         &kp TILDS     &GRA          &kp DLLR     XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-    &slsh_bslsh &dash_tilde &kp LPAR   &hml SL RPAR  &kp EQUAL      &CAR        &kp QUEST     &kp EXCL      &kp AMPS     &kp PIP
+    &slsh_bslsh &dash_tilde &kp LPAR   &hml SL RPAR  &kp EQUAL       &CAR         &kp QUEST    &kp EXCL      &kp AMPS     &kp PIP
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
      &kp STAR    &kp PRCNT   &kp LBKET   &kp RBKET    &kp UNDER      XXX         &kp LETHAN    &kp GRTHAN    &kp LAQUO    &kp RAQUO
 // ╰───────────┴───────────┴───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┴────────────┴────────────╯
@@ -105,11 +105,11 @@ ZMK_LAYER(Symbols,
 
 ZMK_LAYER(Nav,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     &soft_off  &out OUT_TOG XXX         XXX          &bt BT_CLR     XXX         XXX           XXX           XXX          XXX
+     XXX        &out OUT_TOG XXX         XXX          &bt BT_CLR     XXX         XXX           XXX           XXX          XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
      &sk LGUI    &kp C_PREV  &kp C_PP    &kp C_NEXT   XXX            &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT    &kp INS
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-     &bt BT_PRV  &bt BT_NXT  &kp C_VOL_DN &kp C_VOL_UP XXX            &kp HOME    &kp PG_DN     &kp PG_UP     &kp END      &kp SLCK
+     &bt BT_PRV  &bt BT_NXT &kp C_VOL_DN &kp C_VOL_UP XXX            &kp HOME    &kp PG_DN     &kp PG_UP     &kp END      &kp SLCK
 // ╰───────────┴───────────┴───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┴────────────┴────────────╯
                                          ___          ___            ___         ___
 //                                     ╰────────────┴────────────╯ ╰───────────┴─────────────╯
