@@ -1,5 +1,6 @@
 // NOTE: Only turn off it the key is held for N ms or longer
 &soft_off {
+    /delete-property/ split-peripheral-off-on-press;
     hold-time-ms = <3000>;
 };
 
