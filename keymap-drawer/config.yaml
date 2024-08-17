@@ -270,7 +270,6 @@ draw_config:
         stroke: white;
         stroke-width: 4px;
     }
-
   svg_extra_style: ''
   shrink_wide_legends: 6
   glyph_tap_size: 14
@@ -508,7 +507,8 @@ parse_config:
     "&kp RALT(SPACE)": "$$nbsp$$",
     "&out OUT_TOG": '$$output-toggle$$',
     "&kp SAPOS": "'",
-    "&kp DAPOS": '"'
+    "&kp DAPOS": '"',
+    "&soft_off": "$$mdi:power-standby$$"
     }
   sticky_label: sticky
   toggle_label: toggle

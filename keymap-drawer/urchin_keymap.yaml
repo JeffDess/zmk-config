@@ -220,7 +220,7 @@ layers:
   - '~'
   - '`'
   - $
-  - ''
+  - $$mdi:power-standby$$
   - {t: /, s: \}
   - {t: '-', s: '~'}
   - (
@@ -246,8 +246,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   Navigation:
+  - $$mdi:power-standby$$
   - $$output-toggle$$
-  - ''
   - ''
   - ''
   - $$bt-clear$$
