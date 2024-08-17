@@ -380,7 +380,7 @@ draw_config:
           <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
       </svg>
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
