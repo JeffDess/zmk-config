@@ -4,8 +4,8 @@
     hold-time-ms = <3000>;
 };
 
+// FIXME: Combos don't work, only central side is turning off
 // Soft off left half, active on navigation layer
-ZMK_COMBO(off_left, &soft_off, LT3 LT4, NAV)
-
+// ZMK_COMBO(off_left, &soft_off, LT3 LT4, NAV)
 // Soft off right half, active on symbols layer
-ZMK_COMBO(off_right, &soft_off, RT3 RT4, SYM)
+// ZMK_COMBO(off_right, &soft_off, RT3 RT4, SYM)
