@@ -508,7 +508,8 @@ parse_config:
     "&out OUT_TOG": '$$output-toggle$$',
     "&kp SAPOS": "'",
     "&kp DAPOS": '"',
-    "&soft_off": "$$mdi:power-standby$$"
+    "&soft_off": "$$mdi:power-standby$$",
+    "&tog NAV": "NAV"
     }
   sticky_label: sticky
   toggle_label: toggle
@@ -710,6 +711,12 @@ parse_config:
       align: "bottom"
       offset: 0.3
     combo_tab_34:
+      align: "bottom"
+      offset: 0.3
+    combo_nav_toggle:
+      align: "bottom"
+      offset: 0.3
+    combo_nav_toggle_34:
       align: "bottom"
       offset: 0.3
     combo_rightclick:

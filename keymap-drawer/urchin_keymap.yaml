@@ -401,6 +401,11 @@ combos:
   l: [QWERTY]
   a: top
   o: 0.1
+- p: [31, 30]
+  k: NAV
+  l: [QWERTY, Colemak, Ergo-L, Navigation]
+  a: bottom
+  o: 0.3
 - p: [3, 2]
   k: $$material:left_click$$
   l: [QWERTY, Colemak, Ergo-L]

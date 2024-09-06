@@ -21,3 +21,6 @@ ZMK_COMBO(ergol_qwerty, &to QWE, LH0 RH0, ERG)
 
 // QWERTY -> Ergo-L - Outer thumbs, active on QWERTY
 ZMK_COMBO(qwerty_ergol, &to ERG, LH1 RH1, QWE)
+
+// NAV Toggle - Left thumbs, active on all alpha layers & NAV
+ZMK_COMBO(nav_toggle, &tog NAV, LH0 LH1, QWE COL ERG NAV)
