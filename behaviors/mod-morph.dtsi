@@ -78,7 +78,7 @@ ZMK_MOD_MORPH(sap_dap,
 
 // tap: question mark | shift + tap: inverted question mark
 ZMK_MOD_MORPH(ques_iques,
-    bindings = <&kp QUEST>, <&INV_QUEST>;
+    bindings = <&QUEST>, <&INV_QUEST>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
