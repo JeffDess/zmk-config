@@ -33,7 +33,7 @@ ZMK_LAYER(Colemak,
 
 ZMK_LAYER(ColeAcc,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-     &DTILD      &ACUTE      &E_TR COL   XXX          XXX            XXX         &I_TR COL     &O_TR COL     &U_TR COL  &KPT ACC_TR COL
+&KPT ACC_TI COL &KPT ACC_AC COL &E_TR COL XXX         XXX            XXX         &I_TR COL     &O_TR COL     &U_TR COL  &KPT ACC_TR COL
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
      &A_GR COL   &E_CI COL   &E_CU COL  &hrmeg SL COL XXX            XXX         &hrmic SL COL &O_CI COL     &U_CI COL  &KPT ACC_GR COL
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤

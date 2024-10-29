@@ -18,13 +18,13 @@
 #define QUEST  LS(N6)           // ?
 #define PIP    RA(GRAVE)        // |
 #define TILDS  RA(RBKT)         // ~
-#define DTILD  RC(RBKT)         // ~ dead
-#define ACUTE  RC(SEMI)         // ´ dead
 #define LETHAN RA(COMMA)        // ≤
 #define GRTHAN RA(DOT)          // ≥
+#define ACC_AC RC(SEMI)         // ´
 #define ACC_AI RA(SLASH)        // ´
 #define ACC_CI LBKT             // ^
 #define ACC_GR RA(LBKT)         // `
+#define ACC_TI RC(RBKT)         // ~
 #define ACC_TR LS(LBKT)         // ¨
 #define INV_QUEST RC(LS(MINUS)) // ¿
 #define INV_EXCL RC(LS(N1))     // ¡
