@@ -36,8 +36,8 @@ layers:
   - {t: '$$material:backspace$$', s: $$delete$$}
   - {t: '$$tabler:space$$', h: Symbols, s: $$nbsp$$}
   Colemak Accents:
-  - ''
-  - ''
+  - '~'
+  - ´
   - Ë
   - ''
   - ''
@@ -227,8 +227,8 @@ layers:
   - {t: ), h: SHIFT}
   - '='
   - ^
-  - '?'
-  - '!'
+  - {t: '?', s: ¿}
+  - {t: '!', s: ¡}
   - '&'
   - '|'
   - '*'
