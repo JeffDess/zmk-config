@@ -18,6 +18,8 @@
 #define QUEST  LS(N6)           // ?
 #define PIP    RA(GRAVE)        // |
 #define TILDS  RA(RBKT)         // ~
+#define DTILD  RC(RBKT)         // ~ dead
+#define ACUTE  RC(SEMI)         // ´ dead
 #define LETHAN RA(COMMA)        // ≤
 #define GRTHAN RA(DOT)          // ≥
 #define ACC_AI RA(SLASH)        // ´
