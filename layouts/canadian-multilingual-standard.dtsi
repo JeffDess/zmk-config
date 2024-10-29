@@ -26,8 +26,8 @@
 #define ACC_GR RA(LBKT)         // `
 #define ACC_TI RC(RBKT)         // ~
 #define ACC_TR LS(LBKT)         // ¨
-#define INV_QUEST RC(MINUS)     // ¿
-#define INV_EXCL RS(RC(N1))     // ¡
+#define INV_QUEST RC(UNDER)     // ¿
+#define INV_EXCL RC(EXCL)       // ¡
 
 /* Fractions */
 #define MATH_1_4 RC(N4) // ¼
