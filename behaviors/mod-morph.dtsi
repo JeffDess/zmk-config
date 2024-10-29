@@ -78,12 +78,12 @@ ZMK_MOD_MORPH(sap_dap,
 
 // tap: question mark | shift + tap: inverted question mark
 ZMK_MOD_MORPH(ques_iques,
-    bindings = <&kp QUEST>, <&kp QUEST_INV>;
+    bindings = <&kp QUEST>, <&QUEST_INV>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
 // tap: exclamation mark | shift + tap: inverted exclamation mark
 ZMK_MOD_MORPH(excl_iexcl,
-    bindings = <&kp EXCL>, <&kp EXCL_INV>;
+    bindings = <&kp EXCL>, <&EXCL_INV>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
