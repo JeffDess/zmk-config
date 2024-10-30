@@ -46,12 +46,6 @@ ZMK_MOD_MORPH(num_esc_clk,
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
-// hold: symbol layer | tap: space | shift + tap: non-breaking space
-ZMK_MOD_MORPH(sp_nbsp_sym,
-    bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
-    mods = <(MOD_LSFT)>;
-)
-
 // tap: period | shift + tap: colon
 ZMK_MOD_MORPH(dot_col,
     bindings = <&kp DOT>, <&kp COLON>;
@@ -73,5 +67,17 @@ ZMK_MOD_MORPH(trem_gr,
 // tap: single apostrophe | shift + tap: double apostrophe
 ZMK_MOD_MORPH(sap_dap,
     bindings = <&kp SAPOS>, <&kp DAPOS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: question mark | shift + tap: inverted question mark
+ZMK_MOD_MORPH(ques_iques,
+    bindings = <&kp QUEST>, <&kp INV_QUEST>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: exclamation mark | shift + tap: inverted exclamation mark
+ZMK_MOD_MORPH(excl_iexcl,
+    bindings = <&kp EXCL>, <&kp INV_EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
