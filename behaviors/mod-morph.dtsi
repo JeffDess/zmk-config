@@ -46,12 +46,6 @@ ZMK_MOD_MORPH(num_esc_clk,
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
-// hold: symbol layer | tap: space | shift + tap: non-breaking space
-ZMK_MOD_MORPH(sp_nbsp_sym,
-    bindings = <&lt SYM SPACE>, <&kp RALT(SPACE)>;
-    mods = <(MOD_LSFT)>;
-)
-
 // tap: period | shift + tap: colon
 ZMK_MOD_MORPH(dot_col,
     bindings = <&kp DOT>, <&kp COLON>;
