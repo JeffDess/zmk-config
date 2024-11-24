@@ -89,6 +89,26 @@ whenever I switch keyboards.
 
 ![Urchin with Nano Trackball](images/urchin-with-nano.jpg)
 
+## Scripts
+
+1. Export an image of the keymap:
+
+  ```sh
+  make drawing
+  ```
+
+1. Export an image of the keymap and open in browser:
+
+  ```sh
+  make preview
+  ```
+
+1. Download firmware and open file explorer:
+
+  ```sh
+  make download
+  ```
+
 ## References
 
 - [Corne Keyboard](https://github.com/foostan/crkbd)
