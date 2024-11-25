@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: urob
       url-base: https://github.com/urob/
+    - name: gpeye
+      url-base: https://github.com/GPeye
   projects:
     - name: zmk
       remote: urob
@@ -9,6 +11,9 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
+      revision: main
+    - name: urchin-peripheral-animation
+      remote: gpeye
       revision: main
   self:
     path: config
