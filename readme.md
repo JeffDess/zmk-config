@@ -27,6 +27,7 @@ simultaneously with Github Actions.
   [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 - Easy to read files, thanks to
   [zmk-helpers](https://github.com/urob/zmk-helpers)
+- Nice!View Urchin animation on right side of Urchin (credits: [GPeye](https://github.com/gpeye/urchin-peripheral-animation))
 
 ## Keymap
 
