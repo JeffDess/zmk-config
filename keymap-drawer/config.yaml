@@ -374,12 +374,12 @@ draw_config:
           <path fill="#fff" d="m738.2-366.06-41.73-77.07q29-47.38 22.98-102.18-6-54.8-46.31-95.1Q626.47-687.1 560-687.1t-113.14 46.67q-40.3 40.3-46.31 95.11-6.01 54.8 22.98 102.18l-41.72 77.07q-64.35-71.42-62.23-166.88 2.13-95.46 70.71-164.04Q461.01-767.7 560-767.7q99 0 169.7 70.72 68.6 68.58 70.72 164.04 2.12 95.46-62.23 166.88zM615.85 10.83H504.14V-231L362-159.58l198-367.7 197.99 367.7L615.86-231Z"/>
       </svg>
     play-pause: |
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play-filled">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon icon-tabler icon-tabler-player-play">
           <path fill="#fff" stroke="none" d="M11.02 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8a1 1 0 0 0-1.52.85Z" style="fill:#fff;fill-opacity:1"/>
           <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
       </svg>
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
@@ -673,8 +673,8 @@ parse_config:
     C_VOL_UP: '$$tabler:volume$$'
     C_VOL_DN: '$$tabler:volume-2$$'
     C_PP: '$$play-pause$$'
-    C_PREV: '$$tabler:player-track-prev-filled$$'
-    C_NEXT: '$$tabler:player-track-next-filled$$'
+    C_PREV: '$$tabler:player-track-prev$$'
+    C_NEXT: '$$tabler:player-track-next$$'
     LEFT: '$$tabler:arrow-big-left$$'
     RIGHT: '$$tabler:arrow-big-right$$'
     UP: '$$tabler:arrow-big-up$$'

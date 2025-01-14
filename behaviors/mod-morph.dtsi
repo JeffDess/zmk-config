@@ -4,6 +4,11 @@ ZMK_MOD_MORPH(bspc_del,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+ZMK_MOD_MORPH(sym_sp_nbsp,
+    bindings = <&lt SYM SPACE>, <&kp RA(SPACE)>;
+    mods = <(MOD_LALT|MOD_RALT|MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: backspace | shift + tap: delete | hold: nav layer
 ZMK_MOD_MORPH(bs_del_nav,
     bindings = <&lt NAV BSPC>, <&kp DEL>;
