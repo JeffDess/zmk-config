@@ -508,13 +508,13 @@ parse_config:
     "&GTE": " >= ",
     "&ARROW": " -> ",
     "&FAT_ARROW": " => ",
-    "&kp RALT(SPACE)": "$$nbsp$$",
+    "&kp RA(SPACE)": "$$nbsp$$",
     "&out OUT_TOG": '$$output-toggle$$',
     "&kp SAPOS": "'",
     "&kp DAPOS": '"',
     "&soft_off": "$$mdi:power-standby$$",
     "&tog NAV": "NAV"
-    }
+  }
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
@@ -522,7 +522,7 @@ parse_config:
     type: trans
   mark_alternate_layer_activators: true
   qmk_remove_keycode_prefix:
-  - KC_
+    - KC_
   qmk_keycode_map:
     XXXXXXX: ''
     'NO': ''

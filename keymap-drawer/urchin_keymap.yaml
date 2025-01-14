@@ -257,9 +257,9 @@ layers:
   - ''
   - ''
   - {t: GUI, h: sticky}
-  - $$tabler:player-track-prev-filled$$
+  - $$tabler:player-track-prev$$
   - $$play-pause$$
-  - $$tabler:player-track-next-filled$$
+  - $$tabler:player-track-next$$
   - ''
   - $$tabler:arrow-big-left$$
   - $$tabler:arrow-big-down$$
