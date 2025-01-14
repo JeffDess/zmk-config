@@ -92,23 +92,34 @@ whenever I switch keyboards.
 
 ## Scripts
 
-1. Export an image of the keymap:
+First make sure to setup ZMK Helpers module:
+
+```sh
+git submodule update --init --recursive
+```
+
+Then these commands will be available:
+
+- Export an image of the keymap:
 
   ```sh
   make drawing
   ```
 
-1. Export an image of the keymap and open in browser:
+- Export an image of the keymap and open in browser:
 
   ```sh
   make preview
   ```
 
-1. Download firmware and open file explorer:
+### Github Action artefact
 
-  ```sh
-  make download
-  ```
+Download firmware and open file explorer:
+
+```sh
+make download
+```
+
 
 ## References
 
