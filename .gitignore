@@ -1,1 +1,7 @@
 firmware
+.direnv/
+.venv/
+__pycache__/
+*.pyc
+result
+result-*
