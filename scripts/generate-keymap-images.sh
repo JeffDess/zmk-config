@@ -74,8 +74,12 @@ case "$1" in
         watch
         ;;
     '-h'|'--help')
+        echo 'SUMMARY'
         echo 'Draw keymap from configuration and export as SVG'
-        echo 'Add -p or --preview to launch preview in Firefox'
+        echo
+        echo 'FLAGS'
+        echo '-p --preview  Launch preview in feh'
+        echo '-w --watch    Launch preview and update when files are modified'
         ;;
     *)
         init
