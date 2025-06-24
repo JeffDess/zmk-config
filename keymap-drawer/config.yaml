@@ -389,132 +389,131 @@ parse_config:
     - "zmk-helpers/include"
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {
-    "&AE_L 0": "Æ",
-    "&A_CI 0": "Â",
-    "&A_GR 0": "À",
-    "&CEDIL 0": "Ç",
-    "&E_CI 0": "Ê",
-    "&E_CU 0": "É",
-    "&E_GR 0": "È",
-    "&E_TR 0": "Ë",
-    "&I_CI 0": "Î",
-    "&I_TR 0": "Ï",
-    "&KPT ACC_AC 0": "´",
-    "&KPT ACC_CI 0": "^",
-    "&KPT ACC_GR 0": "`",
-    "&KPT ACC_TI 0": "~",
-    "&KPT ACC_TR 0": "¨",
-    "&OE_L 0": "Œ",
-    "&O_CI 0": "Ô",
-    "&O_TR 0": "Ö",
-    "&U_CI 0": "Û",
-    "&U_GR 0": "Ù",
-    "&U_TR 0": "Ü",
-    "&hrme SL 0": "È",
-    "&hrmeg SL 0": "È",
-    "&hrmi SL 0": "Î",
-    "&hrmic SL 0": "Î",
-    "&AE_L 2": "Æ",
-    "&A_CI 2": "Â",
-    "&A_GR 2": "À",
-    "&CEDIL 2": "Ç",
-    "&E_CI 2": "Ê",
-    "&E_CU 2": "É",
-    "&E_GR 2": "È",
-    "&E_TR 2": "Ë",
-    "&I_CI 2": "Î",
-    "&I_TR 2": "Ï",
-    "&KPT ACC_CI 2": "^",
-    "&KPT ACC_GR 2": "`",
-    "&KPT ACC_TR 2": "¨",
-    "&OE_L 2": "Œ",
-    "&O_CI 2": "Ô",
-    "&O_TR 2": "Ö",
-    "&U_CI 2": "Û",
-    "&U_GR 2": "Ù",
-    "&U_TR 2": "Ü",
-    "&hrme SL 2": "È",
-    "&hrmi SL 2": "Î",
-    "&A_GR 4": "À",
-    "&A_CI 4": "Â",
-    "&hrme SL 4": "È",
-    "&hrmec SL 4": "Ê",
-    "&hrmiq SL 2": "Î",
-    "&AE_L 4": "Æ",
-    "&CEDIL 4": "Ç",
-    "&E_CI 4": "Ê",
-    "&E_CU 4": "É",
-    "&E_GR 4": "È",
-    "&E_TR 4": "Ë",
-    "&I_CI 4": "Î",
-    "&I_TR 4": "Ï",
-    "&KPT ACC_CI 4": "^",
-    "&KPT ACC_GR 4": "`",
-    "&KPT ACC_TR 4": "¨",
-    "&kp INV_QUEST": "¿",
-    "&kp INV_EXCL": "¡",
-    "&OE_L 4": "Œ",
-    "&O_CI 4": "Ô",
-    "&O_TR 4": "Ö",
-    "&U_CI 4": "Û",
-    "&U_GR 4": "Ù",
-    "&U_TR 4": "Ü",
-    "&kp QUEST": "?",
-    "&kp RA(COMMA)": "<",
-    "&kp RA(DOT)": ">",
-    "&GRA": "`",
-    "&CAR": "^",
-    "&kp LBRAC": "{",
-    "&kp RBRAC": "}",
-    "&kp LBKET": "[",
-    "&kp RBKET": "]",
-    "&kp PIP": "|",
-    "&kp LAQUO": "«",
-    "&kp RAQUO": "»",
-    "&kp MATH_1_4": "¼",
-    "&kp MATH_1_2": "½",
-    "&kp MATH_3_4": "¾",
-    "&kp MATH_PM": "±",
-    "&kp DEG": "°",
-    "&kp RA(RBKT)": "~",
-    "&kp SLSH": "/",
-    "&kp KP_SLASH": "/",
-    "&kp LS(SLSH)": "\\",
-    "&kp MATH_MICRO": "µ",
-    "&mkp RCLK": "$$material:right_click$$",
-    "&mkp LCLK": "$$material:left_click$$",
-    "&mkp MCLK": "$$click-middle$$",
-    "&msc SCRL_LEFT": "$$scroll-left$$",
-    "&msc SCRL_RIGHT": "$$scroll-right$$",
-    "&msc SCRL_UP": "$$scroll-up$$",
-    "&msc SCRL_DOWN": "$$scroll-down$$",
-    "&mmv MOVE_LEFT": "$$cursor-left$$",
-    "&mmv MOVE_RIGHT": "$$cursor-right$$",
-    "&mmv MOVE_UP": "$$cursor-up$$",
-    "&mmv MOVE_DOWN": "$$cursor-down$$",
-    "&mmv_dpi": "DPI",
-    "&mkp_boot": "QMK BOOT",
-    "&mwh_tg": "$$scroll$$",
-    "&caps_word": "CAPS WORD",
-    "&caps_lock": "CAPS LOCK",
-    "&kp LC(X)": "$$tabler:cut$$",
-    "&kp LC(C)": "$$tabler:copy$$",
-    "&kp LC(V)": "$$tabler:clipboard$$",
-    "&kp LC(LA(J))": "TMUX",
-    "&TMUX_SESSION": "TMUX NEW SESSION",
-    "&TMUX_CMD": "TMUX COMMAND",
-    "&LTE": " <= ",
-    "&GTE": " >= ",
-    "&ARROW": " -> ",
-    "&FAT_ARROW": " => ",
-    "&kp RA(SPACE)": "$$nbsp$$",
-    "&out OUT_TOG": '$$output-toggle$$',
-    "&kp SAPOS": "'",
-    "&kp DAPOS": '"',
-    "&soft_off": "$$mdi:power-standby$$",
+  raw_binding_map:
+    "&AE_L 0": "Æ"
+    "&A_CI 0": "Â"
+    "&A_GR 0": "À"
+    "&CEDIL 0": "Ç"
+    "&E_CI 0": "Ê"
+    "&E_CU 0": "É"
+    "&E_GR 0": "È"
+    "&E_TR 0": "Ë"
+    "&I_CI 0": "Î"
+    "&I_TR 0": "Ï"
+    "&KPT ACC_AC 0": "´"
+    "&KPT ACC_CI 0": "^"
+    "&KPT ACC_GR 0": "`"
+    "&KPT ACC_TI 0": "~"
+    "&KPT ACC_TR 0": "¨"
+    "&OE_L 0": "Œ"
+    "&O_CI 0": "Ô"
+    "&O_TR 0": "Ö"
+    "&U_CI 0": "Û"
+    "&U_GR 0": "Ù"
+    "&U_TR 0": "Ü"
+    "&hrme SL 0": "È"
+    "&hrmeg SL 0": "È"
+    "&hrmi SL 0": "Î"
+    "&hrmic SL 0": "Î"
+    "&AE_L 2": "Æ"
+    "&A_CI 2": "Â"
+    "&A_GR 2": "À"
+    "&CEDIL 2": "Ç"
+    "&E_CI 2": "Ê"
+    "&E_CU 2": "É"
+    "&E_GR 2": "È"
+    "&E_TR 2": "Ë"
+    "&I_CI 2": "Î"
+    "&I_TR 2": "Ï"
+    "&KPT ACC_CI 2": "^"
+    "&KPT ACC_GR 2": "`"
+    "&KPT ACC_TR 2": "¨"
+    "&OE_L 2": "Œ"
+    "&O_CI 2": "Ô"
+    "&O_TR 2": "Ö"
+    "&U_CI 2": "Û"
+    "&U_GR 2": "Ù"
+    "&U_TR 2": "Ü"
+    "&hrme SL 2": "È"
+    "&hrmi SL 2": "Î"
+    "&A_GR 4": "À"
+    "&A_CI 4": "Â"
+    "&hrme SL 4": "È"
+    "&hrmec SL 4": "Ê"
+    "&hrmiq SL 2": "Î"
+    "&AE_L 4": "Æ"
+    "&CEDIL 4": "Ç"
+    "&E_CI 4": "Ê"
+    "&E_CU 4": "É"
+    "&E_GR 4": "È"
+    "&E_TR 4": "Ë"
+    "&I_CI 4": "Î"
+    "&I_TR 4": "Ï"
+    "&KPT ACC_CI 4": "^"
+    "&KPT ACC_GR 4": "`"
+    "&KPT ACC_TR 4": "¨"
+    "&kp INV_QUEST": "¿"
+    "&kp INV_EXCL": "¡"
+    "&OE_L 4": "Œ"
+    "&O_CI 4": "Ô"
+    "&O_TR 4": "Ö"
+    "&U_CI 4": "Û"
+    "&U_GR 4": "Ù"
+    "&U_TR 4": "Ü"
+    "&kp QUEST": "?"
+    "&kp RA(COMMA)": "<"
+    "&kp RA(DOT)": ">"
+    "&GRA": "`"
+    "&CAR": "^"
+    "&kp LBRAC": "{"
+    "&kp RBRAC": "}"
+    "&kp LBKET": "["
+    "&kp RBKET": "]"
+    "&kp PIP": "|"
+    "&kp LAQUO": "«"
+    "&kp RAQUO": "»"
+    "&kp MATH_1_4": "¼"
+    "&kp MATH_1_2": "½"
+    "&kp MATH_3_4": "¾"
+    "&kp MATH_PM": "±"
+    "&kp DEG": "°"
+    "&kp RA(RBKT)": "~"
+    "&kp SLSH": "/"
+    "&kp KP_SLASH": "/"
+    "&kp LS(SLSH)": "\\"
+    "&kp MATH_MICRO": "µ"
+    "&mkp RCLK": "$$material:right_click$$"
+    "&mkp LCLK": "$$material:left_click$$"
+    "&mkp MCLK": "$$click-middle$$"
+    "&msc SCRL_LEFT": "$$scroll-left$$"
+    "&msc SCRL_RIGHT": "$$scroll-right$$"
+    "&msc SCRL_UP": "$$scroll-up$$"
+    "&msc SCRL_DOWN": "$$scroll-down$$"
+    "&mmv MOVE_LEFT": "$$cursor-left$$"
+    "&mmv MOVE_RIGHT": "$$cursor-right$$"
+    "&mmv MOVE_UP": "$$cursor-up$$"
+    "&mmv MOVE_DOWN": "$$cursor-down$$"
+    "&mmv_dpi": "DPI"
+    "&mkp_boot": "QMK BOOT"
+    "&mwh_tg": "$$scroll$$"
+    "&caps_word": "CAPS WORD"
+    "&caps_lock": "CAPS LOCK"
+    "&kp LC(X)": "$$tabler:cut$$"
+    "&kp LC(C)": "$$tabler:copy$$"
+    "&kp LC(V)": "$$tabler:clipboard$$"
+    "&kp LC(LA(J))": "TMUX"
+    "&TMUX_SESSION": "TMUX NEW SESSION"
+    "&TMUX_CMD": "TMUX COMMAND"
+    "&LTE": " <= "
+    "&GTE": " >= "
+    "&ARROW": " -> "
+    "&FAT_ARROW": " => "
+    "&kp RA(SPACE)": "$$nbsp$$"
+    "&out OUT_TOG": '$$output-toggle$$'
+    "&kp SAPOS": "'"
+    "&kp DAPOS": '"'
+    "&soft_off": "$$mdi:power-standby$$"
     "&tog NAV": "NAV"
-  }
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
