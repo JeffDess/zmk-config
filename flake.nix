@@ -8,7 +8,7 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       keymap-drawer_version = "0.22.0";
     in pkgs.mkShell {
-      packages = with pkgs; [ python313 uv ];
+      packages = with pkgs; [ python313 uv entr ];
 
       shellHook = ''
         uv venv
