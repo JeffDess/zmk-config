@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris_rotated}
+layout: {zmk_keyboard: urchin}
 layers:
   Colemak:
   - Q
