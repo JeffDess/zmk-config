@@ -45,17 +45,17 @@ draw () {
 }
 
 preview () {
-    echo "Launching preview in Firefox"
-    firefox "$IMG/$KBD"_keymap.svg &
+    echo "Launching preview in feh..."
+    feh "$IMG"/$KBD"_keymap".svg -B black --keep-zoom-vp &
 }
 
 watch () {
-    echo "Launching preview and watching files..."
+    echo "Watching files..."
     find ./keymap-drawer/ \
         ./behaviors/ \
         ./layouts/ \
         ./config/*.keymap | \
-        entr -s "sh $0 -i && kitten icat ""$IMG"/"$KBD""_keymap.svg"
+        entr -ps "sh $0"
 }
 
 init() {
@@ -67,9 +67,10 @@ case "$1" in
     '-p'|'--preview')
         init
         preview
-        firefox images/keymaps/urchin_keymap.svg &
         ;;
     '-w'|'--watch')
+        init
+        preview
         watch
         ;;
     '-h'|'--help')
