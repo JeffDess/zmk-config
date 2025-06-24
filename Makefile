@@ -1,8 +1,8 @@
 drawing:
 	@./scripts/generate-keymap-images.sh
 preview:
-	@./scripts/generate-keymap-images.sh -p
+	@./scripts/generate-keymap-images.sh --preview
 download:
 	@./scripts/download-firmware.sh
 watch:
-	@find ./keymap-drawer/ | entr -s "make preview"
+	@./scripts/generate-keymap-images.sh --watch

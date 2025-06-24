@@ -3,6 +3,7 @@
 ROOT=$(dirname "$(readlink -f "$0")" | sed 's/\/[^/]*$//')
 IMG="$ROOT/images/keymaps"
 KMD="$ROOT/keymap-drawer"
+KBD="urchin"
 
 parse () {
     KBD_NAME=$1
@@ -43,13 +44,21 @@ draw () {
     fi
 }
 
-launch_preview () {
-   echo "Launching preview in Firefox"
-   firefox images/keymaps/urchin_keymap.svg &
+preview () {
+    echo "Launching preview in Firefox"
+    firefox "$IMG/$KBD"_keymap.svg &
+}
+
+watch () {
+    echo "Launching preview and watching files..."
+    find ./keymap-drawer/ \
+        ./behaviors/ \
+        ./layouts/ \
+        ./config/*.keymap | \
+        entr -s "sh $0 -i && kitten icat ""$IMG"/"$KBD""_keymap.svg"
 }
 
 init() {
-    KBD="urchin"
     parse "$KBD"
     draw "$KBD" --keys-only
 }
@@ -57,8 +66,11 @@ init() {
 case "$1" in
     '-p'|'--preview')
         init
-        echo "Launching preview in Firefox"
+        preview
         firefox images/keymaps/urchin_keymap.svg &
+        ;;
+    '-w'|'--watch')
+        watch
         ;;
     '-h'|'--help')
         echo 'Draw keymap from configuration and export as SVG'
